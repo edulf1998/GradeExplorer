@@ -1,0 +1,1 @@
+﻿https://thoughts-on-java.org/ultimate-guide-association-mappings-jpa-hibernate/
