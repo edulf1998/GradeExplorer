@@ -8,7 +8,7 @@ using System.IO;
 
 namespace GradeExplorer.Utils
 {
-  public static class NHibernate
+  public static class NHibernateUtil
   {
     private static ISessionFactory instance;
 
