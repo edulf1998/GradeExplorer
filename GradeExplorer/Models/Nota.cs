@@ -1,9 +1,29 @@
-﻿namespace GradeExplorer.Models
+﻿using GradeExplorer.Utils;
+
+namespace GradeExplorer.Models
 {
-  public class Nota
+  public class Nota : INotifyBase
   {
-    public Ejercicio Ejercicio { get; set; }
-    public Alumno Alumno { get; set; }
-    public float Puntuacion { get; set; }
+    private float _puntuacion;
+    public float Puntuacion
+    {
+      get => _puntuacion;
+      set => SetField(ref _puntuacion, value);
+    }
+
+    // Relaciones
+    private Alumno _alumno;
+    public Alumno Alumno
+    {
+      get => _alumno;
+      set => SetField(ref _alumno, value);
+    }
+
+    private Ejercicio _ejercicio;
+    public Ejercicio Ejercicio
+    {
+      get => _ejercicio;
+      set => SetField(ref _ejercicio, value);
+    }
   }
 }

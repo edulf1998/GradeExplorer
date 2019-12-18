@@ -2,15 +2,17 @@
 
 namespace GradeExplorer.Models.Mappings
 {
-  class MapaAlumno : ClassMap<Alumno>
+  public class MapaAlumno : ClassMap<Alumno>
   {
     public MapaAlumno()
     {
-      Id(x => x.Id);
-      Map(x => x.Nombre).Length(50).Not.Nullable();
-      Map(x => x.Apellido1).Length(50).Not.Nullable();
-      Map(x => x.Apellido2).Length(50).Not.Nullable();
-      HasMany(x => x.Asignaturas).Table("MatriculaAlumno");
+      Table("Alumno");
+      Id(a => a.Id);
+      Map(a => a.Nombre);
+      Map(a => a.Apellido1);
+      Map(a => a.Apellido2);
+
+      HasManyToMany(a => a.Asignaturas).Table("MatriculaAsignatura");
     }
   }
 }

@@ -1,17 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using GradeExplorer.Views;
 using System.Windows;
 
 namespace GradeExplorer
 {
-  /// <summary>
-  /// Lógica de interacción para App.xaml
-  /// </summary>
   public partial class App : Application
   {
+    /// <summary>
+    /// En este método podemos controlar los argumentos que se pasan al programa
+    /// </summary>
+    /// <param name="sender">El objeto donde se origina el evento</param>
+    /// <param name="e">Aquí están contenidos los argumentos de inicio del programa</param>
+    private void InicioAplicacion(object sender, StartupEventArgs e)
+    {
+      string[] args = e.Args;
+
+      VentanaPrincipal ventana = new VentanaPrincipal();
+      ventana.WindowState = WindowState.Maximized;
+
+      ventana.Show();
+    }
   }
 }

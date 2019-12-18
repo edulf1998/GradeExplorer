@@ -1,11 +1,44 @@
-﻿using System;
+﻿using GradeExplorer.Utils;
+using System;
+using System.Collections.Generic;
 
 namespace GradeExplorer.Models
 {
-  public class Ejercicio
+  public class Ejercicio : INotifyBase
   {
-    public int Id { get; set; }
-    public Asignatura Asignatura { get; set; }
-    public DateTime FechaLimite { get; set; }
+    private int _id;
+    public int Id
+    {
+      get => _id;
+      set => SetField(ref _id, value);
+    }
+
+    private string _descripcion;
+    public string Descripcion
+    {
+      get; set;
+    }
+
+    private DateTime _fechaLimite;
+    public DateTime FechaLimite
+    {
+      get => _fechaLimite;
+      set => SetField(ref _fechaLimite, value);
+    }
+
+    // Relaciones
+    private Asignatura _asignatura;
+    public Asignatura Asignatura
+    {
+      get => _asignatura;
+      set => SetField(ref _asignatura, value);
+    }
+
+    private IList<Nota> _notas;
+    public IList<Nota> Notas
+    {
+      get => _notas;
+      set => SetField(ref _notas, value);
+    }
   }
 }

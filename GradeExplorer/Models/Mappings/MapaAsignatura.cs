@@ -2,13 +2,24 @@
 
 namespace GradeExplorer.Models.Mappings
 {
-  class MapaAsignatura : ClassMap<Asignatura>
+  public class MapaAsignatura : ClassMap<Asignatura>
   {
     public MapaAsignatura()
     {
+      Table("Asignatura");
       Id(a => a.Id);
       Map(a => a.Nombre);
-      HasOne(a => a.Profesor);
+
+      References(a => a.Profesor)
+        .Cascade
+        .All();  // Una asignatura tiene un profesor
+
+      HasManyToMany(a => a.Alumnos)
+        .Table("MatriculaAsignatura")
+        .Cascade
+        .All(); // Una asignatura tiene muchos alumnos
+
+
     }
   }
 }

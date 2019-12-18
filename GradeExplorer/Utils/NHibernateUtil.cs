@@ -3,6 +3,7 @@ using FluentNHibernate.Cfg.Db;
 using GradeExplorer.Models;
 using NHibernate;
 using NHibernate.Cfg;
+using NHibernate.PropertyChanged;
 using NHibernate.Tool.hbm2ddl;
 using System.IO;
 
@@ -20,15 +21,16 @@ namespace GradeExplorer.Utils
         {
           Directory.CreateDirectory("Data");
         }
-
         instance = Fluently
                 .Configure()
                 .Database(SQLiteConfiguration.Standard.UsingFile($@"Data{Path.DirectorySeparatorChar}clase.db"))
-                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Alumno>())
-                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Asignatura>())
-                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Ejercicio>())
+                
                 .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Profesor>())
-                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Nota>())
+
+
+
+                .ProxyFactoryFactory<AddPropertyChangedProxyFactoryFactory>()
+                .ExposeConfiguration(c => c.SetInterceptor(new AddPropertyChangedInterceptor()))
                 .ExposeConfiguration(BuildSchema)
                 .BuildSessionFactory();
       }
