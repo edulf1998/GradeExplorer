@@ -15,7 +15,7 @@ namespace GradeExplorer
       string[] args = e.Args;
 
       VentanaPrincipal ventana = new VentanaPrincipal();
-      ventana.WindowState = WindowState.Maximized;
+      ventana.WindowState = WindowState.Normal;
 
       ventana.Show();
     }
