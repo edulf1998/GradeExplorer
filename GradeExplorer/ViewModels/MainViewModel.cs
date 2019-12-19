@@ -6,12 +6,12 @@ using System.Linq;
 
 namespace GradeExplorer.ViewModels
 {
-  public class VentanaPrincipalViewModel
+  public class MainViewModel
   {
     public ObservableCollection<Alumno> ListaAlumnos { get; set; }
     public Alumno AlumnoSeleccionado { get; set; }
 
-    public VentanaPrincipalViewModel()
+    public MainViewModel()
     {
       ListaAlumnos = new ObservableCollection<Alumno>();
       ObtenerAlumnos();

@@ -1,7 +1,6 @@
 ﻿using GradeExplorer.Models;
 using GradeExplorer.Utils;
 using GradeExplorer.ViewModels;
-using MahApps.Metro.Controls;
 using System.Windows;
 
 namespace GradeExplorer.Views
@@ -9,12 +8,12 @@ namespace GradeExplorer.Views
   /// <summary>
   /// Lógica de interacción para VentanaPrincipal.xaml
   /// </summary>
-  public partial class VentanaPrincipal : MetroWindow
+  public partial class Main : Window
   {
-    public VentanaPrincipal()
+    public Main()
     {
       InitializeComponent();
-      DataContext = new VentanaPrincipalViewModel();
+      DataContext = new NMainViewModel();
     }
   }
 }

@@ -14,7 +14,7 @@ namespace GradeExplorer
     {
       string[] args = e.Args;
 
-      VentanaPrincipal ventana = new VentanaPrincipal();
+      Main ventana = new Main();
       ventana.WindowState = WindowState.Normal;
 
       ventana.Show();
