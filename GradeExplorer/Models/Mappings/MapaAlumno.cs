@@ -13,6 +13,7 @@ namespace GradeExplorer.Models.Mappings
       Map(a => a.Apellido2);
 
       HasManyToMany(a => a.Asignaturas).Table("MatriculaAsignatura");
+      HasMany(a => a.Notas);
     }
   }
 }

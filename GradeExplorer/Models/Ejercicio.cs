@@ -7,20 +7,21 @@ namespace GradeExplorer.Models
   public class Ejercicio : INotifyBase
   {
     private int _id;
-    public int Id
+    public virtual int Id
     {
       get => _id;
       set => SetField(ref _id, value);
     }
 
     private string _descripcion;
-    public string Descripcion
+    public virtual string Descripcion
     {
-      get; set;
+      get => _descripcion;
+      set => SetField(ref _descripcion, value);
     }
 
     private DateTime _fechaLimite;
-    public DateTime FechaLimite
+    public virtual DateTime FechaLimite
     {
       get => _fechaLimite;
       set => SetField(ref _fechaLimite, value);
@@ -28,17 +29,22 @@ namespace GradeExplorer.Models
 
     // Relaciones
     private Asignatura _asignatura;
-    public Asignatura Asignatura
+    public virtual Asignatura Asignatura
     {
       get => _asignatura;
       set => SetField(ref _asignatura, value);
     }
 
     private IList<Nota> _notas;
-    public IList<Nota> Notas
+    public virtual IList<Nota> Notas
     {
       get => _notas;
       set => SetField(ref _notas, value);
+    }
+
+    public Ejercicio()
+    {
+      _notas = new List<Nota>();
     }
   }
 }

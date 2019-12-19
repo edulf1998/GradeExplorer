@@ -96,6 +96,8 @@
     <Compile Include="Models\Ejercicio.cs" />
     <Compile Include="Models\Mappings\MapaAlumno.cs" />
     <Compile Include="Models\Mappings\MapaAsignatura.cs" />
+    <Compile Include="Models\Mappings\MapaEjercicio.cs" />
+    <Compile Include="Models\Mappings\MapaNota.cs" />
     <Compile Include="Models\Mappings\MapaProfesor.cs" />
     <Compile Include="Models\Nota.cs" />
     <Compile Include="Utils\INotifyBase.cs" />

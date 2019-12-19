@@ -13,6 +13,11 @@ namespace GradeExplorer.Utils
   {
     private static ISessionFactory instance;
 
+
+    private static string baseDbUrl = $@"Data{Path.DirectorySeparatorChar}";
+    private static string dbName = "clase";
+    private static string dbExt = ".db";
+
     public static ISessionFactory GetSessionFactory()
     {
       if (instance == null)
@@ -21,13 +26,16 @@ namespace GradeExplorer.Utils
         {
           Directory.CreateDirectory("Data");
         }
+
         instance = Fluently
                 .Configure()
-                .Database(SQLiteConfiguration.Standard.UsingFile($@"Data{Path.DirectorySeparatorChar}clase.db"))
+                .Database(SQLiteConfiguration.Standard.UsingFile($"{baseDbUrl}{dbName}{dbExt}"))
                 
+                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Alumno>())
+                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Asignatura>())
                 .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Profesor>())
-
-
+                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Ejercicio>())
+                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Nota>())
 
                 .ProxyFactoryFactory<AddPropertyChangedProxyFactoryFactory>()
                 .ExposeConfiguration(c => c.SetInterceptor(new AddPropertyChangedInterceptor()))
@@ -37,9 +45,16 @@ namespace GradeExplorer.Utils
       return instance;
     }
 
+    public static void setDbName(string nDbName)
+    {
+      dbName = nDbName;
+      instance = null;
+    }
+
     private static void BuildSchema(Configuration cfg)
     {
       new SchemaExport(cfg).Create(false, true);
     }
+
   }
 }

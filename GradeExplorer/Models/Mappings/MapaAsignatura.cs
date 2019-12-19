@@ -19,7 +19,9 @@ namespace GradeExplorer.Models.Mappings
         .Cascade
         .All(); // Una asignatura tiene muchos alumnos
 
-
+      HasMany(a => a.Ejercicios)
+        .Cascade
+        .All(); // Una asignatura tiene muchos ejercicios
     }
   }
 }

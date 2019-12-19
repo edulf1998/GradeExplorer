@@ -6,14 +6,14 @@ namespace GradeExplorer.Models
   public class Asignatura : INotifyBase
   {
     private int _id;
-    public int Id
+    public virtual int Id
     {
       get => _id;
       set => SetField(ref _id, value);
     }
 
-    private int _nombre;
-    public int Nombre
+    private string _nombre;
+    public virtual string Nombre
     {
       get => _nombre;
       set => SetField(ref _nombre, value);
@@ -21,33 +21,30 @@ namespace GradeExplorer.Models
 
     // Relaciones
     private Profesor _profesor;
-    public Profesor Profesor
+    public virtual Profesor Profesor
     {
       get => _profesor;
       set => SetField(ref _profesor, value);
     }
 
     private IList<Alumno> _alumnos;
-    public IList<Alumno> Alumnos
+    public virtual IList<Alumno> Alumnos
     {
       get => _alumnos;
       set => SetField(ref _alumnos, value);
     }
 
     private IList<Ejercicio> _ejercicios;
-    public IList<Ejercicio> Ejercicios
+    public virtual IList<Ejercicio> Ejercicios
     {
       get => _ejercicios;
       set => SetField(ref _ejercicios, value);
     }
 
-    /*
-    private IList<Nota> _notas;
-    public IList<Nota> Notas
+    public Asignatura()
     {
-      get => _notas;
-      set => SetField(ref _notas, value);
+      _ejercicios = new List<Ejercicio>();
+      _alumnos = new List<Alumno>();
     }
-    */
   }
 }
