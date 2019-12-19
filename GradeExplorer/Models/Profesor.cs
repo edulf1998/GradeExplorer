@@ -12,22 +12,22 @@ namespace GradeExplorer.Models
       set => SetField(ref _id, value);
     }
 
-    private int _nombre;
-    public virtual int Nombre
+    private string _nombre;
+    public virtual string Nombre
     {
       get => _nombre;
       set => SetField(ref _nombre, value);
     }
 
-    private int _apellido1;
-    public virtual int Apellido1
+    private string _apellido1;
+    public virtual string Apellido1
     {
       get => _apellido1;
       set => SetField(ref _apellido1, value);
     }
 
-    private int _apellido2;
-    public virtual int Apellido2
+    private string _apellido2;
+    public virtual string Apellido2
     {
       get => _apellido2;
       set => SetField(ref _apellido2, value);

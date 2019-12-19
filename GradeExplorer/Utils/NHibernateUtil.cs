@@ -16,6 +16,7 @@ namespace GradeExplorer.Utils
 
     private static string baseDbUrl = $@"Data{Path.DirectorySeparatorChar}";
     private static string dbName = "clase";
+    private static string dbNumber = "0";
     private static string dbExt = ".db";
 
     public static ISessionFactory GetSessionFactory()
@@ -29,7 +30,7 @@ namespace GradeExplorer.Utils
 
         instance = Fluently
                 .Configure()
-                .Database(SQLiteConfiguration.Standard.UsingFile($"{baseDbUrl}{dbName}{dbExt}"))
+                .Database(SQLiteConfiguration.Standard.UsingFile($"{baseDbUrl}{dbName}{dbNumber}{dbExt}"))
                 
                 .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Alumno>())
                 .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Asignatura>())
@@ -45,9 +46,9 @@ namespace GradeExplorer.Utils
       return instance;
     }
 
-    public static void setDbName(string nDbName)
+    public static void setDbNumber(string nDbNumber)
     {
-      dbName = nDbName;
+      dbNumber = nDbNumber;
       instance = null;
     }
 
