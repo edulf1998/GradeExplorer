@@ -1,17 +1,13 @@
-﻿<Window x:Class="GradeExplorer.Views.VentanaPrincipal"
+﻿<Controls:MetroWindow x:Class="GradeExplorer.Views.VentanaPrincipal"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:ui="http://schemas.modernwpf.com/2019"        
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         mc:Ignorable="d"
         Title="GradeExplorer - Inicio" 
         Height="450" 
-        Width="800" 
-        ui:WindowHelper.UseModernWindowStyle="True"
-        Background="{DynamicResource SystemControlPageBackgroundAltHighBrush}"
-        Foreground="{DynamicResource SystemControlPageTextBaseHighBrush}"
-        ui:ThemeManager.IsThemeAware="True"
+        Width="800"
         >
     <DockPanel>
         <StatusBar DockPanel.Dock="Bottom">
@@ -21,7 +17,6 @@
         <ListBox DockPanel.Dock="Left" Width="125">
             <ListBoxItem>
                 <StackPanel Orientation="Horizontal">
-                    <ui:FontIcon Glyph="&#xE10F;" Margin="0,0,5,0" />
                     <TextBlock>Inicio</TextBlock>
                 </StackPanel>
             </ListBoxItem>
@@ -40,7 +35,6 @@
                     SelectionMode="Single"
                     CanUserAddRows="False"
                     CanUserDeleteRows="False"
-                    ui:DataGridHelper.UseModernColumnStyles="True"
                     IsReadOnly="True"
                     HeadersVisibility="Column"
                     >
@@ -54,4 +48,4 @@
             </Border>
         </ScrollViewer>
     </DockPanel>
-</Window>
+</Controls:MetroWindow>
