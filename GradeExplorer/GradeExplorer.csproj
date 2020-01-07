@@ -100,6 +100,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="META\IntellisenseResources.cs" />
     <Compile Include="Models\Alumno.cs" />
     <Compile Include="Models\Asignatura.cs" />
     <Compile Include="Models\Ejercicio.cs" />
@@ -113,10 +114,13 @@
     <Compile Include="Models\Profesor.cs" />
     <Compile Include="Utils\NHibernateUtil.cs" />
     <Compile Include="Utils\RelayCommand.cs" />
-    <Compile Include="ViewModels\MainViewModel.cs" />
-    <Compile Include="ViewModels\NMainViewModel.cs" />
+    <Compile Include="ViewModels\MainVM.cs" />
+    <Compile Include="ViewModels\PagesVM\AlumnosPageVM.cs" />
     <Compile Include="Views\Main.xaml.cs">
       <DependentUpon>Main.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\AlumnosPage.xaml.cs">
+      <DependentUpon>AlumnosPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -157,7 +161,15 @@
     <Resource Include="Res\Relaciones_Hibernate.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="META\DesignTimeResources.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\AlumnosPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
