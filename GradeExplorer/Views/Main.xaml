@@ -39,6 +39,9 @@
                 </ControlTemplate>
             </GridSplitter.Template>
         </GridSplitter>
-        <Frame x:Name="FramePrincipal" Grid.Column="2" Source="{Binding Page}" />
+        <Frame x:Name="FramePrincipal" Grid.Column="2" Source="./Pages/AlumnosPage.xaml" />
+        <!--
+            <Frame x:Name="FramePrincipal" Grid.Column="2" Source="{Binding Page}" />
+        -->
     </Grid>
 </Window>

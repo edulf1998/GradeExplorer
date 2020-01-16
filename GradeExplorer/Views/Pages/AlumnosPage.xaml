@@ -17,13 +17,17 @@
             <TextBlock>Barra de Estado Inferior</TextBlock>
         </StatusBar>
         <StackPanel>
-            <TextBlock>Lista de Alumnos</TextBlock>
+            <TextBlock Style="{StaticResource SubheaderTextBlockStyle}" HorizontalAlignment="Center">Lista de Alumnos</TextBlock>
             <DataGrid 
-            ItemsSource="{Binding ListaAlumnos}"
-            AutoGenerateColumns="False"
+                ItemsSource="{Binding ListaAlumnos}"
+                AutoGenerateColumns="False"
+                CanUserAddRows="False"
+                CanUserDeleteRows="False"
+                IsReadOnly="True" 
+                Margin="0, 5, 0, 0"
             >
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="ID" Binding="{Binding Path=Id}" Width="*"/>
+                    <DataGridTextColumn Header="ID" Binding="{Binding Path=Id}" Width="*" SortDirection="Ascending" />
                     <DataGridTextColumn Header="Nombre" Binding="{Binding Path=Nombre}" Width="*"/>
                     <DataGridTextColumn Header="Apellido 1" Binding="{Binding Path=Apellido1}" Width="*"/>
                     <DataGridTextColumn Header="Apellido 2" Binding="{Binding Path=Apellido2}" Width="*"/>

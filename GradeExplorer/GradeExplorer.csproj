@@ -100,7 +100,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="META\IntellisenseResources.cs" />
+    <Compile Include="Properties\IntellisenseResources.cs" />
     <Compile Include="Models\Alumno.cs" />
     <Compile Include="Models\Asignatura.cs" />
     <Compile Include="Models\Ejercicio.cs" />
@@ -161,7 +161,7 @@
     <Resource Include="Res\Relaciones_Hibernate.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="META\DesignTimeResources.xaml">
+    <Page Include="Properties\DesignTimeResources.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
