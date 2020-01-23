@@ -3,9 +3,18 @@ using System.Collections.Generic;
 
 namespace GradeExplorer.Models
 {
+  /// <summary>
+  /// Clase de modelo asociada a la tabla "Asignatura" 
+  /// de la base de datos.
+  /// </summary>
   public class Asignatura : INotifyBase
   {
+
     private int _id;
+
+    /// <summary>
+    /// ID único de la Asignatura.
+    /// </summary>
     public virtual int Id
     {
       get => _id;
@@ -13,6 +22,10 @@ namespace GradeExplorer.Models
     }
 
     private string _nombre;
+
+    /// <summary>
+    /// Nombre de la Asignatura.
+    /// </summary>
     public virtual string Nombre
     {
       get => _nombre;
@@ -20,7 +33,12 @@ namespace GradeExplorer.Models
     }
 
     // Relaciones
+
     private Profesor _profesor;
+
+    /// <summary>
+    /// Profesor que imparte esta Asignatura
+    /// </summary>
     public virtual Profesor Profesor
     {
       get => _profesor;
@@ -28,6 +46,9 @@ namespace GradeExplorer.Models
     }
 
     private IList<Alumno> _alumnos;
+    /// <summary>
+    /// Listado de Alumnos que cursan esta Asignatura
+    /// </summary>
     public virtual IList<Alumno> Alumnos
     {
       get => _alumnos;
@@ -35,12 +56,18 @@ namespace GradeExplorer.Models
     }
 
     private IList<Ejercicio> _ejercicios;
+    /// <summary>
+    /// Listado de Ejercicios propuestos para esta Asignatura.
+    /// </summary>
     public virtual IList<Ejercicio> Ejercicios
     {
       get => _ejercicios;
       set => SetField(ref _ejercicios, value);
     }
-
+    
+    /// <summary>
+    /// Constructor por defecto.
+    /// </summary>
     public Asignatura()
     {
       _ejercicios = new List<Ejercicio>();

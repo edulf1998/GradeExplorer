@@ -3,8 +3,16 @@ using System.Collections.Generic;
 
 namespace GradeExplorer.Models
 {
+  /// <summary>
+  /// Clase de modelo asociada a la tabla "Nota" 
+  /// de la base de datos. Representa una entidad debil, por lo que 
+  /// no posee identificadores únicos.
+  /// </summary>
   public class Nota : INotifyBase
   {
+    /// <summary>
+    /// Puntuación obtenida por el Alumno que ha realizado el Ejercicio.
+    /// </summary>
     private float _puntuacion;
     public virtual float Puntuacion
     {
@@ -13,6 +21,10 @@ namespace GradeExplorer.Models
     }
 
     // Relaciones
+
+      /// <summary>
+      /// Alumno autor del ejercicio
+      /// </summary>
     private Alumno _alumno;
     public virtual Alumno Alumno
     {
@@ -20,13 +32,15 @@ namespace GradeExplorer.Models
       set => SetField(ref _alumno, value);
     }
 
+    /// <summary>
+    /// Ejercicio al que esta nota está asociada.
+    /// </summary>
     private Ejercicio _ejercicio;
     public virtual Ejercicio Ejercicio
     {
       get => _ejercicio;
       set => SetField(ref _ejercicio, value);
     }
-
 
     // Debe sobreescribir Equals y GetHashCode
     public override bool Equals(object obj)

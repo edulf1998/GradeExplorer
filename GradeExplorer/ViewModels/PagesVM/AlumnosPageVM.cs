@@ -28,7 +28,6 @@ namespace GradeExplorer.ViewModels.PagesVM
     private void ObtenerAlumnos()
     {
       isLoading = true;
-
       using (var sessionFactory = NHibernateUtil.GetSessionFactory())
       {
         using (var session = sessionFactory.OpenSession())
@@ -43,7 +42,6 @@ namespace GradeExplorer.ViewModels.PagesVM
           }
         }
       }
-
       isLoading = false;
     }
   }
