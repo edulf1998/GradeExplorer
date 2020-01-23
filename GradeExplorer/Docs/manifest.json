@@ -1,0 +1,450 @@
+{
+  "homepages": [],
+  "source_base_path": "F:/DI/GradeExplorer/GradeExplorer",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "1iBLW6Sr2LdAYTdNvp3DMg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "0cwmd/ZiEm0h5Avna3A6bg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "gB8AESyvNru97tzIZofEEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "yd3lTL+hcZLzNl4BcmAWsA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.App.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.App.html",
+          "hash": "0IFOiemrgY76Aw13k1vxhw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.META.IntellisenseResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.META.IntellisenseResources.html",
+          "hash": "LCEW2WUbuSUhVD4VZ/esVw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.META.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.META.html",
+          "hash": "iRGoknNmEwWNiz4rw1bQjQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Models.Alumno.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Models.Alumno.html",
+          "hash": "ADX3uKDZI5NZldUDwJfxAg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Models.Asignatura.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Models.Asignatura.html",
+          "hash": "AwOSzD+X1Ol44X5WWvzW3w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Models.Ejercicio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Models.Ejercicio.html",
+          "hash": "cCcx+A5fqpsXcyc2M78QmQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Models.Mappings.MapaAlumno.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Models.Mappings.MapaAlumno.html",
+          "hash": "8rLPDvrhq/b6jJgzlFEfWA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Models.Mappings.MapaAsignatura.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Models.Mappings.MapaAsignatura.html",
+          "hash": "aTV2C3ENy2v9LxM838cGew=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Models.Mappings.MapaEjercicio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Models.Mappings.MapaEjercicio.html",
+          "hash": "VRu8qvKrC7Aw4/Fobr4cag=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Models.Mappings.MapaNota.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Models.Mappings.MapaNota.html",
+          "hash": "jtmn38Q6mzs1oIY/UMF5dg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Models.Mappings.MapaProfesor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Models.Mappings.MapaProfesor.html",
+          "hash": "4fP4RCmmQEWk18qtbsSk0w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Models.Mappings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Models.Mappings.html",
+          "hash": "dSU9sJIA81sMXFOVu1wjZg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Models.Nota.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Models.Nota.html",
+          "hash": "UgS5SoZ0KsVWUarDi/CFCw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Models.Profesor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Models.Profesor.html",
+          "hash": "sk4pzk5f2nZIfyqjdZ2wZQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Models.html",
+          "hash": "br+cHq6a8gZFH4mAiKpTEg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Utils.INotifyBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Utils.INotifyBase.html",
+          "hash": "H9p3BKA+TU29mDYByZQKMw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Utils.NHibernateUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Utils.NHibernateUtil.html",
+          "hash": "CMtGUfZ3YN3WM33O7H/B7Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Utils.html",
+          "hash": "JUKb3RHCYbhSqUeI5f3/Ug=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.ViewModels.MainVM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.ViewModels.MainVM.html",
+          "hash": "9SyX718NVF4i9tgcZEg5lA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.html",
+          "hash": "qoKn21vBFx5r3IGOVYOjMA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.ViewModels.PagesVM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.ViewModels.PagesVM.html",
+          "hash": "3TIzrttzLnh7PoKQNxkHkQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.ViewModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.ViewModels.html",
+          "hash": "ebeRDblAirRkyX+3CPNRhw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Views.Main.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Views.Main.html",
+          "hash": "NPW5o9wFgdBexkoBzn5oAg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Views.Pages.AlumnosPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Views.Pages.AlumnosPage.html",
+          "hash": "vqoC2gfCmooMgc2OYcM+xA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Views.Pages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Views.Pages.html",
+          "hash": "rabQwHROJX7dX/Jr+53nfg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Views.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Views.html",
+          "hash": "uKqKEkyfoKmUA/lbHuRg0w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.html",
+          "hash": "iNs8TXbuIGFM4ZLe6Ekd9A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "x15cAlNs4C1r9NCv8k6lqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "G2AoE5T/2VarbHvzLEo4TQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 27,
+          "skipped_file_count": 27
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

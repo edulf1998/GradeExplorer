@@ -60,7 +60,7 @@
         ]
       }
     ],
-    "dest": "bin/Debug/Docs/_site",
+    "dest": "Docs/",
     "template": [
       "default"
     ]
