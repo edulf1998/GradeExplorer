@@ -8,7 +8,7 @@ namespace GradeExplorer.Models
   /// Clase de modelo asociada a la tabla "Ejercicio" 
   /// de la base de datos.
   /// </summary>
-  public class Ejercicio : INotifyBase
+  public class Ejercicio : ModelBase
   {
     /// <summary>
     /// ID único del Ejercicio

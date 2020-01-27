@@ -8,7 +8,7 @@ namespace GradeExplorer.Models
   /// de la base de datos. Representa una entidad debil, por lo que 
   /// no posee identificadores únicos.
   /// </summary>
-  public class Nota : INotifyBase
+  public class Nota : ModelBase
   {
     /// <summary>
     /// Puntuación obtenida por el Alumno que ha realizado el Ejercicio.

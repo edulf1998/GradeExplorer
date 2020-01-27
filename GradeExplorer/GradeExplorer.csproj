@@ -111,7 +111,7 @@
     <Compile Include="Models\Mappings\MapaNota.cs" />
     <Compile Include="Models\Mappings\MapaProfesor.cs" />
     <Compile Include="Models\Nota.cs" />
-    <Compile Include="Utils\INotifyBase.cs" />
+    <Compile Include="Utils\ModelBase.cs" />
     <Compile Include="Models\Profesor.cs" />
     <Compile Include="Utils\NHibernateUtil.cs" />
     <Compile Include="Utils\RelayCommand.cs" />
@@ -122,6 +122,9 @@
     </Compile>
     <Compile Include="Views\Pages\AlumnosPage.xaml.cs">
       <DependentUpon>AlumnosPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\InicioPage.xaml.cs">
+      <DependentUpon>InicioPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -159,7 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controls\" />
-    <Folder Include="Res\Icon\" />
+    <Folder Include="ViewModels\Dialogs\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="icon.ico" />
@@ -180,10 +183,17 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Pages\InicioPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
     <Content Include="api\.gitignore" />
+    <Resource Include="Res\Icon\notebook.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\System.Data.SQLite.Core.1.0.112.0\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('packages\System.Data.SQLite.Core.1.0.112.0\build\net46\System.Data.SQLite.Core.targets')" />

@@ -7,7 +7,7 @@ namespace GradeExplorer.Models
   /// Clase de modelo asociada a la tabla "Asignatura" 
   /// de la base de datos.
   /// </summary>
-  public class Asignatura : INotifyBase
+  public class Asignatura : ModelBase
   {
 
     private int _id;

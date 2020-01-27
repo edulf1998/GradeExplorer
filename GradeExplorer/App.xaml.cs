@@ -16,6 +16,12 @@ namespace GradeExplorer
 
       Main ventana = new Main();
       ventana.WindowState = WindowState.Normal;
+      double screenWidth = SystemParameters.PrimaryScreenWidth;
+      double screenHeight = SystemParameters.PrimaryScreenHeight;
+      double windowWidth = ventana.Width;
+      double windowHeight = ventana.Height;
+      ventana.Left = (screenWidth / 2) - (windowWidth / 2);
+      ventana.Top = (screenHeight / 2) - (windowHeight / 2);
 
       ventana.Show();
     }

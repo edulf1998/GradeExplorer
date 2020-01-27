@@ -12,28 +12,71 @@
     <Page.DataContext>
         <vm:AlumnosPageVM />
     </Page.DataContext>
+
+    <Page.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis" />
+    </Page.Resources>
+
     <DockPanel>
-        <StatusBar DockPanel.Dock="Bottom">
-            <TextBlock>Barra de Estado Inferior</TextBlock>
+        <StatusBar DockPanel.Dock="Bottom" Visibility="{Binding IsLoading, Converter={StaticResource BoolToVis}}">
+            <StatusBarItem>
+                Cargando datos...
+            </StatusBarItem>
+            <StatusBarItem Margin="15, 0, 0, 0">
+                <ProgressBar IsIndeterminate="True" Width="125"/>
+            </StatusBarItem>
         </StatusBar>
+
         <StackPanel>
             <TextBlock Style="{StaticResource SubheaderTextBlockStyle}" HorizontalAlignment="Center">Lista de Alumnos</TextBlock>
+            <ui:CommandBar DefaultLabelPosition="Bottom" Margin="0, 5, 0, 5" HorizontalAlignment="Center" OverflowButtonVisibility="Auto">
+                <ui:AppBarButton Icon="Add" Label="Crear" Command="{Binding AddCommand}"/>
+                <ui:AppBarSeparator />
+
+                <ui:AppBarButton Icon="Edit" Label="Editar" Command="{Binding EditCommand}"/>
+                <ui:AppBarSeparator />
+
+                <ui:AppBarButton Icon="Delete" Label="Eliminar" Command="{Binding DeleteCommand}"/>
+            </ui:CommandBar>
             <DataGrid 
                 ItemsSource="{Binding ListaAlumnos}"
+                SelectedItem="{Binding AlumnoSeleccionado}"
                 AutoGenerateColumns="False"
                 CanUserAddRows="False"
                 CanUserDeleteRows="False"
                 IsReadOnly="True" 
-                Margin="0, 5, 0, 0"
                 SelectionMode="Single"
+                GridLinesVisibility="All"
+                VerticalScrollBarVisibility="Hidden"
+                HorizontalScrollBarVisibility="Hidden"
             >
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="ID" Binding="{Binding Path=Id}" Width="*" SortDirection="Ascending" />
+                    <DataGridTextColumn Header="ID" Binding="{Binding Path=Id}" Width="64" SortDirection="Ascending" />
                     <DataGridTextColumn Header="Nombre" Binding="{Binding Path=Nombre}" Width="*"/>
                     <DataGridTextColumn Header="Apellido 1" Binding="{Binding Path=Apellido1}" Width="*"/>
                     <DataGridTextColumn Header="Apellido 2" Binding="{Binding Path=Apellido2}" Width="*"/>
                 </DataGrid.Columns>
             </DataGrid>
+
+            <ui:ContentDialog
+                Title="Nuevo/Editar Alumno"
+                PrimaryButtonText="Confirmar"
+                SecondaryButtonText="Cancelar"
+                Visibility="{Binding ShowAlumnosDialog, Converter={StaticResource BoolToVis}}"
+                >
+                <StackPanel>
+                    <TextBlock Style="{StaticResource BodyTextBlockStyle}">ID</TextBlock>
+                    <TextBox IsReadOnly="True"></TextBox>
+
+                    <TextBlock Style="{StaticResource BodyTextBlockStyle}">Nombre</TextBlock>
+                    <TextBox></TextBox>
+
+                    <TextBlock Style="{StaticResource BodyTextBlockStyle}">Apellido 1</TextBlock>
+                    <TextBox></TextBox>
+                    <TextBlock Style="{StaticResource BodyTextBlockStyle}">Apellido 2</TextBlock>
+                    <TextBox></TextBox>
+                </StackPanel>
+            </ui:ContentDialog>
         </StackPanel>
     </DockPanel>
 </Page>

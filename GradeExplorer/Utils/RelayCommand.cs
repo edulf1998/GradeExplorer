@@ -3,7 +3,7 @@ using System.Windows.Input;
 
 namespace GradeExplorer.Utils
 {
-  class RelayCommand : ICommand
+  public class RelayCommand : ICommand
   {
     private Action<object> execute;
     private Func<object, bool> canExecute;
@@ -22,7 +22,7 @@ namespace GradeExplorer.Utils
 
     public bool CanExecute(object parameter)
     {
-      return this.canExecute == null || this.canExecute(parameter);
+      return canExecute == null || canExecute(parameter);
     }
 
     public void Execute(object parameter)

@@ -6,42 +6,29 @@
         xmlns:ui="http://schemas.modernwpf.com/2019"
         xmlns:vm="clr-namespace:GradeExplorer.ViewModels"
         mc:Ignorable="d"
-        Title="GradeExplorer - Inicio" 
+        Title="GradeExplorer" 
         Height="600" MinHeight="600"
         Width="900" MinWidth="900"
         ui:WindowHelper.UseModernWindowStyle="True"
         >
-    <Window.DataContext>
-        <vm:MainVM />
-    </Window.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="150" MinWidth="150" MaxWidth="250"/>
-            <ColumnDefinition Width="5" />
+            <ColumnDefinition Width="200"/>
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <ListBox Grid.Column="0" ItemsSource="{Binding PagesMenu}" SelectedIndex="{Binding PageElegida}">
+        <ListBox x:Name="ListaPages" Grid.Column="0" ItemsSource="{Binding PagesMenu}" SelectedIndex="{Binding PageElegida}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="{Binding}" />
+                        <ui:SymbolIcon Symbol="{Binding Icono}"/>
+                        <TextBlock Text="{Binding Texto}" VerticalAlignment="Center" Margin="8, 0, 0, 0"/>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <GridSplitter Grid.Column="1" Width="5" HorizontalAlignment="Stretch">
-            <GridSplitter.Template>
-                <ControlTemplate TargetType="{x:Type GridSplitter}">
-                    <Grid>
-                        <Button Content="⁞" />
-                        <Rectangle Fill="#00FFFFFF" />
-                    </Grid>
-                </ControlTemplate>
-            </GridSplitter.Template>
-        </GridSplitter>
-        <Frame x:Name="FramePrincipal" Grid.Column="2" Source="./Pages/AlumnosPage.xaml" />
-        <!--
-            <Frame x:Name="FramePrincipal" Grid.Column="2" Source="{Binding Page}" />
-        -->
+        <ScrollViewer Grid.Column="1">
+            <Frame x:Name="FramePrincipal" Source="./Pages/InicioPage.xaml" NavigationUIVisibility="Hidden"/>
+        </ScrollViewer>
     </Grid>
 </Window>
+    

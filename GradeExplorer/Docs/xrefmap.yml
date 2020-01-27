@@ -571,47 +571,60 @@ references:
   commentId: N:GradeExplorer.Utils
   fullName: GradeExplorer.Utils
   nameWithType: GradeExplorer.Utils
-- uid: GradeExplorer.Utils.INotifyBase
-  name: INotifyBase
-  href: api/GradeExplorer.Utils.INotifyBase.html
-  commentId: T:GradeExplorer.Utils.INotifyBase
-  fullName: GradeExplorer.Utils.INotifyBase
-  nameWithType: INotifyBase
-- uid: GradeExplorer.Utils.INotifyBase.OnPropertyChanged(System.String)
+- uid: GradeExplorer.Utils.ModelBase
+  name: ModelBase
+  href: api/GradeExplorer.Utils.ModelBase.html
+  commentId: T:GradeExplorer.Utils.ModelBase
+  fullName: GradeExplorer.Utils.ModelBase
+  nameWithType: ModelBase
+- uid: GradeExplorer.Utils.ModelBase.Clone
+  name: Clone()
+  href: api/GradeExplorer.Utils.ModelBase.html#GradeExplorer_Utils_ModelBase_Clone
+  commentId: M:GradeExplorer.Utils.ModelBase.Clone
+  fullName: GradeExplorer.Utils.ModelBase.Clone()
+  nameWithType: ModelBase.Clone()
+- uid: GradeExplorer.Utils.ModelBase.Clone*
+  name: Clone
+  href: api/GradeExplorer.Utils.ModelBase.html#GradeExplorer_Utils_ModelBase_Clone_
+  commentId: Overload:GradeExplorer.Utils.ModelBase.Clone
+  isSpec: "True"
+  fullName: GradeExplorer.Utils.ModelBase.Clone
+  nameWithType: ModelBase.Clone
+- uid: GradeExplorer.Utils.ModelBase.OnPropertyChanged(System.String)
   name: OnPropertyChanged(String)
-  href: api/GradeExplorer.Utils.INotifyBase.html#GradeExplorer_Utils_INotifyBase_OnPropertyChanged_System_String_
-  commentId: M:GradeExplorer.Utils.INotifyBase.OnPropertyChanged(System.String)
-  fullName: GradeExplorer.Utils.INotifyBase.OnPropertyChanged(System.String)
-  nameWithType: INotifyBase.OnPropertyChanged(String)
-- uid: GradeExplorer.Utils.INotifyBase.OnPropertyChanged*
+  href: api/GradeExplorer.Utils.ModelBase.html#GradeExplorer_Utils_ModelBase_OnPropertyChanged_System_String_
+  commentId: M:GradeExplorer.Utils.ModelBase.OnPropertyChanged(System.String)
+  fullName: GradeExplorer.Utils.ModelBase.OnPropertyChanged(System.String)
+  nameWithType: ModelBase.OnPropertyChanged(String)
+- uid: GradeExplorer.Utils.ModelBase.OnPropertyChanged*
   name: OnPropertyChanged
-  href: api/GradeExplorer.Utils.INotifyBase.html#GradeExplorer_Utils_INotifyBase_OnPropertyChanged_
-  commentId: Overload:GradeExplorer.Utils.INotifyBase.OnPropertyChanged
+  href: api/GradeExplorer.Utils.ModelBase.html#GradeExplorer_Utils_ModelBase_OnPropertyChanged_
+  commentId: Overload:GradeExplorer.Utils.ModelBase.OnPropertyChanged
   isSpec: "True"
-  fullName: GradeExplorer.Utils.INotifyBase.OnPropertyChanged
-  nameWithType: INotifyBase.OnPropertyChanged
-- uid: GradeExplorer.Utils.INotifyBase.PropertyChanged
+  fullName: GradeExplorer.Utils.ModelBase.OnPropertyChanged
+  nameWithType: ModelBase.OnPropertyChanged
+- uid: GradeExplorer.Utils.ModelBase.PropertyChanged
   name: PropertyChanged
-  href: api/GradeExplorer.Utils.INotifyBase.html#GradeExplorer_Utils_INotifyBase_PropertyChanged
-  commentId: E:GradeExplorer.Utils.INotifyBase.PropertyChanged
-  fullName: GradeExplorer.Utils.INotifyBase.PropertyChanged
-  nameWithType: INotifyBase.PropertyChanged
-- uid: GradeExplorer.Utils.INotifyBase.SetField*
+  href: api/GradeExplorer.Utils.ModelBase.html#GradeExplorer_Utils_ModelBase_PropertyChanged
+  commentId: E:GradeExplorer.Utils.ModelBase.PropertyChanged
+  fullName: GradeExplorer.Utils.ModelBase.PropertyChanged
+  nameWithType: ModelBase.PropertyChanged
+- uid: GradeExplorer.Utils.ModelBase.SetField*
   name: SetField
-  href: api/GradeExplorer.Utils.INotifyBase.html#GradeExplorer_Utils_INotifyBase_SetField_
-  commentId: Overload:GradeExplorer.Utils.INotifyBase.SetField
+  href: api/GradeExplorer.Utils.ModelBase.html#GradeExplorer_Utils_ModelBase_SetField_
+  commentId: Overload:GradeExplorer.Utils.ModelBase.SetField
   isSpec: "True"
-  fullName: GradeExplorer.Utils.INotifyBase.SetField
-  nameWithType: INotifyBase.SetField
-- uid: GradeExplorer.Utils.INotifyBase.SetField``1(``0@,``0,System.String)
+  fullName: GradeExplorer.Utils.ModelBase.SetField
+  nameWithType: ModelBase.SetField
+- uid: GradeExplorer.Utils.ModelBase.SetField``1(``0@,``0,System.String)
   name: SetField<T>(ref T, T, String)
-  href: api/GradeExplorer.Utils.INotifyBase.html#GradeExplorer_Utils_INotifyBase_SetField__1___0____0_System_String_
-  commentId: M:GradeExplorer.Utils.INotifyBase.SetField``1(``0@,``0,System.String)
+  href: api/GradeExplorer.Utils.ModelBase.html#GradeExplorer_Utils_ModelBase_SetField__1___0____0_System_String_
+  commentId: M:GradeExplorer.Utils.ModelBase.SetField``1(``0@,``0,System.String)
   name.vb: SetField(Of T)(ByRef T, T, String)
-  fullName: GradeExplorer.Utils.INotifyBase.SetField<T>(ref T, T, System.String)
-  fullName.vb: GradeExplorer.Utils.INotifyBase.SetField(Of T)(ByRef T, T, System.String)
-  nameWithType: INotifyBase.SetField<T>(ref T, T, String)
-  nameWithType.vb: INotifyBase.SetField(Of T)(ByRef T, T, String)
+  fullName: GradeExplorer.Utils.ModelBase.SetField<T>(ref T, T, System.String)
+  fullName.vb: GradeExplorer.Utils.ModelBase.SetField(Of T)(ByRef T, T, System.String)
+  nameWithType: ModelBase.SetField<T>(ref T, T, String)
+  nameWithType.vb: ModelBase.SetField(Of T)(ByRef T, T, String)
 - uid: GradeExplorer.Utils.NHibernateUtil
   name: NHibernateUtil
   href: api/GradeExplorer.Utils.NHibernateUtil.html
@@ -644,6 +657,60 @@ references:
   isSpec: "True"
   fullName: GradeExplorer.Utils.NHibernateUtil.setDbNumber
   nameWithType: NHibernateUtil.setDbNumber
+- uid: GradeExplorer.Utils.RelayCommand
+  name: RelayCommand
+  href: api/GradeExplorer.Utils.RelayCommand.html
+  commentId: T:GradeExplorer.Utils.RelayCommand
+  fullName: GradeExplorer.Utils.RelayCommand
+  nameWithType: RelayCommand
+- uid: GradeExplorer.Utils.RelayCommand.#ctor(System.Action{System.Object},System.Func{System.Object,System.Boolean})
+  name: RelayCommand(Action<Object>, Func<Object, Boolean>)
+  href: api/GradeExplorer.Utils.RelayCommand.html#GradeExplorer_Utils_RelayCommand__ctor_System_Action_System_Object__System_Func_System_Object_System_Boolean__
+  commentId: M:GradeExplorer.Utils.RelayCommand.#ctor(System.Action{System.Object},System.Func{System.Object,System.Boolean})
+  name.vb: RelayCommand(Action(Of Object), Func(Of Object, Boolean))
+  fullName: GradeExplorer.Utils.RelayCommand.RelayCommand(System.Action<System.Object>, System.Func<System.Object, System.Boolean>)
+  fullName.vb: GradeExplorer.Utils.RelayCommand.RelayCommand(System.Action(Of System.Object), System.Func(Of System.Object, System.Boolean))
+  nameWithType: RelayCommand.RelayCommand(Action<Object>, Func<Object, Boolean>)
+  nameWithType.vb: RelayCommand.RelayCommand(Action(Of Object), Func(Of Object, Boolean))
+- uid: GradeExplorer.Utils.RelayCommand.#ctor*
+  name: RelayCommand
+  href: api/GradeExplorer.Utils.RelayCommand.html#GradeExplorer_Utils_RelayCommand__ctor_
+  commentId: Overload:GradeExplorer.Utils.RelayCommand.#ctor
+  isSpec: "True"
+  fullName: GradeExplorer.Utils.RelayCommand.RelayCommand
+  nameWithType: RelayCommand.RelayCommand
+- uid: GradeExplorer.Utils.RelayCommand.CanExecute(System.Object)
+  name: CanExecute(Object)
+  href: api/GradeExplorer.Utils.RelayCommand.html#GradeExplorer_Utils_RelayCommand_CanExecute_System_Object_
+  commentId: M:GradeExplorer.Utils.RelayCommand.CanExecute(System.Object)
+  fullName: GradeExplorer.Utils.RelayCommand.CanExecute(System.Object)
+  nameWithType: RelayCommand.CanExecute(Object)
+- uid: GradeExplorer.Utils.RelayCommand.CanExecute*
+  name: CanExecute
+  href: api/GradeExplorer.Utils.RelayCommand.html#GradeExplorer_Utils_RelayCommand_CanExecute_
+  commentId: Overload:GradeExplorer.Utils.RelayCommand.CanExecute
+  isSpec: "True"
+  fullName: GradeExplorer.Utils.RelayCommand.CanExecute
+  nameWithType: RelayCommand.CanExecute
+- uid: GradeExplorer.Utils.RelayCommand.CanExecuteChanged
+  name: CanExecuteChanged
+  href: api/GradeExplorer.Utils.RelayCommand.html#GradeExplorer_Utils_RelayCommand_CanExecuteChanged
+  commentId: E:GradeExplorer.Utils.RelayCommand.CanExecuteChanged
+  fullName: GradeExplorer.Utils.RelayCommand.CanExecuteChanged
+  nameWithType: RelayCommand.CanExecuteChanged
+- uid: GradeExplorer.Utils.RelayCommand.Execute(System.Object)
+  name: Execute(Object)
+  href: api/GradeExplorer.Utils.RelayCommand.html#GradeExplorer_Utils_RelayCommand_Execute_System_Object_
+  commentId: M:GradeExplorer.Utils.RelayCommand.Execute(System.Object)
+  fullName: GradeExplorer.Utils.RelayCommand.Execute(System.Object)
+  nameWithType: RelayCommand.Execute(Object)
+- uid: GradeExplorer.Utils.RelayCommand.Execute*
+  name: Execute
+  href: api/GradeExplorer.Utils.RelayCommand.html#GradeExplorer_Utils_RelayCommand_Execute_
+  commentId: Overload:GradeExplorer.Utils.RelayCommand.Execute
+  isSpec: "True"
+  fullName: GradeExplorer.Utils.RelayCommand.Execute
+  nameWithType: RelayCommand.Execute
 - uid: GradeExplorer.ViewModels
   name: GradeExplorer.ViewModels
   href: api/GradeExplorer.ViewModels.html
@@ -669,58 +736,6 @@ references:
   isSpec: "True"
   fullName: GradeExplorer.ViewModels.MainVM.MainVM
   nameWithType: MainVM.MainVM
-- uid: GradeExplorer.ViewModels.MainVM.PageElegida
-  name: PageElegida
-  href: api/GradeExplorer.ViewModels.MainVM.html#GradeExplorer_ViewModels_MainVM_PageElegida
-  commentId: P:GradeExplorer.ViewModels.MainVM.PageElegida
-  fullName: GradeExplorer.ViewModels.MainVM.PageElegida
-  nameWithType: MainVM.PageElegida
-- uid: GradeExplorer.ViewModels.MainVM.PageElegida*
-  name: PageElegida
-  href: api/GradeExplorer.ViewModels.MainVM.html#GradeExplorer_ViewModels_MainVM_PageElegida_
-  commentId: Overload:GradeExplorer.ViewModels.MainVM.PageElegida
-  isSpec: "True"
-  fullName: GradeExplorer.ViewModels.MainVM.PageElegida
-  nameWithType: MainVM.PageElegida
-- uid: GradeExplorer.ViewModels.MainVM.Pages
-  name: Pages
-  href: api/GradeExplorer.ViewModels.MainVM.html#GradeExplorer_ViewModels_MainVM_Pages
-  commentId: P:GradeExplorer.ViewModels.MainVM.Pages
-  fullName: GradeExplorer.ViewModels.MainVM.Pages
-  nameWithType: MainVM.Pages
-- uid: GradeExplorer.ViewModels.MainVM.Pages*
-  name: Pages
-  href: api/GradeExplorer.ViewModels.MainVM.html#GradeExplorer_ViewModels_MainVM_Pages_
-  commentId: Overload:GradeExplorer.ViewModels.MainVM.Pages
-  isSpec: "True"
-  fullName: GradeExplorer.ViewModels.MainVM.Pages
-  nameWithType: MainVM.Pages
-- uid: GradeExplorer.ViewModels.MainVM.PagesMenu
-  name: PagesMenu
-  href: api/GradeExplorer.ViewModels.MainVM.html#GradeExplorer_ViewModels_MainVM_PagesMenu
-  commentId: P:GradeExplorer.ViewModels.MainVM.PagesMenu
-  fullName: GradeExplorer.ViewModels.MainVM.PagesMenu
-  nameWithType: MainVM.PagesMenu
-- uid: GradeExplorer.ViewModels.MainVM.PagesMenu*
-  name: PagesMenu
-  href: api/GradeExplorer.ViewModels.MainVM.html#GradeExplorer_ViewModels_MainVM_PagesMenu_
-  commentId: Overload:GradeExplorer.ViewModels.MainVM.PagesMenu
-  isSpec: "True"
-  fullName: GradeExplorer.ViewModels.MainVM.PagesMenu
-  nameWithType: MainVM.PagesMenu
-- uid: GradeExplorer.ViewModels.MainVM.UriActual
-  name: UriActual
-  href: api/GradeExplorer.ViewModels.MainVM.html#GradeExplorer_ViewModels_MainVM_UriActual
-  commentId: P:GradeExplorer.ViewModels.MainVM.UriActual
-  fullName: GradeExplorer.ViewModels.MainVM.UriActual
-  nameWithType: MainVM.UriActual
-- uid: GradeExplorer.ViewModels.MainVM.UriActual*
-  name: UriActual
-  href: api/GradeExplorer.ViewModels.MainVM.html#GradeExplorer_ViewModels_MainVM_UriActual_
-  commentId: Overload:GradeExplorer.ViewModels.MainVM.UriActual
-  isSpec: "True"
-  fullName: GradeExplorer.ViewModels.MainVM.UriActual
-  nameWithType: MainVM.UriActual
 - uid: GradeExplorer.ViewModels.PagesVM
   name: GradeExplorer.ViewModels.PagesVM
   href: api/GradeExplorer.ViewModels.PagesVM.html
@@ -746,6 +761,71 @@ references:
   isSpec: "True"
   fullName: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.AlumnosPageVM
   nameWithType: AlumnosPageVM.AlumnosPageVM
+- uid: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.AddCommand
+  name: AddCommand
+  href: api/GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.html#GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_AddCommand
+  commentId: P:GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.AddCommand
+  fullName: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.AddCommand
+  nameWithType: AlumnosPageVM.AddCommand
+- uid: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.AddCommand*
+  name: AddCommand
+  href: api/GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.html#GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_AddCommand_
+  commentId: Overload:GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.AddCommand
+  isSpec: "True"
+  fullName: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.AddCommand
+  nameWithType: AlumnosPageVM.AddCommand
+- uid: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.AlumnoSeleccionado
+  name: AlumnoSeleccionado
+  href: api/GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.html#GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_AlumnoSeleccionado
+  commentId: P:GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.AlumnoSeleccionado
+  fullName: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.AlumnoSeleccionado
+  nameWithType: AlumnosPageVM.AlumnoSeleccionado
+- uid: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.AlumnoSeleccionado*
+  name: AlumnoSeleccionado
+  href: api/GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.html#GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_AlumnoSeleccionado_
+  commentId: Overload:GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.AlumnoSeleccionado
+  isSpec: "True"
+  fullName: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.AlumnoSeleccionado
+  nameWithType: AlumnosPageVM.AlumnoSeleccionado
+- uid: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.DeleteCommand
+  name: DeleteCommand
+  href: api/GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.html#GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_DeleteCommand
+  commentId: P:GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.DeleteCommand
+  fullName: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.DeleteCommand
+  nameWithType: AlumnosPageVM.DeleteCommand
+- uid: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.DeleteCommand*
+  name: DeleteCommand
+  href: api/GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.html#GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_DeleteCommand_
+  commentId: Overload:GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.DeleteCommand
+  isSpec: "True"
+  fullName: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.DeleteCommand
+  nameWithType: AlumnosPageVM.DeleteCommand
+- uid: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.EditCommand
+  name: EditCommand
+  href: api/GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.html#GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_EditCommand
+  commentId: P:GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.EditCommand
+  fullName: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.EditCommand
+  nameWithType: AlumnosPageVM.EditCommand
+- uid: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.EditCommand*
+  name: EditCommand
+  href: api/GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.html#GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_EditCommand_
+  commentId: Overload:GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.EditCommand
+  isSpec: "True"
+  fullName: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.EditCommand
+  nameWithType: AlumnosPageVM.EditCommand
+- uid: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.IsLoading
+  name: IsLoading
+  href: api/GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.html#GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_IsLoading
+  commentId: P:GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.IsLoading
+  fullName: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.IsLoading
+  nameWithType: AlumnosPageVM.IsLoading
+- uid: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.IsLoading*
+  name: IsLoading
+  href: api/GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.html#GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_IsLoading_
+  commentId: Overload:GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.IsLoading
+  isSpec: "True"
+  fullName: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.IsLoading
+  nameWithType: AlumnosPageVM.IsLoading
 - uid: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.ListaAlumnos
   name: ListaAlumnos
   href: api/GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.html#GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_ListaAlumnos
@@ -759,6 +839,19 @@ references:
   isSpec: "True"
   fullName: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.ListaAlumnos
   nameWithType: AlumnosPageVM.ListaAlumnos
+- uid: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.ShowAlumnoDialog
+  name: ShowAlumnoDialog
+  href: api/GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.html#GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_ShowAlumnoDialog
+  commentId: P:GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.ShowAlumnoDialog
+  fullName: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.ShowAlumnoDialog
+  nameWithType: AlumnosPageVM.ShowAlumnoDialog
+- uid: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.ShowAlumnoDialog*
+  name: ShowAlumnoDialog
+  href: api/GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.html#GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_ShowAlumnoDialog_
+  commentId: Overload:GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.ShowAlumnoDialog
+  isSpec: "True"
+  fullName: GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.ShowAlumnoDialog
+  nameWithType: AlumnosPageVM.ShowAlumnoDialog
 - uid: GradeExplorer.Views
   name: GradeExplorer.Views
   href: api/GradeExplorer.Views.html
@@ -784,6 +877,64 @@ references:
   isSpec: "True"
   fullName: GradeExplorer.Views.Main.Main
   nameWithType: Main.Main
+- uid: GradeExplorer.Views.Main.ObjetoMenu
+  name: Main.ObjetoMenu
+  href: api/GradeExplorer.Views.Main.ObjetoMenu.html
+  commentId: T:GradeExplorer.Views.Main.ObjetoMenu
+  fullName: GradeExplorer.Views.Main.ObjetoMenu
+  nameWithType: Main.ObjetoMenu
+- uid: GradeExplorer.Views.Main.ObjetoMenu.Icono
+  name: Icono
+  href: api/GradeExplorer.Views.Main.ObjetoMenu.html#GradeExplorer_Views_Main_ObjetoMenu_Icono
+  commentId: P:GradeExplorer.Views.Main.ObjetoMenu.Icono
+  fullName: GradeExplorer.Views.Main.ObjetoMenu.Icono
+  nameWithType: Main.ObjetoMenu.Icono
+- uid: GradeExplorer.Views.Main.ObjetoMenu.Icono*
+  name: Icono
+  href: api/GradeExplorer.Views.Main.ObjetoMenu.html#GradeExplorer_Views_Main_ObjetoMenu_Icono_
+  commentId: Overload:GradeExplorer.Views.Main.ObjetoMenu.Icono
+  isSpec: "True"
+  fullName: GradeExplorer.Views.Main.ObjetoMenu.Icono
+  nameWithType: Main.ObjetoMenu.Icono
+- uid: GradeExplorer.Views.Main.ObjetoMenu.Texto
+  name: Texto
+  href: api/GradeExplorer.Views.Main.ObjetoMenu.html#GradeExplorer_Views_Main_ObjetoMenu_Texto
+  commentId: P:GradeExplorer.Views.Main.ObjetoMenu.Texto
+  fullName: GradeExplorer.Views.Main.ObjetoMenu.Texto
+  nameWithType: Main.ObjetoMenu.Texto
+- uid: GradeExplorer.Views.Main.ObjetoMenu.Texto*
+  name: Texto
+  href: api/GradeExplorer.Views.Main.ObjetoMenu.html#GradeExplorer_Views_Main_ObjetoMenu_Texto_
+  commentId: Overload:GradeExplorer.Views.Main.ObjetoMenu.Texto
+  isSpec: "True"
+  fullName: GradeExplorer.Views.Main.ObjetoMenu.Texto
+  nameWithType: Main.ObjetoMenu.Texto
+- uid: GradeExplorer.Views.Main.PageElegida
+  name: PageElegida
+  href: api/GradeExplorer.Views.Main.html#GradeExplorer_Views_Main_PageElegida
+  commentId: P:GradeExplorer.Views.Main.PageElegida
+  fullName: GradeExplorer.Views.Main.PageElegida
+  nameWithType: Main.PageElegida
+- uid: GradeExplorer.Views.Main.PageElegida*
+  name: PageElegida
+  href: api/GradeExplorer.Views.Main.html#GradeExplorer_Views_Main_PageElegida_
+  commentId: Overload:GradeExplorer.Views.Main.PageElegida
+  isSpec: "True"
+  fullName: GradeExplorer.Views.Main.PageElegida
+  nameWithType: Main.PageElegida
+- uid: GradeExplorer.Views.Main.PagesMenu
+  name: PagesMenu
+  href: api/GradeExplorer.Views.Main.html#GradeExplorer_Views_Main_PagesMenu
+  commentId: P:GradeExplorer.Views.Main.PagesMenu
+  fullName: GradeExplorer.Views.Main.PagesMenu
+  nameWithType: Main.PagesMenu
+- uid: GradeExplorer.Views.Main.PagesMenu*
+  name: PagesMenu
+  href: api/GradeExplorer.Views.Main.html#GradeExplorer_Views_Main_PagesMenu_
+  commentId: Overload:GradeExplorer.Views.Main.PagesMenu
+  isSpec: "True"
+  fullName: GradeExplorer.Views.Main.PagesMenu
+  nameWithType: Main.PagesMenu
 - uid: GradeExplorer.Views.Pages
   name: GradeExplorer.Views.Pages
   href: api/GradeExplorer.Views.Pages.html
@@ -809,3 +960,22 @@ references:
   isSpec: "True"
   fullName: GradeExplorer.Views.Pages.AlumnosPage.AlumnosPage
   nameWithType: AlumnosPage.AlumnosPage
+- uid: GradeExplorer.Views.Pages.InicioPage
+  name: InicioPage
+  href: api/GradeExplorer.Views.Pages.InicioPage.html
+  commentId: T:GradeExplorer.Views.Pages.InicioPage
+  fullName: GradeExplorer.Views.Pages.InicioPage
+  nameWithType: InicioPage
+- uid: GradeExplorer.Views.Pages.InicioPage.#ctor
+  name: InicioPage()
+  href: api/GradeExplorer.Views.Pages.InicioPage.html#GradeExplorer_Views_Pages_InicioPage__ctor
+  commentId: M:GradeExplorer.Views.Pages.InicioPage.#ctor
+  fullName: GradeExplorer.Views.Pages.InicioPage.InicioPage()
+  nameWithType: InicioPage.InicioPage()
+- uid: GradeExplorer.Views.Pages.InicioPage.#ctor*
+  name: InicioPage
+  href: api/GradeExplorer.Views.Pages.InicioPage.html#GradeExplorer_Views_Pages_InicioPage__ctor_
+  commentId: Overload:GradeExplorer.Views.Pages.InicioPage.#ctor
+  isSpec: "True"
+  fullName: GradeExplorer.Views.Pages.InicioPage.InicioPage
+  nameWithType: InicioPage.InicioPage

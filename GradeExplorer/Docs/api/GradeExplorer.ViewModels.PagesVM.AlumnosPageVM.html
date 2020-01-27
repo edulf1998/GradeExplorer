@@ -78,23 +78,27 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="GradeExplorer.Utils.INotifyBase.html">INotifyBase</a></div>
+    <div class="level1"><a class="xref" href="GradeExplorer.Utils.ModelBase.html">ModelBase</a></div>
     <div class="level2"><span class="xref">AlumnosPageVM</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
     <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.ICloneable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="GradeExplorer.Utils.INotifyBase.html#GradeExplorer_Utils_INotifyBase_PropertyChanged">INotifyBase.PropertyChanged</a>
+      <a class="xref" href="GradeExplorer.Utils.ModelBase.html#GradeExplorer_Utils_ModelBase_PropertyChanged">ModelBase.PropertyChanged</a>
     </div>
     <div>
-      <a class="xref" href="GradeExplorer.Utils.INotifyBase.html#GradeExplorer_Utils_INotifyBase_OnPropertyChanged_System_String_">INotifyBase.OnPropertyChanged(String)</a>
+      <a class="xref" href="GradeExplorer.Utils.ModelBase.html#GradeExplorer_Utils_ModelBase_Clone">ModelBase.Clone()</a>
     </div>
     <div>
-      <a class="xref" href="GradeExplorer.Utils.INotifyBase.html#GradeExplorer_Utils_INotifyBase_SetField__1___0____0_System_String_">INotifyBase.SetField&lt;T&gt;(T, T, String)</a>
+      <a class="xref" href="GradeExplorer.Utils.ModelBase.html#GradeExplorer_Utils_ModelBase_OnPropertyChanged_System_String_">ModelBase.OnPropertyChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="GradeExplorer.Utils.ModelBase.html#GradeExplorer_Utils_ModelBase_SetField__1___0____0_System_String_">ModelBase.SetField&lt;T&gt;(T, T, String)</a>
     </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
@@ -122,7 +126,7 @@
   <h6><strong>Assembly</strong>: GradeExplorer.dll</h6>
   <h5 id="GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AlumnosPageVM : INotifyBase, INotifyPropertyChanged</code></pre>
+    <pre><code class="lang-csharp hljs">public class AlumnosPageVM : ModelBase, INotifyPropertyChanged, ICloneable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -131,7 +135,7 @@
     <a href="https://github.com/edulf1998/GradeExplorer/new/master/apiSpec/new?filename=GradeExplorer_ViewModels_PagesVM_AlumnosPageVM__ctor.md&amp;value=---%0Auid%3A%20GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/ViewModels/PagesVM/AlumnosPageVM.cs/#L22">View Source</a>
+    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/ViewModels/PagesVM/AlumnosPageVM.cs/#L40">View Source</a>
   </span>
   <a id="GradeExplorer_ViewModels_PagesVM_AlumnosPageVM__ctor_" data-uid="GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.#ctor*"></a>
   <h4 id="GradeExplorer_ViewModels_PagesVM_AlumnosPageVM__ctor" data-uid="GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.#ctor">AlumnosPageVM()</h4>
@@ -143,6 +147,156 @@
   </div>
   <h3 id="properties">Properties
   </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/edulf1998/GradeExplorer/new/master/apiSpec/new?filename=GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_AddCommand.md&amp;value=---%0Auid%3A%20GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.AddCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/ViewModels/PagesVM/AlumnosPageVM.cs/#L36">View Source</a>
+  </span>
+  <a id="GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_AddCommand_" data-uid="GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.AddCommand*"></a>
+  <h4 id="GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_AddCommand" data-uid="GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.AddCommand">AddCommand</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RelayCommand AddCommand { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GradeExplorer.Utils.RelayCommand.html">RelayCommand</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/edulf1998/GradeExplorer/new/master/apiSpec/new?filename=GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_AlumnoSeleccionado.md&amp;value=---%0Auid%3A%20GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.AlumnoSeleccionado%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/ViewModels/PagesVM/AlumnosPageVM.cs/#L34">View Source</a>
+  </span>
+  <a id="GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_AlumnoSeleccionado_" data-uid="GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.AlumnoSeleccionado*"></a>
+  <h4 id="GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_AlumnoSeleccionado" data-uid="GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.AlumnoSeleccionado">AlumnoSeleccionado</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Alumno AlumnoSeleccionado { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GradeExplorer.Models.Alumno.html">Alumno</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/edulf1998/GradeExplorer/new/master/apiSpec/new?filename=GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_DeleteCommand.md&amp;value=---%0Auid%3A%20GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.DeleteCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/ViewModels/PagesVM/AlumnosPageVM.cs/#L38">View Source</a>
+  </span>
+  <a id="GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_DeleteCommand_" data-uid="GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.DeleteCommand*"></a>
+  <h4 id="GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_DeleteCommand" data-uid="GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.DeleteCommand">DeleteCommand</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RelayCommand DeleteCommand { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GradeExplorer.Utils.RelayCommand.html">RelayCommand</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/edulf1998/GradeExplorer/new/master/apiSpec/new?filename=GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_EditCommand.md&amp;value=---%0Auid%3A%20GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.EditCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/ViewModels/PagesVM/AlumnosPageVM.cs/#L37">View Source</a>
+  </span>
+  <a id="GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_EditCommand_" data-uid="GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.EditCommand*"></a>
+  <h4 id="GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_EditCommand" data-uid="GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.EditCommand">EditCommand</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RelayCommand EditCommand { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GradeExplorer.Utils.RelayCommand.html">RelayCommand</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/edulf1998/GradeExplorer/new/master/apiSpec/new?filename=GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_IsLoading.md&amp;value=---%0Auid%3A%20GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.IsLoading%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/ViewModels/PagesVM/AlumnosPageVM.cs/#L21">View Source</a>
+  </span>
+  <a id="GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_IsLoading_" data-uid="GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.IsLoading*"></a>
+  <h4 id="GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_IsLoading" data-uid="GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.IsLoading">IsLoading</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLoading { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/edulf1998/GradeExplorer/new/master/apiSpec/new?filename=GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_ListaAlumnos.md&amp;value=---%0Auid%3A%20GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.ListaAlumnos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -173,9 +327,42 @@
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/edulf1998/GradeExplorer/new/master/apiSpec/new?filename=GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_ShowAlumnoDialog.md&amp;value=---%0Auid%3A%20GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.ShowAlumnoDialog%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/ViewModels/PagesVM/AlumnosPageVM.cs/#L28">View Source</a>
+  </span>
+  <a id="GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_ShowAlumnoDialog_" data-uid="GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.ShowAlumnoDialog*"></a>
+  <h4 id="GradeExplorer_ViewModels_PagesVM_AlumnosPageVM_ShowAlumnoDialog" data-uid="GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.ShowAlumnoDialog">ShowAlumnoDialog</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowAlumnoDialog { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.ICloneable</span>
   </div>
 </article>
           </div>

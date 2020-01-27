@@ -1,0 +1,18 @@
+﻿<Page x:Class="GradeExplorer.Views.Pages.InicioPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GradeExplorer.Views.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="InicioPage">
+    <StackPanel Orientation="Vertical">
+        <TextBlock Style="{StaticResource SubheaderTextBlockStyle}" HorizontalAlignment="Center">PANTALLA DE INICIO</TextBlock>
+        <TextBlock Style="{StaticResource BodyTextBlockStyle}" Padding="5, 0, 5, 0">
+            GradeExplorer permite ver y editar la información de un aula de un centro. ¡Pruébalo tú mismo! Puedes navegar por la aplicación con el 
+            menú lateral de la izquierda.
+        </TextBlock>
+        <Image Source="pack://application:,,,/Res/Icon/notebook.png" Width="200" Height="100" Margin="0, 15, 0, 0"/>
+    </StackPanel>
+</Page>

@@ -7,7 +7,7 @@ namespace GradeExplorer.Models
   /// Clase de modelo asociada a la tabla "Alumno" 
   /// de la base de datos.
   /// </summary>
-  public class Alumno : INotifyBase
+  public class Alumno : ModelBase
   {
     /// <summary>
     /// ID único de cada Alumno
