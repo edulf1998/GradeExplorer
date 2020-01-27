@@ -9,10 +9,6 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AlumnosPage">
-    <Page.DataContext>
-        <vm:AlumnosPageVM />
-    </Page.DataContext>
-
     <Page.Resources>
         <BooleanToVisibilityConverter x:Key="BoolToVis" />
     </Page.Resources>
@@ -59,12 +55,13 @@
             </DataGrid>
 
             <ui:ContentDialog
+                x:Name="DialogoAlumno"
                 Title="Nuevo/Editar Alumno"
                 PrimaryButtonText="Confirmar"
                 SecondaryButtonText="Cancelar"
                 Visibility="{Binding ShowAlumnosDialog, Converter={StaticResource BoolToVis}}"
                 >
-                <StackPanel>
+                <StackPanel x:Name="StackDialogo">
                     <TextBlock Style="{StaticResource BodyTextBlockStyle}">ID</TextBlock>
                     <TextBox IsReadOnly="True"></TextBox>
 

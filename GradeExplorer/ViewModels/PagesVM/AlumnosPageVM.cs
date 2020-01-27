@@ -50,6 +50,7 @@ namespace GradeExplorer.ViewModels.PagesVM
     private void AddAlumno()
     {
       ShowAlumnoDialog = true;
+      Console.WriteLine("Algo");
     }
 
     private void EditAlumno()

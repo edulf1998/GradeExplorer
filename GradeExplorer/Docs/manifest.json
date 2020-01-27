@@ -1,44 +1,8 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Users/NooB/Desktop/PROYECTOS_PROGRAMACION/CSharp/ProyectoDI - GradeExplorer/GradeExplorer",
+  "source_base_path": "F:/DI/GradeExplorer/GradeExplorer",
   "xrefmap": "xrefmap.yml",
   "files": [
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/index.html",
-          "hash": "1iBLW6Sr2LdAYTdNvp3DMg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "articles/intro.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/intro.html",
-          "hash": "0cwmd/ZiEm0h5Avna3A6bg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "articles/toc.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/toc.html",
-          "hash": "gB8AESyvNru97tzIZofEEg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
     {
       "type": "Conceptual",
       "source_relative_path": "index.md",
@@ -96,7 +60,7 @@
           "hash": "sugStysU8oYRptld2c1OSQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -108,7 +72,7 @@
           "hash": "Ux+fXG18PGn/2yzg17G5PQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -120,7 +84,7 @@
           "hash": "oBwZ+ifGZ5Y2YSIj9p+Cvg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -204,7 +168,7 @@
           "hash": "ICo+COSykJmz1aoN6/Hapw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -216,7 +180,7 @@
           "hash": "WUDOfckm2G6pi+eog77qog=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -228,7 +192,31 @@
           "hash": "br+cHq6a8gZFH4mAiKpTEg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Tests.TestNHibernateUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Tests.TestNHibernateUtil.html",
+          "hash": "uB+CEBaK/DohHiEBfTH5iQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Tests.html",
+          "hash": "6Mt3x5BjF9KTVtj3Nz1gcA=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -240,7 +228,7 @@
           "hash": "ZIUG3TBI8zEQdSUnxvXncw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -276,7 +264,7 @@
           "hash": "Pm9EkuK+m1QussDRHezd0Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -288,7 +276,7 @@
           "hash": "9tCLo2q4owQDXO7KZF3LEw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -300,7 +288,7 @@
           "hash": "noADbvubH3pAtyRGYA5M4Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -312,7 +300,7 @@
           "hash": "3TIzrttzLnh7PoKQNxkHkQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -324,7 +312,7 @@
           "hash": "ebeRDblAirRkyX+3CPNRhw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -357,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.Views.Pages.AlumnosPage.html",
-          "hash": "vqoC2gfCmooMgc2OYcM+xA=="
+          "hash": "IpX8sSQS7nOjTRL9HaGzjQ=="
         }
       },
       "is_incremental": true,
@@ -417,19 +405,22 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "kcjj+kK5D7iQ/XiqfV76Dw=="
+          "hash": "sd0XnvbIYPG7ea9yKwboEg=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "G2AoE5T/2VarbHvzLEo4TQ=="
+          "hash": "62+cGZxodi+i0snfLQRQRg=="
         }
       },
       "is_incremental": false,
@@ -445,24 +436,24 @@
         "skipped_file_count": 0
       },
       "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 1,
+          "skipped_file_count": 1
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 32,
+          "skipped_file_count": 32
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 3,
-          "skipped_file_count": 3
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 30,
-          "skipped_file_count": 29
         }
       }
     },

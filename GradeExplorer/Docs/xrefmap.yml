@@ -565,6 +565,57 @@ references:
   isSpec: "True"
   fullName: GradeExplorer.Models.Profesor.Nombre
   nameWithType: Profesor.Nombre
+- uid: GradeExplorer.Tests
+  name: GradeExplorer.Tests
+  href: api/GradeExplorer.Tests.html
+  commentId: N:GradeExplorer.Tests
+  fullName: GradeExplorer.Tests
+  nameWithType: GradeExplorer.Tests
+- uid: GradeExplorer.Tests.TestNHibernateUtil
+  name: TestNHibernateUtil
+  href: api/GradeExplorer.Tests.TestNHibernateUtil.html
+  commentId: T:GradeExplorer.Tests.TestNHibernateUtil
+  fullName: GradeExplorer.Tests.TestNHibernateUtil
+  nameWithType: TestNHibernateUtil
+- uid: GradeExplorer.Tests.TestNHibernateUtil.TestAddAlumno
+  name: TestAddAlumno()
+  href: api/GradeExplorer.Tests.TestNHibernateUtil.html#GradeExplorer_Tests_TestNHibernateUtil_TestAddAlumno
+  commentId: M:GradeExplorer.Tests.TestNHibernateUtil.TestAddAlumno
+  fullName: GradeExplorer.Tests.TestNHibernateUtil.TestAddAlumno()
+  nameWithType: TestNHibernateUtil.TestAddAlumno()
+- uid: GradeExplorer.Tests.TestNHibernateUtil.TestAddAlumno*
+  name: TestAddAlumno
+  href: api/GradeExplorer.Tests.TestNHibernateUtil.html#GradeExplorer_Tests_TestNHibernateUtil_TestAddAlumno_
+  commentId: Overload:GradeExplorer.Tests.TestNHibernateUtil.TestAddAlumno
+  isSpec: "True"
+  fullName: GradeExplorer.Tests.TestNHibernateUtil.TestAddAlumno
+  nameWithType: TestNHibernateUtil.TestAddAlumno
+- uid: GradeExplorer.Tests.TestNHibernateUtil.TestDeleteAlumno
+  name: TestDeleteAlumno()
+  href: api/GradeExplorer.Tests.TestNHibernateUtil.html#GradeExplorer_Tests_TestNHibernateUtil_TestDeleteAlumno
+  commentId: M:GradeExplorer.Tests.TestNHibernateUtil.TestDeleteAlumno
+  fullName: GradeExplorer.Tests.TestNHibernateUtil.TestDeleteAlumno()
+  nameWithType: TestNHibernateUtil.TestDeleteAlumno()
+- uid: GradeExplorer.Tests.TestNHibernateUtil.TestDeleteAlumno*
+  name: TestDeleteAlumno
+  href: api/GradeExplorer.Tests.TestNHibernateUtil.html#GradeExplorer_Tests_TestNHibernateUtil_TestDeleteAlumno_
+  commentId: Overload:GradeExplorer.Tests.TestNHibernateUtil.TestDeleteAlumno
+  isSpec: "True"
+  fullName: GradeExplorer.Tests.TestNHibernateUtil.TestDeleteAlumno
+  nameWithType: TestNHibernateUtil.TestDeleteAlumno
+- uid: GradeExplorer.Tests.TestNHibernateUtil.TestGetAlumno
+  name: TestGetAlumno()
+  href: api/GradeExplorer.Tests.TestNHibernateUtil.html#GradeExplorer_Tests_TestNHibernateUtil_TestGetAlumno
+  commentId: M:GradeExplorer.Tests.TestNHibernateUtil.TestGetAlumno
+  fullName: GradeExplorer.Tests.TestNHibernateUtil.TestGetAlumno()
+  nameWithType: TestNHibernateUtil.TestGetAlumno()
+- uid: GradeExplorer.Tests.TestNHibernateUtil.TestGetAlumno*
+  name: TestGetAlumno
+  href: api/GradeExplorer.Tests.TestNHibernateUtil.html#GradeExplorer_Tests_TestNHibernateUtil_TestGetAlumno_
+  commentId: Overload:GradeExplorer.Tests.TestNHibernateUtil.TestGetAlumno
+  isSpec: "True"
+  fullName: GradeExplorer.Tests.TestNHibernateUtil.TestGetAlumno
+  nameWithType: TestNHibernateUtil.TestGetAlumno
 - uid: GradeExplorer.Utils
   name: GradeExplorer.Utils
   href: api/GradeExplorer.Utils.html
