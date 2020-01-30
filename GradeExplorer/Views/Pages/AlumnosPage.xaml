@@ -53,27 +53,6 @@
                     <DataGridTextColumn Header="Apellido 2" Binding="{Binding Path=Apellido2}" Width="*"/>
                 </DataGrid.Columns>
             </DataGrid>
-
-            <ui:ContentDialog
-                x:Name="DialogoAlumno"
-                Title="Nuevo/Editar Alumno"
-                PrimaryButtonText="Confirmar"
-                SecondaryButtonText="Cancelar"
-                Visibility="{Binding ShowAlumnosDialog, Converter={StaticResource BoolToVis}}"
-                >
-                <StackPanel x:Name="StackDialogo">
-                    <TextBlock Style="{StaticResource BodyTextBlockStyle}">ID</TextBlock>
-                    <TextBox IsReadOnly="True"></TextBox>
-
-                    <TextBlock Style="{StaticResource BodyTextBlockStyle}">Nombre</TextBlock>
-                    <TextBox></TextBox>
-
-                    <TextBlock Style="{StaticResource BodyTextBlockStyle}">Apellido 1</TextBlock>
-                    <TextBox></TextBox>
-                    <TextBlock Style="{StaticResource BodyTextBlockStyle}">Apellido 2</TextBlock>
-                    <TextBox></TextBox>
-                </StackPanel>
-            </ui:ContentDialog>
         </StackPanel>
     </DockPanel>
 </Page>

@@ -69,6 +69,7 @@ namespace GradeExplorer.Tests
             if (a != null)
             {
               session.Delete(a);
+              transaction.Commit();
             }
           }
         }

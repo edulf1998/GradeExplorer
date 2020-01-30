@@ -13,7 +13,6 @@ namespace GradeExplorer.Utils
   {
     private static ISessionFactory instance;
 
-
     private static string baseDbUrl = $@"Data{Path.DirectorySeparatorChar}";
     private static string dbName = "clase";
     private static string dbNumber = "0";

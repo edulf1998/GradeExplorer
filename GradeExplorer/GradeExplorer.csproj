@@ -122,14 +122,28 @@
     <Compile Include="Utils\RelayCommand.cs" />
     <Compile Include="ViewModels\MainVM.cs" />
     <Compile Include="ViewModels\PagesVM\AlumnosPageVM.cs" />
+    <Compile Include="ViewModels\PagesVM\AsignaturasPageVM.cs" />
+    <Compile Include="ViewModels\PagesVM\PersonalPageVM.cs" />
     <Compile Include="Views\Main.xaml.cs">
       <DependentUpon>Main.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\AlumnosPage.xaml.cs">
       <DependentUpon>AlumnosPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Pages\AsignaturasPage.xaml.cs">
+      <DependentUpon>AsignaturasPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Pages\InicioPage.xaml.cs">
       <DependentUpon>InicioPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\PersonalPage.xaml.cs">
+      <DependentUpon>PersonalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\PuntuacionesPage.xaml.cs">
+      <DependentUpon>PuntuacionesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\VentanaAlumnos.xaml.cs">
+      <DependentUpon>VentanaAlumnos.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -188,7 +202,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Pages\AsignaturasPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Pages\InicioPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\PersonalPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\PuntuacionesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\VentanaAlumnos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "F:/DI/GradeExplorer/GradeExplorer",
+  "source_base_path": "C:/Users/NooB/Desktop/PROYECTOS_PROGRAMACION/CSharp/ProyectoDI - GradeExplorer/GradeExplorer",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.Utils.ModelBase.html",
-          "hash": "ZIUG3TBI8zEQdSUnxvXncw=="
+          "hash": "8b46q7RPY2IN6/b93TfInw=="
         }
       },
       "is_incremental": true,
@@ -237,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.Utils.NHibernateUtil.html",
-          "hash": "CMtGUfZ3YN3WM33O7H/B7Q=="
+          "hash": "cpPuZG0iIO0dh4ptu0tBrw=="
         }
       },
       "is_incremental": true,
@@ -285,7 +285,31 @@
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.ViewModels.PagesVM.AlumnosPageVM.html",
-          "hash": "noADbvubH3pAtyRGYA5M4Q=="
+          "hash": "vszNqAg8hGWdK6st/Rs51w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.ViewModels.PagesVM.AsignaturasPageVM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.ViewModels.PagesVM.AsignaturasPageVM.html",
+          "hash": "sMx6CiYKIHCeHwN8kkXSZA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.ViewModels.PagesVM.PersonalPageVM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.ViewModels.PagesVM.PersonalPageVM.html",
+          "hash": "2CBZkqzrtrLxxzeltsvIAQ=="
         }
       },
       "is_incremental": true,
@@ -297,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.ViewModels.PagesVM.html",
-          "hash": "3TIzrttzLnh7PoKQNxkHkQ=="
+          "hash": "ccTw+fOVhHgcwPalsBZkrQ=="
         }
       },
       "is_incremental": true,
@@ -321,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.Views.Main.ObjetoMenu.html",
-          "hash": "5zPo0CviCUfVKwR/Z9z7Yg=="
+          "hash": "4PODzB2NtdoA+YkgGbygvA=="
         }
       },
       "is_incremental": true,
@@ -345,7 +369,19 @@
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.Views.Pages.AlumnosPage.html",
-          "hash": "IpX8sSQS7nOjTRL9HaGzjQ=="
+          "hash": "wy+0UkhAHCs1reh6Efw8GQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Views.Pages.AsignaturasPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Views.Pages.AsignaturasPage.html",
+          "hash": "o7K05KzjNhtU5KY5w7akPQ=="
         }
       },
       "is_incremental": true,
@@ -365,11 +401,59 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Views.Pages.PersonalPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Views.Pages.PersonalPage.html",
+          "hash": "fVfmy6JHTcsv71WdPZ8NbQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Views.Pages.PuntuacionesPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Views.Pages.PuntuacionesPage.html",
+          "hash": "ab+BYJWY0oqFcJ0tbb4ldA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/GradeExplorer.Views.Pages.yml",
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.Views.Pages.html",
-          "hash": "2q3XAUW9Y5C7kwnjrUTfIA=="
+          "hash": "HeUNosFF5wj9BYqsry9jtg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Views.Windows.VentanaAlumnos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Views.Windows.VentanaAlumnos.html",
+          "hash": "Crj35r3K7xVYtFWMP2Z9kg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Views.Windows.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Views.Windows.html",
+          "hash": "6xMTMcwYqaBK4U0iNuelxQ=="
         }
       },
       "is_incremental": true,
@@ -405,7 +489,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "sd0XnvbIYPG7ea9yKwboEg=="
+          "hash": "TDWzPwGU1kFEc5/4pK4Gpw=="
         }
       },
       "is_incremental": false,
@@ -436,6 +520,13 @@
         "skipped_file_count": 0
       },
       "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
@@ -445,15 +536,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 32,
-          "skipped_file_count": 32
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
+          "total_file_count": 39,
+          "skipped_file_count": 39
         }
       }
     },

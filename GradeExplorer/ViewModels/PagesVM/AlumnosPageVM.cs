@@ -1,5 +1,6 @@
 ﻿using GradeExplorer.Models;
 using GradeExplorer.Utils;
+using GradeExplorer.Views.Windows;
 using System;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
@@ -24,13 +25,6 @@ namespace GradeExplorer.ViewModels.PagesVM
       set => SetField(ref _isLoading, value);
     }
 
-    private bool _showAlumnoDialog = false;
-    public bool ShowAlumnoDialog
-    {
-      get => _showAlumnoDialog;
-      set => SetField(ref _showAlumnoDialog, value);
-    }
-
     public Alumno AlumnoSeleccionado { get; set; }
 
     public RelayCommand AddCommand { get; set; }
@@ -49,13 +43,14 @@ namespace GradeExplorer.ViewModels.PagesVM
 
     private void AddAlumno()
     {
-      ShowAlumnoDialog = true;
-      Console.WriteLine("Algo");
+      var ventana = new VentanaAlumnos();
+      ventana.Show();
     }
 
     private void EditAlumno()
     {
-      ShowAlumnoDialog = true;
+      var ventana = new VentanaAlumnos(AlumnoSeleccionado);
+      ventana.Show();
     }
 
     private void DeleteAlumno()

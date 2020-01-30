@@ -12,8 +12,6 @@ namespace GradeExplorer.Views.Pages
     {
       InitializeComponent();
       DataContext = new AlumnosPageVM();
-      DialogoAlumno.DataContext = this;
-      DialogoAlumno.Content = StackDialogo;
     }
   }
 }

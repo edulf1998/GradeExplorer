@@ -36,6 +36,9 @@ namespace GradeExplorer.Views
       {
         new ObjetoMenu() { Icono = Symbol.Home, Texto = "Inicio" },
         new ObjetoMenu() { Icono = Symbol.People, Texto = "Alumnos" },
+        new ObjetoMenu() { Icono = Symbol.Contact, Texto="Personal" },
+        new ObjetoMenu() { Icono = Symbol.PreviewLink, Texto="Asignaturas" },
+        new ObjetoMenu() { Icono = Symbol.Mail, Texto="Puntuaciones" }
       };
 
       DataContext = new MainVM(); // Asigno el DataContext principal
