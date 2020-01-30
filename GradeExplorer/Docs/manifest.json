@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Users/NooB/Desktop/PROYECTOS_PROGRAMACION/CSharp/ProyectoDI - GradeExplorer/GradeExplorer",
+  "source_base_path": "F:/DI/GradeExplorer/GradeExplorer",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.Utils.ModelBase.html",
-          "hash": "8b46q7RPY2IN6/b93TfInw=="
+          "hash": "3VLytbBqiliD15rGotyGUg=="
         }
       },
       "is_incremental": true,
@@ -237,10 +237,10 @@
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.Utils.NHibernateUtil.html",
-          "hash": "cpPuZG0iIO0dh4ptu0tBrw=="
+          "hash": "KkbjwnzPrhc+wCbu2zVORA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -264,7 +264,7 @@
           "hash": "Pm9EkuK+m1QussDRHezd0Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -297,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.ViewModels.PagesVM.AsignaturasPageVM.html",
-          "hash": "sMx6CiYKIHCeHwN8kkXSZA=="
+          "hash": "WXu7ihsvTGDAZ509/9a30A=="
         }
       },
       "is_incremental": true,
@@ -317,11 +317,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.html",
+          "hash": "CCpjn7XeG7EzapbFRn8e+Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/GradeExplorer.ViewModels.PagesVM.yml",
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.ViewModels.PagesVM.html",
-          "hash": "ccTw+fOVhHgcwPalsBZkrQ=="
+          "hash": "dJF8rTsELqG0eM30ClZfgg=="
         }
       },
       "is_incremental": true,
@@ -393,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.Views.Pages.InicioPage.html",
-          "hash": "WzcigdGucVaSZvg3Ry6FJA=="
+          "hash": "Vjhgz0R/DqnrQK8+yj/dzA=="
         }
       },
       "is_incremental": true,
@@ -417,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.Views.Pages.PuntuacionesPage.html",
-          "hash": "ab+BYJWY0oqFcJ0tbb4ldA=="
+          "hash": "lBicK1isIIe29yWKkW9g0g=="
         }
       },
       "is_incremental": true,
@@ -489,7 +501,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "TDWzPwGU1kFEc5/4pK4Gpw=="
+          "hash": "p0lUH076wyXfnZLJUXSmrA=="
         }
       },
       "is_incremental": false,
@@ -527,17 +539,17 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 40,
+          "skipped_file_count": 39
+        },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 1,
           "skipped_file_count": 1
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 39,
-          "skipped_file_count": 39
         }
       }
     },

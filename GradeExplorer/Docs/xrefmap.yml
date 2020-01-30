@@ -682,6 +682,19 @@ references:
   commentId: T:GradeExplorer.Utils.NHibernateUtil
   fullName: GradeExplorer.Utils.NHibernateUtil
   nameWithType: NHibernateUtil
+- uid: GradeExplorer.Utils.NHibernateUtil.DeleteDb
+  name: DeleteDb()
+  href: api/GradeExplorer.Utils.NHibernateUtil.html#GradeExplorer_Utils_NHibernateUtil_DeleteDb
+  commentId: M:GradeExplorer.Utils.NHibernateUtil.DeleteDb
+  fullName: GradeExplorer.Utils.NHibernateUtil.DeleteDb()
+  nameWithType: NHibernateUtil.DeleteDb()
+- uid: GradeExplorer.Utils.NHibernateUtil.DeleteDb*
+  name: DeleteDb
+  href: api/GradeExplorer.Utils.NHibernateUtil.html#GradeExplorer_Utils_NHibernateUtil_DeleteDb_
+  commentId: Overload:GradeExplorer.Utils.NHibernateUtil.DeleteDb
+  isSpec: "True"
+  fullName: GradeExplorer.Utils.NHibernateUtil.DeleteDb
+  nameWithType: NHibernateUtil.DeleteDb
 - uid: GradeExplorer.Utils.NHibernateUtil.GetSessionFactory
   name: GetSessionFactory()
   href: api/GradeExplorer.Utils.NHibernateUtil.html#GradeExplorer_Utils_NHibernateUtil_GetSessionFactory
@@ -695,6 +708,19 @@ references:
   isSpec: "True"
   fullName: GradeExplorer.Utils.NHibernateUtil.GetSessionFactory
   nameWithType: NHibernateUtil.GetSessionFactory
+- uid: GradeExplorer.Utils.NHibernateUtil.InsertarDatosDemo
+  name: InsertarDatosDemo()
+  href: api/GradeExplorer.Utils.NHibernateUtil.html#GradeExplorer_Utils_NHibernateUtil_InsertarDatosDemo
+  commentId: M:GradeExplorer.Utils.NHibernateUtil.InsertarDatosDemo
+  fullName: GradeExplorer.Utils.NHibernateUtil.InsertarDatosDemo()
+  nameWithType: NHibernateUtil.InsertarDatosDemo()
+- uid: GradeExplorer.Utils.NHibernateUtil.InsertarDatosDemo*
+  name: InsertarDatosDemo
+  href: api/GradeExplorer.Utils.NHibernateUtil.html#GradeExplorer_Utils_NHibernateUtil_InsertarDatosDemo_
+  commentId: Overload:GradeExplorer.Utils.NHibernateUtil.InsertarDatosDemo
+  isSpec: "True"
+  fullName: GradeExplorer.Utils.NHibernateUtil.InsertarDatosDemo
+  nameWithType: NHibernateUtil.InsertarDatosDemo
 - uid: GradeExplorer.Utils.NHibernateUtil.setDbNumber(System.String)
   name: setDbNumber(String)
   href: api/GradeExplorer.Utils.NHibernateUtil.html#GradeExplorer_Utils_NHibernateUtil_setDbNumber_System_String_
@@ -1084,6 +1110,77 @@ references:
   isSpec: "True"
   fullName: GradeExplorer.ViewModels.PagesVM.PersonalPageVM.ProfesorSeleccionado
   nameWithType: PersonalPageVM.ProfesorSeleccionado
+- uid: GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM
+  name: PuntuacionesPageVM
+  href: api/GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.html
+  commentId: T:GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM
+  fullName: GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM
+  nameWithType: PuntuacionesPageVM
+- uid: GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.#ctor
+  name: PuntuacionesPageVM()
+  href: api/GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.html#GradeExplorer_ViewModels_PagesVM_PuntuacionesPageVM__ctor
+  commentId: M:GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.#ctor
+  fullName: GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.PuntuacionesPageVM()
+  nameWithType: PuntuacionesPageVM.PuntuacionesPageVM()
+- uid: GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.#ctor*
+  name: PuntuacionesPageVM
+  href: api/GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.html#GradeExplorer_ViewModels_PagesVM_PuntuacionesPageVM__ctor_
+  commentId: Overload:GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.#ctor
+  isSpec: "True"
+  fullName: GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.PuntuacionesPageVM
+  nameWithType: PuntuacionesPageVM.PuntuacionesPageVM
+- uid: GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.Alumnos
+  name: Alumnos
+  href: api/GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.html#GradeExplorer_ViewModels_PagesVM_PuntuacionesPageVM_Alumnos
+  commentId: P:GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.Alumnos
+  fullName: GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.Alumnos
+  nameWithType: PuntuacionesPageVM.Alumnos
+- uid: GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.Alumnos*
+  name: Alumnos
+  href: api/GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.html#GradeExplorer_ViewModels_PagesVM_PuntuacionesPageVM_Alumnos_
+  commentId: Overload:GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.Alumnos
+  isSpec: "True"
+  fullName: GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.Alumnos
+  nameWithType: PuntuacionesPageVM.Alumnos
+- uid: GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.AlumnoSeleccionado
+  name: AlumnoSeleccionado
+  href: api/GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.html#GradeExplorer_ViewModels_PagesVM_PuntuacionesPageVM_AlumnoSeleccionado
+  commentId: P:GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.AlumnoSeleccionado
+  fullName: GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.AlumnoSeleccionado
+  nameWithType: PuntuacionesPageVM.AlumnoSeleccionado
+- uid: GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.AlumnoSeleccionado*
+  name: AlumnoSeleccionado
+  href: api/GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.html#GradeExplorer_ViewModels_PagesVM_PuntuacionesPageVM_AlumnoSeleccionado_
+  commentId: Overload:GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.AlumnoSeleccionado
+  isSpec: "True"
+  fullName: GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.AlumnoSeleccionado
+  nameWithType: PuntuacionesPageVM.AlumnoSeleccionado
+- uid: GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.IsLoading
+  name: IsLoading
+  href: api/GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.html#GradeExplorer_ViewModels_PagesVM_PuntuacionesPageVM_IsLoading
+  commentId: P:GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.IsLoading
+  fullName: GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.IsLoading
+  nameWithType: PuntuacionesPageVM.IsLoading
+- uid: GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.IsLoading*
+  name: IsLoading
+  href: api/GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.html#GradeExplorer_ViewModels_PagesVM_PuntuacionesPageVM_IsLoading_
+  commentId: Overload:GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.IsLoading
+  isSpec: "True"
+  fullName: GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.IsLoading
+  nameWithType: PuntuacionesPageVM.IsLoading
+- uid: GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.NotaSeleccionada
+  name: NotaSeleccionada
+  href: api/GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.html#GradeExplorer_ViewModels_PagesVM_PuntuacionesPageVM_NotaSeleccionada
+  commentId: P:GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.NotaSeleccionada
+  fullName: GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.NotaSeleccionada
+  nameWithType: PuntuacionesPageVM.NotaSeleccionada
+- uid: GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.NotaSeleccionada*
+  name: NotaSeleccionada
+  href: api/GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.html#GradeExplorer_ViewModels_PagesVM_PuntuacionesPageVM_NotaSeleccionada_
+  commentId: Overload:GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.NotaSeleccionada
+  isSpec: "True"
+  fullName: GradeExplorer.ViewModels.PagesVM.PuntuacionesPageVM.NotaSeleccionada
+  nameWithType: PuntuacionesPageVM.NotaSeleccionada
 - uid: GradeExplorer.Views
   name: GradeExplorer.Views
   href: api/GradeExplorer.Views.html

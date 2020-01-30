@@ -124,6 +124,7 @@
     <Compile Include="ViewModels\PagesVM\AlumnosPageVM.cs" />
     <Compile Include="ViewModels\PagesVM\AsignaturasPageVM.cs" />
     <Compile Include="ViewModels\PagesVM\PersonalPageVM.cs" />
+    <Compile Include="ViewModels\PagesVM\PuntuacionesPageVM.cs" />
     <Compile Include="Views\Main.xaml.cs">
       <DependentUpon>Main.xaml</DependentUpon>
     </Compile>
@@ -181,7 +182,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controls\" />
-    <Folder Include="ViewModels\Dialogs\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="icon.ico" />

@@ -41,8 +41,6 @@ namespace GradeExplorer.Utils
                 .ExposeConfiguration(c => c.SetInterceptor(new AddPropertyChangedInterceptor()))
                 .ExposeConfiguration(BuildSchema)
                 .BuildSessionFactory();
-
-        InsertarDatosDemo();
       }
 
       return instance;
@@ -56,10 +54,13 @@ namespace GradeExplorer.Utils
 
     private static void BuildSchema(Configuration cfg)
     {
-      new SchemaExport(cfg).Create(false, true);
+      if (!File.Exists($"{baseDbUrl}{dbName}{dbNumber}{dbExt}"))
+      {
+        new SchemaExport(cfg).Create(false, true);
+      }
     }
 
-    private static void InsertarDatosDemo()
+    public static void InsertarDatosDemo()
     {
       using (var sessionFactory = instance)
       {
@@ -120,6 +121,15 @@ namespace GradeExplorer.Utils
             transaction.Commit();
           }
         }
+      }
+    }
+
+    public static void DeleteDb()
+    {
+      instance = null;
+      if (File.Exists($"{baseDbUrl}{dbName}{dbNumber}{dbExt}"))
+      {
+        File.Delete($"{baseDbUrl}{dbName}{dbNumber}{dbExt}");
       }
     }
   }

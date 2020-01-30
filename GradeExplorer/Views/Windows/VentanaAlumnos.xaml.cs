@@ -22,17 +22,17 @@ namespace GradeExplorer.Views.Windows
     public VentanaAlumnos()
     {
       InitializeComponent();
-      
       _alumno = new Alumno();
       _asignaturas = new ObservableCollection<Asignatura>(_alumno.Asignaturas);
+      DataContext = this;
     }
 
     public VentanaAlumnos(Alumno a)
     {
       InitializeComponent();
-      
       _alumno = a;
       Task.Factory.StartNew(() => ObtenerAsignaturas());
+      DataContext = this;
     }
 
     private void ObtenerAsignaturas()

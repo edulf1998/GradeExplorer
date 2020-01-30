@@ -2,6 +2,7 @@
 using GradeExplorer.Utils;
 using System;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Threading;
@@ -45,7 +46,7 @@ namespace GradeExplorer.ViewModels.PagesVM
       IsLoading = true;
       using (var session = NHibernateUtil.GetSessionFactory().OpenSession())
       {
-        var asignaturas = session.CreateQuery("from Asignatura a").List<Asignatura>();
+        var asignaturas = session.QueryOver<Asignatura>().List();
         foreach (Asignatura a in asignaturas)
         {
           Application.Current.Dispatcher.BeginInvoke(new Action(() =>

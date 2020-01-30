@@ -8,11 +8,24 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="InicioPage">
     <StackPanel Orientation="Vertical">
-        <TextBlock Style="{StaticResource SubheaderTextBlockStyle}" HorizontalAlignment="Center">PANTALLA DE INICIO</TextBlock>
+        <TextBlock Style="{StaticResource SubheaderTextBlockStyle}" HorizontalAlignment="Center">¡Bienvenido!</TextBlock>
         <TextBlock Style="{StaticResource BodyTextBlockStyle}" Padding="5, 0, 5, 0">
             GradeExplorer permite ver y editar la información de un aula de un centro. ¡Pruébalo tú mismo! Puedes navegar por la aplicación con el 
             menú lateral de la izquierda.
         </TextBlock>
         <Image Source="pack://application:,,,/Res/Icon/notebook.png" Width="200" Height="100" Margin="0, 15, 0, 0"/>
+
+        <Border Padding="0, 15, 0, 0">
+            <Grid HorizontalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="15" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Click="CargarDatosEjemplo">Cargar Datos Ejemplo</Button>
+                <Button Grid.Column="2"  Click="VaciarBaseDatos">Vaciar Base de Datos</Button>
+            </Grid>
+        </Border>
     </StackPanel>
 </Page>
+    

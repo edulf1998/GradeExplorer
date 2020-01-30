@@ -4,11 +4,63 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:GradeExplorer.Views.Pages"
+      xmlns:ui="http://schemas.modernwpf.com/2019"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PuntuacionesPage">
 
-    <Grid>
-        
-    </Grid>
+    <Page.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis" />
+    </Page.Resources>
+
+    <DockPanel>
+        <StatusBar DockPanel.Dock="Bottom" Visibility="{Binding IsLoading, Converter={StaticResource BoolToVis}}">
+            <StatusBarItem>
+                Cargando datos...
+            </StatusBarItem>
+            <StatusBarItem Margin="15, 0, 0, 0">
+                <ProgressBar IsIndeterminate="True" Width="125"/>
+            </StatusBarItem>
+        </StatusBar>
+
+        <StackPanel>
+            <TextBlock Style="{StaticResource SubheaderTextBlockStyle}" HorizontalAlignment="Center">Puntuaciones Obtenidas</TextBlock>
+            <ui:CommandBar DefaultLabelPosition="Bottom" Margin="0, 5, 0, 5" HorizontalAlignment="Center" OverflowButtonVisibility="Auto">
+                <ui:AppBarButton Icon="Add" Label="Crear" Command="{Binding AddCommand}"/>
+                <ui:AppBarSeparator />
+
+                <ui:AppBarButton Icon="Edit" Label="Editar" Command="{Binding EditCommand}"/>
+                <ui:AppBarSeparator />
+
+                <ui:AppBarButton Icon="Delete" Label="Eliminar" Command="{Binding DeleteCommand}"/>
+            </ui:CommandBar>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <ListBox 
+                    Grid.Column="0"
+                    ItemsSource="{Binding Alumnos}"
+                    SelectedItem="{Binding AlumnoSeleccionado}"
+                    >
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding Path=Nombre}"/>
+                                <TextBlock Text="{Binding Path=Apellido1}"/>
+                                <TextBlock Text="{Binding Path=Apellido2}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate> 
+                </ListBox>
+                <ListBox 
+                    Grid.Column="1"
+                    ItemsSource="{Binding AlumnoSeleccionado.Notas}"
+                    >
+
+                </ListBox>
+            </Grid>
+        </StackPanel>
+    </DockPanel>
 </Page>

@@ -55,7 +55,22 @@ namespace GradeExplorer.ViewModels.PagesVM
 
     private void DeleteAlumno()
     {
+      MessageBoxResult dialogResult = MessageBox.Show("¡Esta operación no se puede deshacer!", "¿Borrar alumno?", MessageBoxButton.YesNo);
+      if (dialogResult == MessageBoxResult.Yes)
+      {
+        using (var session = NHibernateUtil.GetSessionFactory().OpenSession())
+        {
+          using (var transaction = session.BeginTransaction())
+          {
+            session.Delete(AlumnoSeleccionado);
+            transaction.Commit();
 
+            // Vaciar lista y volver a obtener los datos
+            _listaAlumnos.Clear();
+            Task.Factory.StartNew(() => ObtenerAlumnos());
+          }
+        }
+      }
     }
 
     private bool CanEditAlumno()
