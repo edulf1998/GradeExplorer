@@ -30,19 +30,26 @@ namespace GradeExplorer.ViewModels.PagesVM
       set => SetField(ref _alumnoSeleccionado, value);
     }
 
+    private ObservableCollection<Nota> _notas;
+    public ObservableCollection<Nota> Notas
+    {
+      get => _notas;
+      set => SetField(ref _notas, value);
+    }
+
     public Nota NotaSeleccionada { get; set; }
 
-    private RelayCommand AddCommand { get; set; }
-    private RelayCommand EditCommand { get; set; }
-    private RelayCommand DeleteCommand { get; set; }
+    //private RelayCommand AddCommand { get; set; }
+    //private RelayCommand EditCommand { get; set; }
+    //private RelayCommand DeleteCommand { get; set; }
 
     public PuntuacionesPageVM()
     {
       _alumnos = new ObservableCollection<Alumno>();
 
-      AddCommand = new RelayCommand((a) => AddNota());
-      EditCommand = new RelayCommand((a) => EditNota(), (a) => CanEditNota());
-      DeleteCommand = new RelayCommand((a) => DeleteNota(), (a) => CanDeleteNota());
+      //AddCommand = new RelayCommand((a) => AddNota());
+      //EditCommand = new RelayCommand((a) => EditNota(), (a) => CanEditNota());
+      //DeleteCommand = new RelayCommand((a) => DeleteNota(), (a) => CanDeleteNota());
 
       Task.Factory.StartNew(() => ObtenerAlumnosNotas());
     }

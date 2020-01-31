@@ -8,7 +8,7 @@
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
         
-        Title="Ventana Alumno" Height="550" Width="400">
+        Title="Ventana Alumno" Height="450" Width="400">
     <Border
         Padding="15"
         >
@@ -25,9 +25,9 @@
                 <TextBlock Style="{StaticResource BodyTextBlockStyle}">Apellido 2</TextBlock>
                 <TextBox Text="{Binding Alumno.Apellido2}"></TextBox>
 
-                <ListBox ItemsSource="{Binding Asignaturas}">
-                    
-                </ListBox>
+                <Border Padding="0, 15, 0, 0">
+                    <Button HorizontalAlignment="Stretch" Command="{Binding ConfirmCommand}">Confirmar</Button>
+                </Border>
             </StackPanel>
         </ScrollViewer>
     </Border>

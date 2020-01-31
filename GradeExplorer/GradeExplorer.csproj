@@ -116,6 +116,7 @@
     <Compile Include="Models\Mappings\MapaProfesor.cs" />
     <Compile Include="Models\Nota.cs" />
     <Compile Include="Tests\TestNHibernateUtil.cs" />
+    <Compile Include="Utils\CloneMachine.cs" />
     <Compile Include="Utils\ModelBase.cs" />
     <Compile Include="Models\Profesor.cs" />
     <Compile Include="Utils\NHibernateUtil.cs" />
@@ -125,6 +126,8 @@
     <Compile Include="ViewModels\PagesVM\AsignaturasPageVM.cs" />
     <Compile Include="ViewModels\PagesVM\PersonalPageVM.cs" />
     <Compile Include="ViewModels\PagesVM\PuntuacionesPageVM.cs" />
+    <Compile Include="ViewModels\WindowsVM\VentanaAlumnosVM.cs" />
+    <Compile Include="ViewModels\WindowsVM\VentanaPersonalVM.cs" />
     <Compile Include="Views\Main.xaml.cs">
       <DependentUpon>Main.xaml</DependentUpon>
     </Compile>
@@ -145,6 +148,9 @@
     </Compile>
     <Compile Include="Views\Windows\VentanaAlumnos.xaml.cs">
       <DependentUpon>VentanaAlumnos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\VentanaPersonal.xaml.cs">
+      <DependentUpon>VentanaPersonal.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -219,6 +225,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Windows\VentanaAlumnos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\VentanaPersonal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

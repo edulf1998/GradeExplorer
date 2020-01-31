@@ -1,5 +1,6 @@
 ﻿using GradeExplorer.Models;
 using GradeExplorer.Utils;
+using GradeExplorer.Views.Windows;
 using System;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
@@ -42,17 +43,42 @@ namespace GradeExplorer.ViewModels.PagesVM
 
     private void AddProfesor()
     {
-      
+      var ventana = new VentanaPersonal();
+      ventana.ShowDialog();
+
+      // Vaciar lista y volver a obtener los datos
+      _profesores.Clear();
+      Task.Factory.StartNew(() => ObtenerPersonal());
     }
 
     private void EditProfesor()
     {
+      var ventana = new VentanaPersonal(ProfesorSeleccionado);
+      ventana.ShowDialog();
 
+      // Vaciar lista y volver a obtener los datos
+      _profesores.Clear();
+      Task.Factory.StartNew(() => ObtenerPersonal());
     }
 
     private void DeleteProfesor()
     {
+      MessageBoxResult dialogResult = MessageBox.Show("¡Esta operación no se puede deshacer!", "¿Borrar alumno?", MessageBoxButton.YesNo);
+      if (dialogResult == MessageBoxResult.Yes)
+      {
+        using (var session = NHibernateUtil.GetSessionFactory().OpenSession())
+        {
+          using (var transaction = session.BeginTransaction())
+          {
+            session.Delete(ProfesorSeleccionado);
+            transaction.Commit();
 
+            // Vaciar lista y volver a obtener los datos
+            _profesores.Clear();
+            Task.Factory.StartNew(() => ObtenerPersonal());
+          }
+        }
+      }
     }
 
     private bool CanEdit()

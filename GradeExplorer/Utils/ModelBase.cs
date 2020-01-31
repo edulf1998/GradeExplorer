@@ -5,13 +5,9 @@ using System.Runtime.CompilerServices;
 
 namespace GradeExplorer.Utils
 {
-  public class ModelBase : INotifyPropertyChanged, ICloneable
+  public class ModelBase : INotifyPropertyChanged
   {
     public virtual event PropertyChangedEventHandler PropertyChanged;
-    public virtual object Clone()
-    {
-      return new { };
-    }
 
     protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
     {

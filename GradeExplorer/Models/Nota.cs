@@ -22,9 +22,9 @@ namespace GradeExplorer.Models
 
     // Relaciones
 
-      /// <summary>
-      /// Alumno autor del ejercicio
-      /// </summary>
+    /// <summary>
+    /// Alumno autor del ejercicio
+    /// </summary>
     private Alumno _alumno;
     public virtual Alumno Alumno
     {

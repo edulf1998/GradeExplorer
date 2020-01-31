@@ -7,7 +7,8 @@
       xmlns:ui="http://schemas.modernwpf.com/2019"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PuntuacionesPage">
+      Title="PuntuacionesPage"
+      >
 
     <Page.Resources>
         <BooleanToVisibilityConverter x:Key="BoolToVis" />
@@ -25,7 +26,7 @@
 
         <StackPanel>
             <TextBlock Style="{StaticResource SubheaderTextBlockStyle}" HorizontalAlignment="Center">Puntuaciones Obtenidas</TextBlock>
-            <ui:CommandBar DefaultLabelPosition="Bottom" Margin="0, 5, 0, 5" HorizontalAlignment="Center" OverflowButtonVisibility="Auto">
+            <!--<ui:CommandBar DefaultLabelPosition="Bottom" Margin="0, 5, 0, 5" HorizontalAlignment="Center" OverflowButtonVisibility="Auto">
                 <ui:AppBarButton Icon="Add" Label="Crear" Command="{Binding AddCommand}"/>
                 <ui:AppBarSeparator />
 
@@ -33,8 +34,8 @@
                 <ui:AppBarSeparator />
 
                 <ui:AppBarButton Icon="Delete" Label="Eliminar" Command="{Binding DeleteCommand}"/>
-            </ui:CommandBar>
-            <Grid>
+            </ui:CommandBar>-->
+            <Grid Margin="0, 5, 0, 5">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
@@ -48,17 +49,27 @@
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
                                 <TextBlock Text="{Binding Path=Nombre}"/>
+                                <Border Padding="5, 0, 5, 0">
+                                    <TextBlock></TextBlock>
+                                </Border>
                                 <TextBlock Text="{Binding Path=Apellido1}"/>
-                                <TextBlock Text="{Binding Path=Apellido2}"/>
                             </StackPanel>
                         </DataTemplate>
-                    </ListBox.ItemTemplate> 
+                    </ListBox.ItemTemplate>
                 </ListBox>
                 <ListBox 
                     Grid.Column="1"
-                    ItemsSource="{Binding AlumnoSeleccionado.Notas}"
+                    ItemsSource="{Binding Notas}"
                     >
-
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Text="{Binding Path=Ejercicio.Descripcion}"/>
+                                <TextBlock>::</TextBlock>
+                                <TextBlock Text="{Binding Path=Puntuacion}" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
                 </ListBox>
             </Grid>
         </StackPanel>

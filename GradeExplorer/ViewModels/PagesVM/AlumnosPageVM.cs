@@ -44,13 +44,21 @@ namespace GradeExplorer.ViewModels.PagesVM
     private void AddAlumno()
     {
       var ventana = new VentanaAlumnos();
-      ventana.Show();
+      ventana.ShowDialog();
+
+      // Vaciar lista y volver a obtener los datos
+      _listaAlumnos.Clear();
+      Task.Factory.StartNew(() => ObtenerAlumnos());
     }
 
     private void EditAlumno()
     {
       var ventana = new VentanaAlumnos(AlumnoSeleccionado);
-      ventana.Show();
+      ventana.ShowDialog();
+
+      // Vaciar lista y volver a obtener los datos
+      _listaAlumnos.Clear();
+      Task.Factory.StartNew(() => ObtenerAlumnos());
     }
 
     private void DeleteAlumno()

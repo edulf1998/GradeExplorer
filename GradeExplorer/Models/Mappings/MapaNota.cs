@@ -8,8 +8,6 @@ namespace GradeExplorer.Models.Mappings
     {
       Table("NotaEjercicio");
 
-      
-
       CompositeId()
       .KeyReference(n => n.Alumno)
       .KeyReference(n => n.Ejercicio); // La clave primaria es compuesta, y relaciona un Ejercicio con un Alumno

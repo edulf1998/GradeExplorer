@@ -5,6 +5,7 @@ using NHibernate;
 using NHibernate.Cfg;
 using NHibernate.PropertyChanged;
 using NHibernate.Tool.hbm2ddl;
+using System;
 using System.IO;
 
 namespace GradeExplorer.Utils
@@ -62,7 +63,7 @@ namespace GradeExplorer.Utils
 
     public static void InsertarDatosDemo()
     {
-      using (var sessionFactory = instance)
+      using (var sessionFactory = GetSessionFactory())
       {
         using (var session = sessionFactory.OpenSession())
         {
@@ -103,6 +104,14 @@ namespace GradeExplorer.Utils
             aS3.Alumnos.Add(a3);
             aS3.Alumnos.Add(a4);
 
+            Ejercicio ej1 = new Ejercicio() { Asignatura = aS1, Descripcion = "UT01 - 01", FechaLimite = DateTime.Now };
+            Ejercicio ej2 = new Ejercicio() { Asignatura = aS1, Descripcion = "UT01 - 02", FechaLimite = DateTime.Now };
+            Ejercicio ej3 = new Ejercicio() { Asignatura = aS1, Descripcion = "UT01 - 03", FechaLimite = DateTime.Now };
+
+            Nota n1 = new Nota() { Alumno = a1, Ejercicio = ej1, Puntuacion = 8.67f };
+            Nota n2 = new Nota() { Alumno = a1, Ejercicio = ej2, Puntuacion = 5.47f };
+            Nota n3 = new Nota() { Alumno = a1, Ejercicio = ej3, Puntuacion = 4.78f };
+
             session.SaveOrUpdate(a1);
             session.SaveOrUpdate(a2);
             session.SaveOrUpdate(a3);
@@ -117,6 +126,14 @@ namespace GradeExplorer.Utils
             session.SaveOrUpdate(aS3);
             session.SaveOrUpdate(aS4);
             session.SaveOrUpdate(aS5);
+
+            session.SaveOrUpdate(ej1);
+            session.SaveOrUpdate(ej2);
+            session.SaveOrUpdate(ej3);
+
+            session.SaveOrUpdate(n1);
+            session.SaveOrUpdate(n2);
+            session.SaveOrUpdate(n3);
 
             transaction.Commit();
           }
