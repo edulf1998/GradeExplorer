@@ -1,4 +1,5 @@
-﻿using GradeExplorer.Views;
+﻿using GradeExplorer.Utils;
+using GradeExplorer.Views;
 using System.Windows;
 
 namespace GradeExplorer
@@ -22,6 +23,12 @@ namespace GradeExplorer
       double windowHeight = ventana.Height;
       ventana.Left = (screenWidth / 2) - (windowWidth / 2);
       ventana.Top = (screenHeight / 2) - (windowHeight / 2);
+
+      // Crear base de datos si no existe, ya que la usaremos de aqui en adelante
+      using (SchoolContext c = new SchoolContext())
+      {
+        c.Database.CreateIfNotExists();
+      }
 
       ventana.Show();
     }

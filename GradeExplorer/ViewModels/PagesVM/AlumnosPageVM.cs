@@ -1,11 +1,9 @@
 ﻿using GradeExplorer.Models;
 using GradeExplorer.Utils;
 using GradeExplorer.Views.Windows;
-using System;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Threading;
 
 namespace GradeExplorer.ViewModels.PagesVM
 {
@@ -66,18 +64,6 @@ namespace GradeExplorer.ViewModels.PagesVM
       MessageBoxResult dialogResult = MessageBox.Show("¡Esta operación no se puede deshacer!", "¿Borrar alumno?", MessageBoxButton.YesNo);
       if (dialogResult == MessageBoxResult.Yes)
       {
-        using (var session = NHibernateUtil.GetSessionFactory().OpenSession())
-        {
-          using (var transaction = session.BeginTransaction())
-          {
-            session.Delete(AlumnoSeleccionado);
-            transaction.Commit();
-
-            // Vaciar lista y volver a obtener los datos
-            _listaAlumnos.Clear();
-            Task.Factory.StartNew(() => ObtenerAlumnos());
-          }
-        }
       }
     }
 
@@ -94,20 +80,6 @@ namespace GradeExplorer.ViewModels.PagesVM
     private void ObtenerAlumnos()
     {
       IsLoading = true;
-      using (var sessionFactory = NHibernateUtil.GetSessionFactory())
-      {
-        using (var session = sessionFactory.OpenSession())
-        {
-          var alumnos = session.CreateQuery("from Alumno a").List<Alumno>();
-          foreach (Alumno a in alumnos)
-          {
-            Application.Current.Dispatcher.BeginInvoke(new Action(() =>
-            {
-              _listaAlumnos.Add(a);
-            }), DispatcherPriority.Background);
-          }
-        }
-      }
       IsLoading = false;
     }
   }

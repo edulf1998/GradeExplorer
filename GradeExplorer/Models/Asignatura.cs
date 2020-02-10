@@ -1,5 +1,7 @@
 ﻿using GradeExplorer.Utils;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GradeExplorer.Models
 {
@@ -7,15 +9,16 @@ namespace GradeExplorer.Models
   /// Clase de modelo asociada a la tabla "Asignatura" 
   /// de la base de datos.
   /// </summary>
+  [Table("Asignaturas")]
   public class Asignatura : ModelBase
   {
 
     private int _id;
-
     /// <summary>
     /// ID único de la Asignatura.
     /// </summary>
-    public virtual int Id
+    [Key]
+    public int Id
     {
       get => _id;
       set => SetField(ref _id, value);

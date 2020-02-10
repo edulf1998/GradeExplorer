@@ -1,11 +1,9 @@
 ﻿using GradeExplorer.Models;
 using GradeExplorer.Utils;
 using GradeExplorer.Views.Windows;
-using System;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Threading;
 
 namespace GradeExplorer.ViewModels.PagesVM
 {
@@ -66,18 +64,6 @@ namespace GradeExplorer.ViewModels.PagesVM
       MessageBoxResult dialogResult = MessageBox.Show("¡Esta operación no se puede deshacer!", "¿Borrar alumno?", MessageBoxButton.YesNo);
       if (dialogResult == MessageBoxResult.Yes)
       {
-        using (var session = NHibernateUtil.GetSessionFactory().OpenSession())
-        {
-          using (var transaction = session.BeginTransaction())
-          {
-            session.Delete(ProfesorSeleccionado);
-            transaction.Commit();
-
-            // Vaciar lista y volver a obtener los datos
-            _profesores.Clear();
-            Task.Factory.StartNew(() => ObtenerPersonal());
-          }
-        }
       }
     }
 
@@ -94,17 +80,6 @@ namespace GradeExplorer.ViewModels.PagesVM
     private void ObtenerPersonal()
     {
       IsLoading = true;
-      using (var session = NHibernateUtil.GetSessionFactory().OpenSession())
-      {
-        var profesores = session.CreateQuery("from Profesor p").List<Profesor>();
-        foreach (Profesor p in profesores)
-        {
-          Application.Current.Dispatcher.BeginInvoke(new Action(() =>
-          {
-            _profesores.Add(p);
-          }), DispatcherPriority.Background);
-        }
-      }
       IsLoading = false;
     }
   }

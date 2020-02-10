@@ -28,14 +28,6 @@ namespace GradeExplorer.ViewModels.WindowsVM
 
     private void Guardar()
     {
-      using (var session = NHibernateUtil.GetSessionFactory().OpenSession())
-      {
-        using (var transaction = session.BeginTransaction())
-        {
-          session.SaveOrUpdate(_profesor);
-          transaction.Commit();
-        }
-      }
     }
   }
 }

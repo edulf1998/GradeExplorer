@@ -1,10 +1,7 @@
 ﻿using GradeExplorer.Models;
 using GradeExplorer.Utils;
-using System;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Threading;
 
 namespace GradeExplorer.ViewModels.PagesVM
 {
@@ -39,17 +36,17 @@ namespace GradeExplorer.ViewModels.PagesVM
 
     public Nota NotaSeleccionada { get; set; }
 
-    //private RelayCommand AddCommand { get; set; }
-    //private RelayCommand EditCommand { get; set; }
-    //private RelayCommand DeleteCommand { get; set; }
+    private RelayCommand AddCommand { get; set; }
+    private RelayCommand EditCommand { get; set; }
+    private RelayCommand DeleteCommand { get; set; }
 
     public PuntuacionesPageVM()
     {
       _alumnos = new ObservableCollection<Alumno>();
 
-      //AddCommand = new RelayCommand((a) => AddNota());
-      //EditCommand = new RelayCommand((a) => EditNota(), (a) => CanEditNota());
-      //DeleteCommand = new RelayCommand((a) => DeleteNota(), (a) => CanDeleteNota());
+      AddCommand = new RelayCommand((a) => AddNota());
+      EditCommand = new RelayCommand((a) => EditNota(), (a) => CanEditNota());
+      DeleteCommand = new RelayCommand((a) => DeleteNota(), (a) => CanDeleteNota());
 
       Task.Factory.StartNew(() => ObtenerAlumnosNotas());
     }
@@ -82,17 +79,6 @@ namespace GradeExplorer.ViewModels.PagesVM
     private void ObtenerAlumnosNotas()
     {
       IsLoading = true;
-      using (var session = NHibernateUtil.GetSessionFactory().OpenSession())
-      {
-        var alumnos = session.QueryOver<Alumno>().List();
-        foreach (Alumno a in alumnos)
-        {
-          Application.Current.Dispatcher.BeginInvoke(new Action(() =>
-          {
-            _alumnos.Add(a);
-          }), DispatcherPriority.Background);
-        }
-      }
       IsLoading = false;
     }
   }

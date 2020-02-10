@@ -1,5 +1,7 @@
 ﻿using GradeExplorer.Utils;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GradeExplorer.Models
 {
@@ -8,13 +10,14 @@ namespace GradeExplorer.Models
   /// de la base de datos. Representa una entidad debil, por lo que 
   /// no posee identificadores únicos.
   /// </summary>
+  [Table("Notas")]
   public class Nota : ModelBase
   {
     /// <summary>
     /// Puntuación obtenida por el Alumno que ha realizado el Ejercicio.
     /// </summary>
     private float _puntuacion;
-    public virtual float Puntuacion
+    public float Puntuacion
     {
       get => _puntuacion;
       set => SetField(ref _puntuacion, value);
@@ -26,6 +29,8 @@ namespace GradeExplorer.Models
     /// Alumno autor del ejercicio
     /// </summary>
     private Alumno _alumno;
+    [Key]
+    [ForeignKey("Notas")]
     public virtual Alumno Alumno
     {
       get => _alumno;
@@ -36,6 +41,7 @@ namespace GradeExplorer.Models
     /// Ejercicio al que esta nota está asociada.
     /// </summary>
     private Ejercicio _ejercicio;
+    [Key]
     public virtual Ejercicio Ejercicio
     {
       get => _ejercicio;

@@ -1,5 +1,7 @@
 ﻿using GradeExplorer.Utils;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GradeExplorer.Models
 {
@@ -7,13 +9,16 @@ namespace GradeExplorer.Models
   /// Clase de modelo asociada a la tabla "Alumno" 
   /// de la base de datos.
   /// </summary>
+  [Table("Alumnos")]
   public class Alumno : ModelBase
   {
     /// <summary>
     /// ID único de cada Alumno
     /// </summary>
     private int _id;
-    public virtual int Id
+
+    [Key]
+    public int Id
     {
       get => _id;
       set => SetField(ref _id, value);
@@ -23,7 +28,9 @@ namespace GradeExplorer.Models
     /// Nombre del Alumno.
     /// </summary>
     private string _nombre;
-    public virtual string Nombre
+
+    [Column("Nombre")]
+    public string Nombre
     {
       get => _nombre;
       set => SetField(ref _nombre, value);
@@ -33,7 +40,9 @@ namespace GradeExplorer.Models
     /// Primer apellido del Alumno.
     /// </summary>
     private string _apellido1;
-    public virtual string Apellido1
+
+    [Column("Apellido1")]
+    public string Apellido1
     {
       get => _apellido1;
       set => SetField(ref _apellido1, value);
@@ -43,7 +52,9 @@ namespace GradeExplorer.Models
     /// Segundo apellido del Alumno.
     /// </summary>
     private string _apellido2;
-    public virtual string Apellido2
+
+    [Column("Apellido2")]
+    public string Apellido2
     {
       get => _apellido2;
       set => SetField(ref _apellido2, value);
@@ -51,9 +62,9 @@ namespace GradeExplorer.Models
 
     // Relaciones
 
-      /// <summary>
-      /// Listado de Asignaturas que cursa el Alumno.
-      /// </summary>
+    /// <summary>
+    /// Listado de Asignaturas que cursa el Alumno.
+    /// </summary>
     private IList<Asignatura> _asignaturas;
     public virtual IList<Asignatura> Asignaturas
     {
