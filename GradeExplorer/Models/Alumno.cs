@@ -12,23 +12,24 @@ namespace GradeExplorer.Models
   [Table("Alumnos")]
   public class Alumno : ModelBase
   {
+
+    private int _id;
     /// <summary>
     /// ID único de cada Alumno
     /// </summary>
-    private int _id;
-
     [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id
     {
       get => _id;
       set => SetField(ref _id, value);
     }
 
+
+    private string _nombre;
     /// <summary>
     /// Nombre del Alumno.
     /// </summary>
-    private string _nombre;
-
     [Column("Nombre")]
     public string Nombre
     {
@@ -36,11 +37,10 @@ namespace GradeExplorer.Models
       set => SetField(ref _nombre, value);
     }
 
+    private string _apellido1;
     /// <summary>
     /// Primer apellido del Alumno.
     /// </summary>
-    private string _apellido1;
-
     [Column("Apellido1")]
     public string Apellido1
     {
@@ -48,11 +48,10 @@ namespace GradeExplorer.Models
       set => SetField(ref _apellido1, value);
     }
 
+    private string _apellido2;
     /// <summary>
     /// Segundo apellido del Alumno.
     /// </summary>
-    private string _apellido2;
-
     [Column("Apellido2")]
     public string Apellido2
     {
@@ -62,20 +61,22 @@ namespace GradeExplorer.Models
 
     // Relaciones
 
+    private IList<Asignatura> _asignaturas;
     /// <summary>
     /// Listado de Asignaturas que cursa el Alumno.
     /// </summary>
-    private IList<Asignatura> _asignaturas;
+    [InverseProperty("Alumnos")]
     public virtual IList<Asignatura> Asignaturas
     {
       get => _asignaturas;
       set => SetField(ref _asignaturas, value);
     }
 
+    private IList<Nota> _notas;
     /// <summary>
     /// Notas asociadas a este Alumno.
     /// </summary>
-    private IList<Nota> _notas;
+    [InverseProperty("Alumno")]
     public virtual IList<Nota> Notas
     {
       get => _notas;

@@ -367,6 +367,19 @@ references:
   isSpec: "True"
   fullName: GradeExplorer.Models.Nota.GetHashCode
   nameWithType: Nota.GetHashCode
+- uid: GradeExplorer.Models.Nota.Id
+  name: Id
+  href: api/GradeExplorer.Models.Nota.html#GradeExplorer_Models_Nota_Id
+  commentId: P:GradeExplorer.Models.Nota.Id
+  fullName: GradeExplorer.Models.Nota.Id
+  nameWithType: Nota.Id
+- uid: GradeExplorer.Models.Nota.Id*
+  name: Id
+  href: api/GradeExplorer.Models.Nota.html#GradeExplorer_Models_Nota_Id_
+  commentId: Overload:GradeExplorer.Models.Nota.Id
+  isSpec: "True"
+  fullName: GradeExplorer.Models.Nota.Id
+  nameWithType: Nota.Id
 - uid: GradeExplorer.Models.Nota.Puntuacion
   name: Puntuacion
   href: api/GradeExplorer.Models.Nota.html#GradeExplorer_Models_Nota_Puntuacion

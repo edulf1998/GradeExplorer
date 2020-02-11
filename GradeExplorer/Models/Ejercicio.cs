@@ -1,6 +1,8 @@
 ﻿using GradeExplorer.Utils;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GradeExplorer.Models
 {
@@ -10,30 +12,34 @@ namespace GradeExplorer.Models
   /// </summary>
   public class Ejercicio : ModelBase
   {
+    private int _id;
     /// <summary>
     /// ID único del Ejercicio
     /// </summary>
-    private int _id;
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public virtual int Id
     {
       get => _id;
       set => SetField(ref _id, value);
     }
 
+    private string _descripcion;
     /// <summary>
     /// Descripción del Ejercicio.
     /// </summary>
-    private string _descripcion;
+    [Column("Desc")]
     public virtual string Descripcion
     {
       get => _descripcion;
       set => SetField(ref _descripcion, value);
     }
 
+    private DateTime _fechaLimite;
     /// <summary>
     /// Fecha límite de entrega del Ejercicio.
     /// </summary>
-    private DateTime _fechaLimite;
+    [Column("Fecha")]
     public virtual DateTime FechaLimite
     {
       get => _fechaLimite;
@@ -42,20 +48,22 @@ namespace GradeExplorer.Models
 
     // Relaciones
 
+    private Asignatura _asignatura;
     /// <summary>
     /// Asignatura asociada al Ejercicio.
     /// </summary>
-    private Asignatura _asignatura;
+    [InverseProperty("Ejercicios")]
     public virtual Asignatura Asignatura
     {
       get => _asignatura;
       set => SetField(ref _asignatura, value);
     }
 
+    private IList<Nota> _notas;
     /// <summary>
     /// Listado de Notas que los Alumnos han obtenido para este Ejercicio.
     /// </summary>
-    private IList<Nota> _notas;
+    [InverseProperty("Ejercicio")]
     public virtual IList<Nota> Notas
     {
       get => _notas;

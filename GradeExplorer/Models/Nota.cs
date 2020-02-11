@@ -13,10 +13,22 @@ namespace GradeExplorer.Models
   [Table("Notas")]
   public class Nota : ModelBase
   {
+    private int _id;
+    /// <summary>
+    /// Id de la Nota
+    /// </summary>
+    [Key]
+    public int Id
+    {
+      get => _id;
+      set => SetField(ref _id, value);
+    }
+
+    private float _puntuacion;
     /// <summary>
     /// Puntuación obtenida por el Alumno que ha realizado el Ejercicio.
     /// </summary>
-    private float _puntuacion;
+    [Column("Puntuacion")]
     public float Puntuacion
     {
       get => _puntuacion;
@@ -29,19 +41,18 @@ namespace GradeExplorer.Models
     /// Alumno autor del ejercicio
     /// </summary>
     private Alumno _alumno;
-    [Key]
-    [ForeignKey("Notas")]
+    [InverseProperty("Notas")]
     public virtual Alumno Alumno
     {
       get => _alumno;
       set => SetField(ref _alumno, value);
     }
 
+    private Ejercicio _ejercicio;
     /// <summary>
     /// Ejercicio al que esta nota está asociada.
     /// </summary>
-    private Ejercicio _ejercicio;
-    [Key]
+    [InverseProperty("Notas")]
     public virtual Ejercicio Ejercicio
     {
       get => _ejercicio;

@@ -134,7 +134,7 @@ public class Alumno : ModelBase, INotifyPropertyChanged</code></pre>
     <a href="https://github.com/edulf1998/GradeExplorer/new/master/apiSpec/new?filename=GradeExplorer_Models_Alumno__ctor.md&amp;value=---%0Auid%3A%20GradeExplorer.Models.Alumno.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/Models/Alumno.cs/#L85">View Source</a>
+    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/Models/Alumno.cs/#L86">View Source</a>
   </span>
   <a id="GradeExplorer_Models_Alumno__ctor_" data-uid="GradeExplorer.Models.Alumno.#ctor*"></a>
   <h4 id="GradeExplorer_Models_Alumno__ctor" data-uid="GradeExplorer.Models.Alumno.#ctor">Alumno()</h4>
@@ -155,7 +155,8 @@ public class Alumno : ModelBase, INotifyPropertyChanged</code></pre>
   </span>
   <a id="GradeExplorer_Models_Alumno_Apellido1_" data-uid="GradeExplorer.Models.Alumno.Apellido1*"></a>
   <h4 id="GradeExplorer_Models_Alumno_Apellido1" data-uid="GradeExplorer.Models.Alumno.Apellido1">Apellido1</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Primer apellido del Alumno.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -182,11 +183,12 @@ public string Apellido1 { get; set; }</code></pre>
     <a href="https://github.com/edulf1998/GradeExplorer/new/master/apiSpec/new?filename=GradeExplorer_Models_Alumno_Apellido2.md&amp;value=---%0Auid%3A%20GradeExplorer.Models.Alumno.Apellido2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/Models/Alumno.cs/#L56">View Source</a>
+    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/Models/Alumno.cs/#L55">View Source</a>
   </span>
   <a id="GradeExplorer_Models_Alumno_Apellido2_" data-uid="GradeExplorer.Models.Alumno.Apellido2*"></a>
   <h4 id="GradeExplorer_Models_Alumno_Apellido2" data-uid="GradeExplorer.Models.Alumno.Apellido2">Apellido2</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Segundo apellido del Alumno.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -213,15 +215,17 @@ public string Apellido2 { get; set; }</code></pre>
     <a href="https://github.com/edulf1998/GradeExplorer/new/master/apiSpec/new?filename=GradeExplorer_Models_Alumno_Asignaturas.md&amp;value=---%0Auid%3A%20GradeExplorer.Models.Alumno.Asignaturas%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/Models/Alumno.cs/#L69">View Source</a>
+    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/Models/Alumno.cs/#L68">View Source</a>
   </span>
   <a id="GradeExplorer_Models_Alumno_Asignaturas_" data-uid="GradeExplorer.Models.Alumno.Asignaturas*"></a>
   <h4 id="GradeExplorer_Models_Alumno_Asignaturas" data-uid="GradeExplorer.Models.Alumno.Asignaturas">Asignaturas</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Listado de Asignaturas que cursa el Alumno.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IList&lt;Asignatura&gt; Asignaturas { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[InverseProperty(&quot;Alumnos&quot;)]
+public virtual IList&lt;Asignatura&gt; Asignaturas { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -247,11 +251,13 @@ public string Apellido2 { get; set; }</code></pre>
   </span>
   <a id="GradeExplorer_Models_Alumno_Id_" data-uid="GradeExplorer.Models.Alumno.Id*"></a>
   <h4 id="GradeExplorer_Models_Alumno_Id" data-uid="GradeExplorer.Models.Alumno.Id">Id</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>ID único de cada Alumno</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Key]
+[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 public int Id { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
@@ -274,11 +280,12 @@ public int Id { get; set; }</code></pre>
     <a href="https://github.com/edulf1998/GradeExplorer/new/master/apiSpec/new?filename=GradeExplorer_Models_Alumno_Nombre.md&amp;value=---%0Auid%3A%20GradeExplorer.Models.Alumno.Nombre%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/Models/Alumno.cs/#L32">View Source</a>
+    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/Models/Alumno.cs/#L33">View Source</a>
   </span>
   <a id="GradeExplorer_Models_Alumno_Nombre_" data-uid="GradeExplorer.Models.Alumno.Nombre*"></a>
   <h4 id="GradeExplorer_Models_Alumno_Nombre" data-uid="GradeExplorer.Models.Alumno.Nombre">Nombre</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Nombre del Alumno.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -309,11 +316,13 @@ public string Nombre { get; set; }</code></pre>
   </span>
   <a id="GradeExplorer_Models_Alumno_Notas_" data-uid="GradeExplorer.Models.Alumno.Notas*"></a>
   <h4 id="GradeExplorer_Models_Alumno_Notas" data-uid="GradeExplorer.Models.Alumno.Notas">Notas</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Notas asociadas a este Alumno.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IList&lt;Nota&gt; Notas { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[InverseProperty(&quot;Alumno&quot;)]
+public virtual IList&lt;Nota&gt; Notas { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">

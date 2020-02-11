@@ -129,7 +129,7 @@ public class Nota : ModelBase, INotifyPropertyChanged</code></pre>
     <a href="https://github.com/edulf1998/GradeExplorer/new/master/apiSpec/new?filename=GradeExplorer_Models_Nota_Alumno.md&amp;value=---%0Auid%3A%20GradeExplorer.Models.Nota.Alumno%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/Models/Nota.cs/#L32">View Source</a>
+    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/Models/Nota.cs/#L44">View Source</a>
   </span>
   <a id="GradeExplorer_Models_Nota_Alumno_" data-uid="GradeExplorer.Models.Nota.Alumno*"></a>
   <h4 id="GradeExplorer_Models_Nota_Alumno" data-uid="GradeExplorer.Models.Nota.Alumno">Alumno</h4>
@@ -137,8 +137,7 @@ public class Nota : ModelBase, INotifyPropertyChanged</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Key]
-[ForeignKey(&quot;Notas&quot;)]
+    <pre><code class="lang-csharp hljs">[InverseProperty(&quot;Notas&quot;)]
 public virtual Alumno Alumno { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
@@ -161,16 +160,16 @@ public virtual Alumno Alumno { get; set; }</code></pre>
     <a href="https://github.com/edulf1998/GradeExplorer/new/master/apiSpec/new?filename=GradeExplorer_Models_Nota_Ejercicio.md&amp;value=---%0Auid%3A%20GradeExplorer.Models.Nota.Ejercicio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/Models/Nota.cs/#L44">View Source</a>
+    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/Models/Nota.cs/#L55">View Source</a>
   </span>
   <a id="GradeExplorer_Models_Nota_Ejercicio_" data-uid="GradeExplorer.Models.Nota.Ejercicio*"></a>
   <h4 id="GradeExplorer_Models_Nota_Ejercicio" data-uid="GradeExplorer.Models.Nota.Ejercicio">Ejercicio</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Ejercicio al que esta nota está asociada.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Key]
-[ForeignKey(&quot;Ejercicios&quot;)]
+    <pre><code class="lang-csharp hljs">[InverseProperty(&quot;Notas&quot;)]
 public virtual Ejercicio Ejercicio { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
@@ -190,18 +189,52 @@ public virtual Ejercicio Ejercicio { get; set; }</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/edulf1998/GradeExplorer/new/master/apiSpec/new?filename=GradeExplorer_Models_Nota_Puntuacion.md&amp;value=---%0Auid%3A%20GradeExplorer.Models.Nota.Puntuacion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/edulf1998/GradeExplorer/new/master/apiSpec/new?filename=GradeExplorer_Models_Nota_Id.md&amp;value=---%0Auid%3A%20GradeExplorer.Models.Nota.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/Models/Nota.cs/#L20">View Source</a>
   </span>
-  <a id="GradeExplorer_Models_Nota_Puntuacion_" data-uid="GradeExplorer.Models.Nota.Puntuacion*"></a>
-  <h4 id="GradeExplorer_Models_Nota_Puntuacion" data-uid="GradeExplorer.Models.Nota.Puntuacion">Puntuacion</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="GradeExplorer_Models_Nota_Id_" data-uid="GradeExplorer.Models.Nota.Id*"></a>
+  <h4 id="GradeExplorer_Models_Nota_Id" data-uid="GradeExplorer.Models.Nota.Id">Id</h4>
+  <div class="markdown level1 summary"><p>Id de la Nota</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Puntuacion { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Key]
+public int Id { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/edulf1998/GradeExplorer/new/master/apiSpec/new?filename=GradeExplorer_Models_Nota_Puntuacion.md&amp;value=---%0Auid%3A%20GradeExplorer.Models.Nota.Puntuacion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/Models/Nota.cs/#L31">View Source</a>
+  </span>
+  <a id="GradeExplorer_Models_Nota_Puntuacion_" data-uid="GradeExplorer.Models.Nota.Puntuacion*"></a>
+  <h4 id="GradeExplorer_Models_Nota_Puntuacion" data-uid="GradeExplorer.Models.Nota.Puntuacion">Puntuacion</h4>
+  <div class="markdown level1 summary"><p>Puntuación obtenida por el Alumno que ha realizado el Ejercicio.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Column(&quot;Puntuacion&quot;)]
+public float Puntuacion { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -225,7 +258,7 @@ public virtual Ejercicio Ejercicio { get; set; }</code></pre>
     <a href="https://github.com/edulf1998/GradeExplorer/new/master/apiSpec/new?filename=GradeExplorer_Models_Nota_Equals_System_Object_.md&amp;value=---%0Auid%3A%20GradeExplorer.Models.Nota.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/Models/Nota.cs/#L53">View Source</a>
+    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/Models/Nota.cs/#L63">View Source</a>
   </span>
   <a id="GradeExplorer_Models_Nota_Equals_" data-uid="GradeExplorer.Models.Nota.Equals*"></a>
   <h4 id="GradeExplorer_Models_Nota_Equals_System_Object_" data-uid="GradeExplorer.Models.Nota.Equals(System.Object)">Equals(Object)</h4>
@@ -274,7 +307,7 @@ public virtual Ejercicio Ejercicio { get; set; }</code></pre>
     <a href="https://github.com/edulf1998/GradeExplorer/new/master/apiSpec/new?filename=GradeExplorer_Models_Nota_GetHashCode.md&amp;value=---%0Auid%3A%20GradeExplorer.Models.Nota.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/Models/Nota.cs/#L60">View Source</a>
+    <a href="https://github.com/edulf1998/GradeExplorer/blob/master/GradeExplorer/Models/Nota.cs/#L70">View Source</a>
   </span>
   <a id="GradeExplorer_Models_Nota_GetHashCode_" data-uid="GradeExplorer.Models.Nota.GetHashCode*"></a>
   <h4 id="GradeExplorer_Models_Nota_GetHashCode" data-uid="GradeExplorer.Models.Nota.GetHashCode">GetHashCode()</h4>

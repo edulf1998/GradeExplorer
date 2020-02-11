@@ -18,6 +18,7 @@ namespace GradeExplorer.Models
     /// ID único de la Asignatura.
     /// </summary>
     [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id
     {
       get => _id;
@@ -25,10 +26,10 @@ namespace GradeExplorer.Models
     }
 
     private string _nombre;
-
     /// <summary>
     /// Nombre de la Asignatura.
     /// </summary>
+    [Column("Nombre")]
     public virtual string Nombre
     {
       get => _nombre;
@@ -38,10 +39,10 @@ namespace GradeExplorer.Models
     // Relaciones
 
     private Profesor _profesor;
-
     /// <summary>
     /// Profesor que imparte esta Asignatura
     /// </summary>
+    [InverseProperty("Asignaturas")]
     public virtual Profesor Profesor
     {
       get => _profesor;
@@ -52,6 +53,7 @@ namespace GradeExplorer.Models
     /// <summary>
     /// Listado de Alumnos que cursan esta Asignatura
     /// </summary>
+    [InverseProperty("Asignaturas")]
     public virtual IList<Alumno> Alumnos
     {
       get => _alumnos;
@@ -62,6 +64,7 @@ namespace GradeExplorer.Models
     /// <summary>
     /// Listado de Ejercicios propuestos para esta Asignatura.
     /// </summary>
+    [InverseProperty("Asignatura")]
     public virtual IList<Ejercicio> Ejercicios
     {
       get => _ejercicios;
