@@ -60,7 +60,7 @@
           "hash": "H/YWE4KbO6SjbSQzovmG5w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -72,7 +72,7 @@
           "hash": "ICXJTUfZHdnTwQHkf2LxGw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -84,7 +84,7 @@
           "hash": "DsUYet9SyvdkdAk7XKGOFQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -96,7 +96,7 @@
           "hash": "wOKOqP/vV51jVKOL138fqA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -105,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.Models.Profesor.html",
-          "hash": "KJGYBRWbLLE0ZTpYNMD7Jg=="
+          "hash": "Yelu9yT06ySmU1VXAJ+Ohw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -120,7 +120,7 @@
           "hash": "br+cHq6a8gZFH4mAiKpTEg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -144,7 +144,7 @@
           "hash": "bUkZjl5HEM+z1ZDVCeUkRQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.Utils.SchoolContext.html",
-          "hash": "W0F6snG3JBOar4DpocaUSA=="
+          "hash": "Fh3yo5+Uyaro2ffP8uTy5g=="
         }
       },
       "is_incremental": true,
@@ -180,7 +180,7 @@
           "hash": "WDOMwLd2t1lPN0u/YnZlLg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -192,7 +192,7 @@
           "hash": "DFfkHnoFwWWwAs9SRfFjqg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -204,7 +204,7 @@
           "hash": "Atwn0Lbrpf3WGv8rzONJqQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -213,10 +213,10 @@
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.ViewModels.PagesVM.AsignaturasPageVM.html",
-          "hash": "fx0otUbQBVMU5Idkwhi5mw=="
+          "hash": "widp/Ne5uEf4ojE1zDUDVw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -225,10 +225,10 @@
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.ViewModels.PagesVM.PersonalPageVM.html",
-          "hash": "WLqqo6qdrZGNCeWfl7benA=="
+          "hash": "mlM2T1ZyrpmdEtdeU0QjJg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -240,7 +240,7 @@
           "hash": "OjQeeqFGnqNLkOnorgOdzw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -252,7 +252,7 @@
           "hash": "dJF8rTsELqG0eM30ClZfgg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -261,10 +261,10 @@
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.ViewModels.WindowsVM.VentanaAlumnosVM.html",
-          "hash": "KmrxoTYhdPYbCgD6a4+K7g=="
+          "hash": "DDHk+an4+jFWZAqGWC5cqQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -273,10 +273,10 @@
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM.html",
-          "hash": "aTkTFQJtnX/sL1tTlNm8WQ=="
+          "hash": "o+oi98JNBvJonZ9QN0hzIA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -288,7 +288,7 @@
           "hash": "VqgVVHwKnPRxVBGrLPj+Hw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -300,7 +300,7 @@
           "hash": "ebeRDblAirRkyX+3CPNRhw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -496,13 +496,6 @@
         "skipped_file_count": 0
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
@@ -513,7 +506,14 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 37,
-          "skipped_file_count": 36
+          "skipped_file_count": 37
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
         }
       }
     },

@@ -12,13 +12,13 @@ namespace GradeExplorer.Views.Windows
     public VentanaAlumnos()
     {
       InitializeComponent();
-      DataContext = new VentanaAlumnosVM();
+      DataContext = new VentanaAlumnosVM(this);
     }
 
     public VentanaAlumnos(Alumno a)
     {
       InitializeComponent();
-      DataContext = new VentanaAlumnosVM(a);
+      DataContext = new VentanaAlumnosVM(a, this);
     }
   }
 }

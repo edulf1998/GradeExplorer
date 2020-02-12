@@ -701,6 +701,19 @@ references:
   isSpec: "True"
   fullName: GradeExplorer.Utils.SchoolContext.Profesores
   nameWithType: SchoolContext.Profesores
+- uid: GradeExplorer.Utils.SchoolContext.VaciarBaseDatos
+  name: VaciarBaseDatos()
+  href: api/GradeExplorer.Utils.SchoolContext.html#GradeExplorer_Utils_SchoolContext_VaciarBaseDatos
+  commentId: M:GradeExplorer.Utils.SchoolContext.VaciarBaseDatos
+  fullName: GradeExplorer.Utils.SchoolContext.VaciarBaseDatos()
+  nameWithType: SchoolContext.VaciarBaseDatos()
+- uid: GradeExplorer.Utils.SchoolContext.VaciarBaseDatos*
+  name: VaciarBaseDatos
+  href: api/GradeExplorer.Utils.SchoolContext.html#GradeExplorer_Utils_SchoolContext_VaciarBaseDatos_
+  commentId: Overload:GradeExplorer.Utils.SchoolContext.VaciarBaseDatos
+  isSpec: "True"
+  fullName: GradeExplorer.Utils.SchoolContext.VaciarBaseDatos
+  nameWithType: SchoolContext.VaciarBaseDatos
 - uid: GradeExplorer.ViewModels
   name: GradeExplorer.ViewModels
   href: api/GradeExplorer.ViewModels.html
@@ -1119,18 +1132,18 @@ references:
   commentId: T:GradeExplorer.ViewModels.WindowsVM.VentanaAlumnosVM
   fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAlumnosVM
   nameWithType: VentanaAlumnosVM
-- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAlumnosVM.#ctor
-  name: VentanaAlumnosVM()
-  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAlumnosVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAlumnosVM__ctor
-  commentId: M:GradeExplorer.ViewModels.WindowsVM.VentanaAlumnosVM.#ctor
-  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAlumnosVM.VentanaAlumnosVM()
-  nameWithType: VentanaAlumnosVM.VentanaAlumnosVM()
-- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAlumnosVM.#ctor(GradeExplorer.Models.Alumno)
-  name: VentanaAlumnosVM(Alumno)
-  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAlumnosVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAlumnosVM__ctor_GradeExplorer_Models_Alumno_
-  commentId: M:GradeExplorer.ViewModels.WindowsVM.VentanaAlumnosVM.#ctor(GradeExplorer.Models.Alumno)
-  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAlumnosVM.VentanaAlumnosVM(GradeExplorer.Models.Alumno)
-  nameWithType: VentanaAlumnosVM.VentanaAlumnosVM(Alumno)
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAlumnosVM.#ctor(GradeExplorer.Models.Alumno,System.Windows.Window)
+  name: VentanaAlumnosVM(Alumno, Window)
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAlumnosVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAlumnosVM__ctor_GradeExplorer_Models_Alumno_System_Windows_Window_
+  commentId: M:GradeExplorer.ViewModels.WindowsVM.VentanaAlumnosVM.#ctor(GradeExplorer.Models.Alumno,System.Windows.Window)
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAlumnosVM.VentanaAlumnosVM(GradeExplorer.Models.Alumno, System.Windows.Window)
+  nameWithType: VentanaAlumnosVM.VentanaAlumnosVM(Alumno, Window)
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAlumnosVM.#ctor(System.Windows.Window)
+  name: VentanaAlumnosVM(Window)
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAlumnosVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAlumnosVM__ctor_System_Windows_Window_
+  commentId: M:GradeExplorer.ViewModels.WindowsVM.VentanaAlumnosVM.#ctor(System.Windows.Window)
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAlumnosVM.VentanaAlumnosVM(System.Windows.Window)
+  nameWithType: VentanaAlumnosVM.VentanaAlumnosVM(Window)
 - uid: GradeExplorer.ViewModels.WindowsVM.VentanaAlumnosVM.#ctor*
   name: VentanaAlumnosVM
   href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAlumnosVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAlumnosVM__ctor_
@@ -1170,18 +1183,18 @@ references:
   commentId: T:GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM
   fullName: GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM
   nameWithType: VentanaPersonalVM
-- uid: GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM.#ctor
-  name: VentanaPersonalVM()
-  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaPersonalVM__ctor
-  commentId: M:GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM.#ctor
-  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM.VentanaPersonalVM()
-  nameWithType: VentanaPersonalVM.VentanaPersonalVM()
-- uid: GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM.#ctor(GradeExplorer.Models.Profesor)
-  name: VentanaPersonalVM(Profesor)
-  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaPersonalVM__ctor_GradeExplorer_Models_Profesor_
-  commentId: M:GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM.#ctor(GradeExplorer.Models.Profesor)
-  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM.VentanaPersonalVM(GradeExplorer.Models.Profesor)
-  nameWithType: VentanaPersonalVM.VentanaPersonalVM(Profesor)
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM.#ctor(GradeExplorer.Models.Profesor,System.Windows.Window)
+  name: VentanaPersonalVM(Profesor, Window)
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaPersonalVM__ctor_GradeExplorer_Models_Profesor_System_Windows_Window_
+  commentId: M:GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM.#ctor(GradeExplorer.Models.Profesor,System.Windows.Window)
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM.VentanaPersonalVM(GradeExplorer.Models.Profesor, System.Windows.Window)
+  nameWithType: VentanaPersonalVM.VentanaPersonalVM(Profesor, Window)
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM.#ctor(System.Windows.Window)
+  name: VentanaPersonalVM(Window)
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaPersonalVM__ctor_System_Windows_Window_
+  commentId: M:GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM.#ctor(System.Windows.Window)
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM.VentanaPersonalVM(System.Windows.Window)
+  nameWithType: VentanaPersonalVM.VentanaPersonalVM(Window)
 - uid: GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM.#ctor*
   name: VentanaPersonalVM
   href: api/GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaPersonalVM__ctor_

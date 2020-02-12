@@ -1,5 +1,6 @@
 ﻿using GradeExplorer.Models;
 using MySql.Data.EntityFramework;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 
@@ -18,6 +19,15 @@ namespace GradeExplorer.Utils
     {
     }
 
+    public static void VaciarBaseDatos()
+    {
+      using (var context = new SchoolContext())
+      {
+        context.Database.Delete();
+        context.Database.CreateIfNotExists();
+      }
+    }
+
     public static void InsertarDatosDemo()
     {
       using (var context = new SchoolContext())
@@ -28,7 +38,23 @@ namespace GradeExplorer.Utils
           new Alumno() { Nombre = "Marco", Apellido1 = "de la Rosa", Apellido2 = "Martínez" },
         };
 
+        List<Asignatura> _asignaturas = new List<Asignatura>
+        {
+          new Asignatura() { Nombre = "Lengua Castellana y Literatura" },
+          new Asignatura() { Nombre = "Inglés" },
+          new Asignatura() { Nombre = "Latín" },
+        };
+
+        List<Profesor> _profesores = new List<Profesor>
+        {
+          new Profesor() { Nombre = "Charles", Apellido1 = "Xavier"},
+          new Profesor() { Nombre = "Profesor", Apellido1 = "Oak"},
+        };
+
         context.Alumnos.AddRange(_alumnos);
+        context.Asignatura.AddRange(_asignaturas);
+        context.Profesores.AddRange(_profesores);
+
         context.SaveChanges();
       }
     }

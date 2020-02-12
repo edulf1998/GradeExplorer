@@ -1,9 +1,11 @@
 ﻿using GradeExplorer.Models;
 using GradeExplorer.Utils;
 using GradeExplorer.Views.Windows;
+using System;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Threading;
 
 namespace GradeExplorer.ViewModels.PagesVM
 {
@@ -80,6 +82,16 @@ namespace GradeExplorer.ViewModels.PagesVM
     private void ObtenerPersonal()
     {
       IsLoading = true;
+      using (var c = new SchoolContext())
+      {
+        foreach (Profesor p in c.Profesores)
+        {
+          Application.Current.Dispatcher.BeginInvoke(new Action(() =>
+          {
+            Profesores.Add(p);
+          }), DispatcherPriority.Background);
+        }
+      }
       IsLoading = false;
     }
   }

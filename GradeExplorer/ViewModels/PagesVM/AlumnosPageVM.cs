@@ -66,6 +66,7 @@ namespace GradeExplorer.ViewModels.PagesVM
       MessageBoxResult dialogResult = MessageBox.Show("¡Esta operación no se puede deshacer!", "¿Borrar alumno?", MessageBoxButton.YesNo);
       if (dialogResult == MessageBoxResult.Yes)
       {
+
       }
     }
 
@@ -82,7 +83,6 @@ namespace GradeExplorer.ViewModels.PagesVM
     private void ObtenerAlumnos()
     {
       IsLoading = true;
-
       using (var c = new SchoolContext())
       {
         foreach(Alumno a in c.Alumnos)

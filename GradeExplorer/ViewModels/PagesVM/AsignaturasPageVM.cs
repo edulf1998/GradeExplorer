@@ -1,7 +1,10 @@
 ﻿using GradeExplorer.Models;
 using GradeExplorer.Utils;
+using System;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Threading;
 
 namespace GradeExplorer.ViewModels.PagesVM
 {
@@ -40,6 +43,16 @@ namespace GradeExplorer.ViewModels.PagesVM
     private void ObtenerAsignaturas()
     {
       IsLoading = true;
+      using (var c = new SchoolContext())
+      {
+        foreach (Asignatura a in c.Asignatura)
+        {
+          Application.Current.Dispatcher.BeginInvoke(new Action(() =>
+          {
+            ListaAsignaturas.Add(a);
+          }), DispatcherPriority.Background);
+        }
+      }
       IsLoading = false;
     }
 

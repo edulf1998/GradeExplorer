@@ -9,6 +9,7 @@ namespace GradeExplorer.Models
   /// Clase de modelo asociada a la tabla "Profesor" 
   /// de la base de datos.
   /// </summary>
+  [Table("Profesores")]
   public class Profesor : ModelBase
   {
     private int _id;

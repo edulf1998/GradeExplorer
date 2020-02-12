@@ -20,6 +20,7 @@ namespace GradeExplorer.Views.Pages
 
     private void VaciarBaseDatos(object sender, System.Windows.RoutedEventArgs e)
     {
+      SchoolContext.VaciarBaseDatos();
     }
   }
 }
