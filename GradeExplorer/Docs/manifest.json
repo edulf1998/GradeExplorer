@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Users/NooB/Desktop/PROYECTOS_PROGRAMACION/CSharp/ProyectoDI2/GradeExplorer",
+  "source_base_path": "F:/DI/GradeExplorer/GradeExplorer",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.ViewModels.PagesVM.AsignaturasPageVM.html",
-          "hash": "JqFggFKaA/HVE+Dx+y/Zgw=="
+          "hash": "LsVy6X8ixCM7L9vL0770Jg=="
         }
       },
       "is_incremental": true,
@@ -273,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html",
-          "hash": "VWa6qRjTdLmLHY2ohprBVg=="
+          "hash": "UrWbcXoJ890Fkx5Gll8HdQ=="
         }
       },
       "is_incremental": true,
@@ -520,17 +520,17 @@
         "skipped_file_count": 0
       },
       "processors": {
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 1,
-          "skipped_file_count": 1
-        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 39,
           "skipped_file_count": 39
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 1,
+          "skipped_file_count": 1
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

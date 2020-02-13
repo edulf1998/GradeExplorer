@@ -2,6 +2,7 @@
 using GradeExplorer.Utils;
 using GradeExplorer.Views.Windows;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Data.Entity;
 using System.Linq;
@@ -48,7 +49,7 @@ namespace GradeExplorer.ViewModels.PagesVM
       IsLoading = true;
       using (var c = new SchoolContext())
       {
-        var _asignaturas = c.Asignatura.Include((a)=>a.Profesor).ToList();
+        var _asignaturas = c.Asignatura.Include((a) => a.Profesor).Include((a) => a.Alumnos).ToList();
         foreach (Asignatura a in _asignaturas)
         {
           Application.Current.Dispatcher.BeginInvoke(new Action(() =>

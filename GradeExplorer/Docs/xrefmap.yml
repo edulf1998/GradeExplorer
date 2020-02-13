@@ -1202,6 +1202,19 @@ references:
   isSpec: "True"
   fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.VentanaAsignaturasVM
   nameWithType: VentanaAsignaturasVM.VentanaAsignaturasVM
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Alumnos
+  name: Alumnos
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM_Alumnos
+  commentId: P:GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Alumnos
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Alumnos
+  nameWithType: VentanaAsignaturasVM.Alumnos
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Alumnos*
+  name: Alumnos
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM_Alumnos_
+  commentId: Overload:GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Alumnos
+  isSpec: "True"
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Alumnos
+  nameWithType: VentanaAsignaturasVM.Alumnos
 - uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Asignatura
   name: Asignatura
   href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM_Asignatura

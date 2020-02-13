@@ -22,10 +22,27 @@
                 <ComboBox ItemsSource="{Binding Profesores}" SelectedItem="{Binding Profesor}">
                     <ComboBox.ItemTemplate>
                         <DataTemplate>
-                            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Text="{Binding Path = Nombre}"/>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Style="{StaticResource BodyTextBlockStyle}" Text="{Binding Path = Nombre}"/>
+                                <TextBlock Style="{StaticResource BodyTextBlockStyle}" Text="  " />
+                                <TextBlock Style="{StaticResource BodyTextBlockStyle}" Text="{Binding Path = Apellido1}" />
+                            </StackPanel>
                         </DataTemplate>
                     </ComboBox.ItemTemplate>
                 </ComboBox>
+
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}">Alumnos Matriculados</TextBlock>
+                <ListBox ItemsSource="{Binding Alumnos}" SelectionMode="Multiple">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Style="{StaticResource BodyTextBlockStyle}" Text="{Binding Path = Nombre}"/>
+                                <TextBlock Style="{StaticResource BodyTextBlockStyle}" Text="  " />
+                                <TextBlock Style="{StaticResource BodyTextBlockStyle}" Text="{Binding Path = Apellido1}" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
 
                 <Border Padding="0, 15, 0, 0">
                     <Button HorizontalAlignment="Stretch" Command="{Binding ConfirmCommand}">Confirmar</Button>
