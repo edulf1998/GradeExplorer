@@ -7,7 +7,6 @@
         xmlns:ui="http://schemas.modernwpf.com/2019"
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
-        
         Title="Ventana Alumno" Height="450" Width="400">
     <Border
         Padding="15"

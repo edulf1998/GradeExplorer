@@ -12,7 +12,6 @@ namespace GradeExplorer.Models
   [Table("Asignaturas")]
   public class Asignatura : ModelBase
   {
-
     private int _id;
     /// <summary>
     /// ID único de la Asignatura.

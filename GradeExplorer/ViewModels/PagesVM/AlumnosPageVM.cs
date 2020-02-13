@@ -3,6 +3,7 @@ using GradeExplorer.Utils;
 using GradeExplorer.Views.Windows;
 using System;
 using System.Collections.ObjectModel;
+using System.Data.Entity;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Threading;
@@ -66,7 +67,15 @@ namespace GradeExplorer.ViewModels.PagesVM
       MessageBoxResult dialogResult = MessageBox.Show("¡Esta operación no se puede deshacer!", "¿Borrar alumno?", MessageBoxButton.YesNo);
       if (dialogResult == MessageBoxResult.Yes)
       {
+        using (var c = new SchoolContext())
+        {
+          c.Entry(AlumnoSeleccionado).State = EntityState.Deleted;
+          c.SaveChanges();
+        }
 
+        // Vaciar lista y volver a obtener los datos
+        _listaAlumnos.Clear();
+        Task.Factory.StartNew(() => ObtenerAlumnos());
       }
     }
 
@@ -85,7 +94,7 @@ namespace GradeExplorer.ViewModels.PagesVM
       IsLoading = true;
       using (var c = new SchoolContext())
       {
-        foreach(Alumno a in c.Alumnos)
+        foreach (Alumno a in c.Alumnos)
         {
           Application.Current.Dispatcher.BeginInvoke(new Action(() =>
           {

@@ -1177,6 +1177,83 @@ references:
   isSpec: "True"
   fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAlumnosVM.ConfirmCommand
   nameWithType: VentanaAlumnosVM.ConfirmCommand
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM
+  name: VentanaAsignaturasVM
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html
+  commentId: T:GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM
+  nameWithType: VentanaAsignaturasVM
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.#ctor(GradeExplorer.Models.Asignatura,System.Windows.Window)
+  name: VentanaAsignaturasVM(Asignatura, Window)
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM__ctor_GradeExplorer_Models_Asignatura_System_Windows_Window_
+  commentId: M:GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.#ctor(GradeExplorer.Models.Asignatura,System.Windows.Window)
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.VentanaAsignaturasVM(GradeExplorer.Models.Asignatura, System.Windows.Window)
+  nameWithType: VentanaAsignaturasVM.VentanaAsignaturasVM(Asignatura, Window)
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.#ctor(System.Windows.Window)
+  name: VentanaAsignaturasVM(Window)
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM__ctor_System_Windows_Window_
+  commentId: M:GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.#ctor(System.Windows.Window)
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.VentanaAsignaturasVM(System.Windows.Window)
+  nameWithType: VentanaAsignaturasVM.VentanaAsignaturasVM(Window)
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.#ctor*
+  name: VentanaAsignaturasVM
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM__ctor_
+  commentId: Overload:GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.#ctor
+  isSpec: "True"
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.VentanaAsignaturasVM
+  nameWithType: VentanaAsignaturasVM.VentanaAsignaturasVM
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Asignatura
+  name: Asignatura
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM_Asignatura
+  commentId: P:GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Asignatura
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Asignatura
+  nameWithType: VentanaAsignaturasVM.Asignatura
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Asignatura*
+  name: Asignatura
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM_Asignatura_
+  commentId: Overload:GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Asignatura
+  isSpec: "True"
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Asignatura
+  nameWithType: VentanaAsignaturasVM.Asignatura
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.ConfirmCommand
+  name: ConfirmCommand
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM_ConfirmCommand
+  commentId: P:GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.ConfirmCommand
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.ConfirmCommand
+  nameWithType: VentanaAsignaturasVM.ConfirmCommand
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.ConfirmCommand*
+  name: ConfirmCommand
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM_ConfirmCommand_
+  commentId: Overload:GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.ConfirmCommand
+  isSpec: "True"
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.ConfirmCommand
+  nameWithType: VentanaAsignaturasVM.ConfirmCommand
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Profesor
+  name: Profesor
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM_Profesor
+  commentId: P:GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Profesor
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Profesor
+  nameWithType: VentanaAsignaturasVM.Profesor
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Profesor*
+  name: Profesor
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM_Profesor_
+  commentId: Overload:GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Profesor
+  isSpec: "True"
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Profesor
+  nameWithType: VentanaAsignaturasVM.Profesor
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Profesores
+  name: Profesores
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM_Profesores
+  commentId: P:GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Profesores
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Profesores
+  nameWithType: VentanaAsignaturasVM.Profesores
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Profesores*
+  name: Profesores
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM_Profesores_
+  commentId: Overload:GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Profesores
+  isSpec: "True"
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Profesores
+  nameWithType: VentanaAsignaturasVM.Profesores
 - uid: GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM
   name: VentanaPersonalVM
   href: api/GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM.html
@@ -1443,6 +1520,31 @@ references:
   isSpec: "True"
   fullName: GradeExplorer.Views.Windows.VentanaAlumnos.VentanaAlumnos
   nameWithType: VentanaAlumnos.VentanaAlumnos
+- uid: GradeExplorer.Views.Windows.VentanaAsignaturas
+  name: VentanaAsignaturas
+  href: api/GradeExplorer.Views.Windows.VentanaAsignaturas.html
+  commentId: T:GradeExplorer.Views.Windows.VentanaAsignaturas
+  fullName: GradeExplorer.Views.Windows.VentanaAsignaturas
+  nameWithType: VentanaAsignaturas
+- uid: GradeExplorer.Views.Windows.VentanaAsignaturas.#ctor
+  name: VentanaAsignaturas()
+  href: api/GradeExplorer.Views.Windows.VentanaAsignaturas.html#GradeExplorer_Views_Windows_VentanaAsignaturas__ctor
+  commentId: M:GradeExplorer.Views.Windows.VentanaAsignaturas.#ctor
+  fullName: GradeExplorer.Views.Windows.VentanaAsignaturas.VentanaAsignaturas()
+  nameWithType: VentanaAsignaturas.VentanaAsignaturas()
+- uid: GradeExplorer.Views.Windows.VentanaAsignaturas.#ctor(GradeExplorer.Models.Asignatura)
+  name: VentanaAsignaturas(Asignatura)
+  href: api/GradeExplorer.Views.Windows.VentanaAsignaturas.html#GradeExplorer_Views_Windows_VentanaAsignaturas__ctor_GradeExplorer_Models_Asignatura_
+  commentId: M:GradeExplorer.Views.Windows.VentanaAsignaturas.#ctor(GradeExplorer.Models.Asignatura)
+  fullName: GradeExplorer.Views.Windows.VentanaAsignaturas.VentanaAsignaturas(GradeExplorer.Models.Asignatura)
+  nameWithType: VentanaAsignaturas.VentanaAsignaturas(Asignatura)
+- uid: GradeExplorer.Views.Windows.VentanaAsignaturas.#ctor*
+  name: VentanaAsignaturas
+  href: api/GradeExplorer.Views.Windows.VentanaAsignaturas.html#GradeExplorer_Views_Windows_VentanaAsignaturas__ctor_
+  commentId: Overload:GradeExplorer.Views.Windows.VentanaAsignaturas.#ctor
+  isSpec: "True"
+  fullName: GradeExplorer.Views.Windows.VentanaAsignaturas.VentanaAsignaturas
+  nameWithType: VentanaAsignaturas.VentanaAsignaturas
 - uid: GradeExplorer.Views.Windows.VentanaPersonal
   name: VentanaPersonal
   href: api/GradeExplorer.Views.Windows.VentanaPersonal.html

@@ -1,0 +1,36 @@
+﻿<Window x:Class="GradeExplorer.Views.Windows.VentanaAsignaturas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GradeExplorer.Views.Windows"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Ventana Asignatura" Height="450" Width="400">
+    <Border
+        Padding="15"
+        >
+        <ScrollViewer>
+            <StackPanel>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}">ID</TextBlock>
+                <TextBox IsReadOnly="True" Text="{Binding Asignatura.Id}"></TextBox>
+
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}">Nombre</TextBlock>
+                <TextBox Text="{Binding Asignatura.Nombre}"></TextBox>
+
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}">Profesor</TextBlock>
+                <ComboBox ItemsSource="{Binding Profesores}" SelectedItem="{Binding Profesor}">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Text="{Binding Path = Nombre}"/>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+
+                <Border Padding="0, 15, 0, 0">
+                    <Button HorizontalAlignment="Stretch" Command="{Binding ConfirmCommand}">Confirmar</Button>
+                </Border>
+            </StackPanel>
+        </ScrollViewer>
+    </Border>
+</Window>

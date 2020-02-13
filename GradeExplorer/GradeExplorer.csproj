@@ -138,6 +138,7 @@
     <Compile Include="ViewModels\PagesVM\AsignaturasPageVM.cs" />
     <Compile Include="ViewModels\PagesVM\PersonalPageVM.cs" />
     <Compile Include="ViewModels\PagesVM\PuntuacionesPageVM.cs" />
+    <Compile Include="ViewModels\WindowsVM\VentanaAsignaturasVM.cs" />
     <Compile Include="ViewModels\WindowsVM\VentanaAlumnosVM.cs" />
     <Compile Include="ViewModels\WindowsVM\VentanaPersonalVM.cs" />
     <Compile Include="Views\Main.xaml.cs">
@@ -160,6 +161,9 @@
     </Compile>
     <Compile Include="Views\Windows\VentanaAlumnos.xaml.cs">
       <DependentUpon>VentanaAlumnos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\VentanaAsignaturas.xaml.cs">
+      <DependentUpon>VentanaAsignaturas.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Windows\VentanaPersonal.xaml.cs">
       <DependentUpon>VentanaPersonal.xaml</DependentUpon>
@@ -238,6 +242,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Windows\VentanaAlumnos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\VentanaAsignaturas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

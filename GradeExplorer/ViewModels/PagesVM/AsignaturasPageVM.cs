@@ -1,7 +1,10 @@
 ﻿using GradeExplorer.Models;
 using GradeExplorer.Utils;
+using GradeExplorer.Views.Windows;
 using System;
 using System.Collections.ObjectModel;
+using System.Data.Entity;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Threading;
@@ -45,7 +48,8 @@ namespace GradeExplorer.ViewModels.PagesVM
       IsLoading = true;
       using (var c = new SchoolContext())
       {
-        foreach (Asignatura a in c.Asignatura)
+        var _asignaturas = c.Asignatura.Include((a)=>a.Profesor).ToList();
+        foreach (Asignatura a in _asignaturas)
         {
           Application.Current.Dispatcher.BeginInvoke(new Action(() =>
           {
@@ -58,7 +62,19 @@ namespace GradeExplorer.ViewModels.PagesVM
 
     private void DeleteAsignatura()
     {
+      MessageBoxResult dialogResult = MessageBox.Show("¡Esta operación no se puede deshacer!", "¿Borrar alumno?", MessageBoxButton.YesNo);
+      if (dialogResult == MessageBoxResult.Yes)
+      {
+        using (var c = new SchoolContext())
+        {
+          c.Entry(AsignaturaSeleccionada).State = EntityState.Deleted;
+          c.SaveChanges();
+        }
 
+        // Vaciar lista y volver a obtener los datos
+        _asignaturas.Clear();
+        Task.Factory.StartNew(() => ObtenerAsignaturas());
+      }
     }
 
     private bool CanEditAsignatura()
@@ -73,12 +89,22 @@ namespace GradeExplorer.ViewModels.PagesVM
 
     private void EditAsignatura()
     {
+      var ventana = new VentanaAsignaturas(AsignaturaSeleccionada);
+      ventana.ShowDialog();
 
+      // Vaciar lista y volver a obtener los datos
+      _asignaturas.Clear();
+      Task.Factory.StartNew(() => ObtenerAsignaturas());
     }
 
     private void AddAsignatura()
     {
+      var ventana = new VentanaAsignaturas();
+      ventana.ShowDialog();
 
+      // Vaciar lista y volver a obtener los datos
+      _asignaturas.Clear();
+      Task.Factory.StartNew(() => ObtenerAsignaturas());
     }
   }
 }

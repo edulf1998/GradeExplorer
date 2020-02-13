@@ -40,15 +40,15 @@ namespace GradeExplorer.Utils
 
         List<Asignatura> _asignaturas = new List<Asignatura>
         {
-          new Asignatura() { Nombre = "Lengua Castellana y Literatura" },
-          new Asignatura() { Nombre = "Inglés" },
-          new Asignatura() { Nombre = "Latín" },
+          new Asignatura() { Nombre = "Lengua Castellana y Literatura", Profesor = new Profesor() { Nombre = "Profesor A", Apellido1 = "A", Apellido2 = "A" } },
+          new Asignatura() { Nombre = "Inglés", Profesor = new Profesor() { Nombre = "Profesor B", Apellido1 = "B", Apellido2 = "B" }  },
+          new Asignatura() { Nombre = "Latín", Profesor = new Profesor() { Nombre = "Profesor C", Apellido1 = "C", Apellido2 = "C" } },
         };
 
         List<Profesor> _profesores = new List<Profesor>
         {
-          new Profesor() { Nombre = "Charles", Apellido1 = "Xavier"},
-          new Profesor() { Nombre = "Profesor", Apellido1 = "Oak"},
+          new Profesor() { Nombre = "Charles", Apellido1 = "Xavier", Apellido2 = "Xavier"},
+          new Profesor() { Nombre = "Profesor", Apellido1 = "Oak", Apellido2 = "Oak"},
         };
 
         context.Alumnos.AddRange(_alumnos);
