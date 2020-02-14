@@ -477,6 +477,57 @@ references:
   isSpec: "True"
   fullName: GradeExplorer.Models.Profesor.Nombre
   nameWithType: Profesor.Nombre
+- uid: GradeExplorer.Tests
+  name: GradeExplorer.Tests
+  href: api/GradeExplorer.Tests.html
+  commentId: N:GradeExplorer.Tests
+  fullName: GradeExplorer.Tests
+  nameWithType: GradeExplorer.Tests
+- uid: GradeExplorer.Tests.SchoolContextTest
+  name: SchoolContextTest
+  href: api/GradeExplorer.Tests.SchoolContextTest.html
+  commentId: T:GradeExplorer.Tests.SchoolContextTest
+  fullName: GradeExplorer.Tests.SchoolContextTest
+  nameWithType: SchoolContextTest
+- uid: GradeExplorer.Tests.SchoolContextTest.Test000AddAlumno
+  name: Test000AddAlumno()
+  href: api/GradeExplorer.Tests.SchoolContextTest.html#GradeExplorer_Tests_SchoolContextTest_Test000AddAlumno
+  commentId: M:GradeExplorer.Tests.SchoolContextTest.Test000AddAlumno
+  fullName: GradeExplorer.Tests.SchoolContextTest.Test000AddAlumno()
+  nameWithType: SchoolContextTest.Test000AddAlumno()
+- uid: GradeExplorer.Tests.SchoolContextTest.Test000AddAlumno*
+  name: Test000AddAlumno
+  href: api/GradeExplorer.Tests.SchoolContextTest.html#GradeExplorer_Tests_SchoolContextTest_Test000AddAlumno_
+  commentId: Overload:GradeExplorer.Tests.SchoolContextTest.Test000AddAlumno
+  isSpec: "True"
+  fullName: GradeExplorer.Tests.SchoolContextTest.Test000AddAlumno
+  nameWithType: SchoolContextTest.Test000AddAlumno
+- uid: GradeExplorer.Tests.SchoolContextTest.Test001EditAlumno
+  name: Test001EditAlumno()
+  href: api/GradeExplorer.Tests.SchoolContextTest.html#GradeExplorer_Tests_SchoolContextTest_Test001EditAlumno
+  commentId: M:GradeExplorer.Tests.SchoolContextTest.Test001EditAlumno
+  fullName: GradeExplorer.Tests.SchoolContextTest.Test001EditAlumno()
+  nameWithType: SchoolContextTest.Test001EditAlumno()
+- uid: GradeExplorer.Tests.SchoolContextTest.Test001EditAlumno*
+  name: Test001EditAlumno
+  href: api/GradeExplorer.Tests.SchoolContextTest.html#GradeExplorer_Tests_SchoolContextTest_Test001EditAlumno_
+  commentId: Overload:GradeExplorer.Tests.SchoolContextTest.Test001EditAlumno
+  isSpec: "True"
+  fullName: GradeExplorer.Tests.SchoolContextTest.Test001EditAlumno
+  nameWithType: SchoolContextTest.Test001EditAlumno
+- uid: GradeExplorer.Tests.SchoolContextTest.Test002DeleteAlumno
+  name: Test002DeleteAlumno()
+  href: api/GradeExplorer.Tests.SchoolContextTest.html#GradeExplorer_Tests_SchoolContextTest_Test002DeleteAlumno
+  commentId: M:GradeExplorer.Tests.SchoolContextTest.Test002DeleteAlumno
+  fullName: GradeExplorer.Tests.SchoolContextTest.Test002DeleteAlumno()
+  nameWithType: SchoolContextTest.Test002DeleteAlumno()
+- uid: GradeExplorer.Tests.SchoolContextTest.Test002DeleteAlumno*
+  name: Test002DeleteAlumno
+  href: api/GradeExplorer.Tests.SchoolContextTest.html#GradeExplorer_Tests_SchoolContextTest_Test002DeleteAlumno_
+  commentId: Overload:GradeExplorer.Tests.SchoolContextTest.Test002DeleteAlumno
+  isSpec: "True"
+  fullName: GradeExplorer.Tests.SchoolContextTest.Test002DeleteAlumno
+  nameWithType: SchoolContextTest.Test002DeleteAlumno
 - uid: GradeExplorer.Utils
   name: GradeExplorer.Utils
   href: api/GradeExplorer.Utils.html
@@ -636,19 +687,19 @@ references:
   isSpec: "True"
   fullName: GradeExplorer.Utils.SchoolContext.Alumnos
   nameWithType: SchoolContext.Alumnos
-- uid: GradeExplorer.Utils.SchoolContext.Asignatura
-  name: Asignatura
-  href: api/GradeExplorer.Utils.SchoolContext.html#GradeExplorer_Utils_SchoolContext_Asignatura
-  commentId: P:GradeExplorer.Utils.SchoolContext.Asignatura
-  fullName: GradeExplorer.Utils.SchoolContext.Asignatura
-  nameWithType: SchoolContext.Asignatura
-- uid: GradeExplorer.Utils.SchoolContext.Asignatura*
-  name: Asignatura
-  href: api/GradeExplorer.Utils.SchoolContext.html#GradeExplorer_Utils_SchoolContext_Asignatura_
-  commentId: Overload:GradeExplorer.Utils.SchoolContext.Asignatura
+- uid: GradeExplorer.Utils.SchoolContext.Asignaturas
+  name: Asignaturas
+  href: api/GradeExplorer.Utils.SchoolContext.html#GradeExplorer_Utils_SchoolContext_Asignaturas
+  commentId: P:GradeExplorer.Utils.SchoolContext.Asignaturas
+  fullName: GradeExplorer.Utils.SchoolContext.Asignaturas
+  nameWithType: SchoolContext.Asignaturas
+- uid: GradeExplorer.Utils.SchoolContext.Asignaturas*
+  name: Asignaturas
+  href: api/GradeExplorer.Utils.SchoolContext.html#GradeExplorer_Utils_SchoolContext_Asignaturas_
+  commentId: Overload:GradeExplorer.Utils.SchoolContext.Asignaturas
   isSpec: "True"
-  fullName: GradeExplorer.Utils.SchoolContext.Asignatura
-  nameWithType: SchoolContext.Asignatura
+  fullName: GradeExplorer.Utils.SchoolContext.Asignaturas
+  nameWithType: SchoolContext.Asignaturas
 - uid: GradeExplorer.Utils.SchoolContext.Ejercicios
   name: Ejercicios
   href: api/GradeExplorer.Utils.SchoolContext.html#GradeExplorer_Utils_SchoolContext_Ejercicios
@@ -1202,6 +1253,19 @@ references:
   isSpec: "True"
   fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.VentanaAsignaturasVM
   nameWithType: VentanaAsignaturasVM.VentanaAsignaturasVM
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.AddAlumnoCommand
+  name: AddAlumnoCommand
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM_AddAlumnoCommand
+  commentId: P:GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.AddAlumnoCommand
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.AddAlumnoCommand
+  nameWithType: VentanaAsignaturasVM.AddAlumnoCommand
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.AddAlumnoCommand*
+  name: AddAlumnoCommand
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM_AddAlumnoCommand_
+  commentId: Overload:GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.AddAlumnoCommand
+  isSpec: "True"
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.AddAlumnoCommand
+  nameWithType: VentanaAsignaturasVM.AddAlumnoCommand
 - uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Alumnos
   name: Alumnos
   href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM_Alumnos
@@ -1215,6 +1279,19 @@ references:
   isSpec: "True"
   fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Alumnos
   nameWithType: VentanaAsignaturasVM.Alumnos
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.AlumnoSeleccionado
+  name: AlumnoSeleccionado
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM_AlumnoSeleccionado
+  commentId: P:GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.AlumnoSeleccionado
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.AlumnoSeleccionado
+  nameWithType: VentanaAsignaturasVM.AlumnoSeleccionado
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.AlumnoSeleccionado*
+  name: AlumnoSeleccionado
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM_AlumnoSeleccionado_
+  commentId: Overload:GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.AlumnoSeleccionado
+  isSpec: "True"
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.AlumnoSeleccionado
+  nameWithType: VentanaAsignaturasVM.AlumnoSeleccionado
 - uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Asignatura
   name: Asignatura
   href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM_Asignatura
@@ -1241,6 +1318,19 @@ references:
   isSpec: "True"
   fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.ConfirmCommand
   nameWithType: VentanaAsignaturasVM.ConfirmCommand
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.DeleteAlumnoCommand
+  name: DeleteAlumnoCommand
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM_DeleteAlumnoCommand
+  commentId: P:GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.DeleteAlumnoCommand
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.DeleteAlumnoCommand
+  nameWithType: VentanaAsignaturasVM.DeleteAlumnoCommand
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.DeleteAlumnoCommand*
+  name: DeleteAlumnoCommand
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM_DeleteAlumnoCommand_
+  commentId: Overload:GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.DeleteAlumnoCommand
+  isSpec: "True"
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.DeleteAlumnoCommand
+  nameWithType: VentanaAsignaturasVM.DeleteAlumnoCommand
 - uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Profesor
   name: Profesor
   href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM_Profesor
@@ -1267,6 +1357,19 @@ references:
   isSpec: "True"
   fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.Profesores
   nameWithType: VentanaAsignaturasVM.Profesores
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.TodosAlumnos
+  name: TodosAlumnos
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM_TodosAlumnos
+  commentId: P:GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.TodosAlumnos
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.TodosAlumnos
+  nameWithType: VentanaAsignaturasVM.TodosAlumnos
+- uid: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.TodosAlumnos*
+  name: TodosAlumnos
+  href: api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html#GradeExplorer_ViewModels_WindowsVM_VentanaAsignaturasVM_TodosAlumnos_
+  commentId: Overload:GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.TodosAlumnos
+  isSpec: "True"
+  fullName: GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.TodosAlumnos
+  nameWithType: VentanaAsignaturasVM.TodosAlumnos
 - uid: GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM
   name: VentanaPersonalVM
   href: api/GradeExplorer.ViewModels.WindowsVM.VentanaPersonalVM.html
@@ -1583,3 +1686,64 @@ references:
   isSpec: "True"
   fullName: GradeExplorer.Views.Windows.VentanaPersonal.VentanaPersonal
   nameWithType: VentanaPersonal.VentanaPersonal
+- uid: GradeExplorer.Views.Windows.VentanaUnAlumno
+  name: VentanaUnAlumno
+  href: api/GradeExplorer.Views.Windows.VentanaUnAlumno.html
+  commentId: T:GradeExplorer.Views.Windows.VentanaUnAlumno
+  fullName: GradeExplorer.Views.Windows.VentanaUnAlumno
+  nameWithType: VentanaUnAlumno
+- uid: GradeExplorer.Views.Windows.VentanaUnAlumno.#ctor(System.Collections.ObjectModel.ObservableCollection{GradeExplorer.Models.Alumno})
+  name: VentanaUnAlumno(ObservableCollection<Alumno>)
+  href: api/GradeExplorer.Views.Windows.VentanaUnAlumno.html#GradeExplorer_Views_Windows_VentanaUnAlumno__ctor_System_Collections_ObjectModel_ObservableCollection_GradeExplorer_Models_Alumno__
+  commentId: M:GradeExplorer.Views.Windows.VentanaUnAlumno.#ctor(System.Collections.ObjectModel.ObservableCollection{GradeExplorer.Models.Alumno})
+  name.vb: VentanaUnAlumno(ObservableCollection(Of Alumno))
+  fullName: GradeExplorer.Views.Windows.VentanaUnAlumno.VentanaUnAlumno(System.Collections.ObjectModel.ObservableCollection<GradeExplorer.Models.Alumno>)
+  fullName.vb: GradeExplorer.Views.Windows.VentanaUnAlumno.VentanaUnAlumno(System.Collections.ObjectModel.ObservableCollection(Of GradeExplorer.Models.Alumno))
+  nameWithType: VentanaUnAlumno.VentanaUnAlumno(ObservableCollection<Alumno>)
+  nameWithType.vb: VentanaUnAlumno.VentanaUnAlumno(ObservableCollection(Of Alumno))
+- uid: GradeExplorer.Views.Windows.VentanaUnAlumno.#ctor*
+  name: VentanaUnAlumno
+  href: api/GradeExplorer.Views.Windows.VentanaUnAlumno.html#GradeExplorer_Views_Windows_VentanaUnAlumno__ctor_
+  commentId: Overload:GradeExplorer.Views.Windows.VentanaUnAlumno.#ctor
+  isSpec: "True"
+  fullName: GradeExplorer.Views.Windows.VentanaUnAlumno.VentanaUnAlumno
+  nameWithType: VentanaUnAlumno.VentanaUnAlumno
+- uid: GradeExplorer.Views.Windows.VentanaUnAlumno.Alumno
+  name: Alumno
+  href: api/GradeExplorer.Views.Windows.VentanaUnAlumno.html#GradeExplorer_Views_Windows_VentanaUnAlumno_Alumno
+  commentId: P:GradeExplorer.Views.Windows.VentanaUnAlumno.Alumno
+  fullName: GradeExplorer.Views.Windows.VentanaUnAlumno.Alumno
+  nameWithType: VentanaUnAlumno.Alumno
+- uid: GradeExplorer.Views.Windows.VentanaUnAlumno.Alumno*
+  name: Alumno
+  href: api/GradeExplorer.Views.Windows.VentanaUnAlumno.html#GradeExplorer_Views_Windows_VentanaUnAlumno_Alumno_
+  commentId: Overload:GradeExplorer.Views.Windows.VentanaUnAlumno.Alumno
+  isSpec: "True"
+  fullName: GradeExplorer.Views.Windows.VentanaUnAlumno.Alumno
+  nameWithType: VentanaUnAlumno.Alumno
+- uid: GradeExplorer.Views.Windows.VentanaUnAlumno.Alumnos
+  name: Alumnos
+  href: api/GradeExplorer.Views.Windows.VentanaUnAlumno.html#GradeExplorer_Views_Windows_VentanaUnAlumno_Alumnos
+  commentId: P:GradeExplorer.Views.Windows.VentanaUnAlumno.Alumnos
+  fullName: GradeExplorer.Views.Windows.VentanaUnAlumno.Alumnos
+  nameWithType: VentanaUnAlumno.Alumnos
+- uid: GradeExplorer.Views.Windows.VentanaUnAlumno.Alumnos*
+  name: Alumnos
+  href: api/GradeExplorer.Views.Windows.VentanaUnAlumno.html#GradeExplorer_Views_Windows_VentanaUnAlumno_Alumnos_
+  commentId: Overload:GradeExplorer.Views.Windows.VentanaUnAlumno.Alumnos
+  isSpec: "True"
+  fullName: GradeExplorer.Views.Windows.VentanaUnAlumno.Alumnos
+  nameWithType: VentanaUnAlumno.Alumnos
+- uid: GradeExplorer.Views.Windows.VentanaUnAlumno.ConfirmCommand
+  name: ConfirmCommand
+  href: api/GradeExplorer.Views.Windows.VentanaUnAlumno.html#GradeExplorer_Views_Windows_VentanaUnAlumno_ConfirmCommand
+  commentId: P:GradeExplorer.Views.Windows.VentanaUnAlumno.ConfirmCommand
+  fullName: GradeExplorer.Views.Windows.VentanaUnAlumno.ConfirmCommand
+  nameWithType: VentanaUnAlumno.ConfirmCommand
+- uid: GradeExplorer.Views.Windows.VentanaUnAlumno.ConfirmCommand*
+  name: ConfirmCommand
+  href: api/GradeExplorer.Views.Windows.VentanaUnAlumno.html#GradeExplorer_Views_Windows_VentanaUnAlumno_ConfirmCommand_
+  commentId: Overload:GradeExplorer.Views.Windows.VentanaUnAlumno.ConfirmCommand
+  isSpec: "True"
+  fullName: GradeExplorer.Views.Windows.VentanaUnAlumno.ConfirmCommand
+  nameWithType: VentanaUnAlumno.ConfirmCommand

@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "F:/DI/GradeExplorer/GradeExplorer",
+  "source_base_path": "C:/Users/NooB/Desktop/PROYECTOS_PROGRAMACION/CSharp/ProyectoDI2/GradeExplorer",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.App.html",
-          "hash": "kFjR2qzamH7d3MsYi75QhA=="
+          "hash": "C7u8hKfJEy/MaCGjg/XsbQ=="
         }
       },
       "is_incremental": true,
@@ -125,6 +125,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Tests.SchoolContextTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Tests.SchoolContextTest.html",
+          "hash": "wxf3fxSMI5IOnPKbAvycJg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Tests.html",
+          "hash": "5bStAg0MFdUZ8KVmeL8PRQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/GradeExplorer.Utils.CloneMachine-1.yml",
       "output": {
         ".html": {
@@ -165,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.Utils.SchoolContext.html",
-          "hash": "Fh3yo5+Uyaro2ffP8uTy5g=="
+          "hash": "JPqYIU+KO2lZtBAw9pUW5A=="
         }
       },
       "is_incremental": true,
@@ -273,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.ViewModels.WindowsVM.VentanaAsignaturasVM.html",
-          "hash": "UrWbcXoJ890Fkx5Gll8HdQ=="
+          "hash": "O3xe/6AfvNw2ns7PpDexOQ=="
         }
       },
       "is_incremental": true,
@@ -449,11 +473,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/GradeExplorer.Views.Windows.VentanaUnAlumno.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GradeExplorer.Views.Windows.VentanaUnAlumno.html",
+          "hash": "NZSar5kvxHX7glhvrjIJMg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/GradeExplorer.Views.Windows.yml",
       "output": {
         ".html": {
           "relative_path": "api/GradeExplorer.Views.Windows.html",
-          "hash": "hqvA3AEmC0P73geRIS8utA=="
+          "hash": "7NrPONyGeRZnFwWtwdjRXA=="
         }
       },
       "is_incremental": true,
@@ -489,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "0o93K2XrpK5Rp0sRVdSg0g=="
+          "hash": "VjRjY1a71pUyZbS/uDZIHQ=="
         }
       },
       "is_incremental": false,
@@ -520,24 +556,24 @@
         "skipped_file_count": 0
       },
       "processors": {
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 39,
-          "skipped_file_count": 39
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 1,
-          "skipped_file_count": 1
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 42,
+          "skipped_file_count": 42
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 1,
+          "skipped_file_count": 1
         }
       }
     },

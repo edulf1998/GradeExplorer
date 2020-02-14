@@ -123,6 +123,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Tests\SchoolContextTest.cs" />
     <Compile Include="Utils\SchoolContext.cs" />
     <Compile Include="Properties\IntellisenseResources.cs" />
     <Compile Include="Models\Alumno.cs" />
@@ -168,6 +169,9 @@
     <Compile Include="Views\Windows\VentanaPersonal.xaml.cs">
       <DependentUpon>VentanaPersonal.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Windows\VentanaUnAlumno.xaml.cs">
+      <DependentUpon>VentanaUnAlumno.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -204,7 +208,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controls\" />
-    <Folder Include="Tests\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="icon.ico" />
@@ -250,6 +253,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Windows\VentanaPersonal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\VentanaUnAlumno.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

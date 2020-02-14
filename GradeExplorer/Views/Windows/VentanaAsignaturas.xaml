@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GradeExplorer.Views.Windows"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         Title="Ventana Asignatura" Height="450" Width="400">
@@ -32,7 +33,12 @@
                 </ComboBox>
 
                 <TextBlock Style="{StaticResource BodyTextBlockStyle}">Alumnos Matriculados</TextBlock>
-                <ListBox ItemsSource="{Binding Alumnos}" SelectionMode="Multiple">
+                <ui:CommandBar DefaultLabelPosition="Bottom" Margin="0, 5, 0, 5" HorizontalAlignment="Center" OverflowButtonVisibility="Auto">
+                    <ui:AppBarButton Icon="Add" Label="Crear" Command="{Binding AddAlumnoCommand}"/>
+                    <ui:AppBarSeparator />
+                    <ui:AppBarButton Icon="Delete" Label="Eliminar" Command="{Binding DeleteAlumnoCommand}"/>
+                </ui:CommandBar>
+                <ListBox ItemsSource="{Binding Alumnos}" SelectedItem="{Binding AlumnoSeleccionado}">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">

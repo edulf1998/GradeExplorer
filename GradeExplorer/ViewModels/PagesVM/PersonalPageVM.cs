@@ -70,6 +70,13 @@ namespace GradeExplorer.ViewModels.PagesVM
         using (var c = new SchoolContext())
         {
           c.Entry(ProfesorSeleccionado).State = EntityState.Deleted;
+
+          foreach(Asignatura asig in ProfesorSeleccionado.Asignaturas)
+          {
+            c.Entry(asig.Profesor).State = EntityState.Modified;
+            asig.Profesor = null;
+          }
+
           c.SaveChanges();
         }
 
@@ -94,7 +101,8 @@ namespace GradeExplorer.ViewModels.PagesVM
       IsLoading = true;
       using (var c = new SchoolContext())
       {
-        foreach (Profesor p in c.Profesores)
+        var prfsrs = c.Profesores.Include((p) => p.Asignaturas);
+        foreach (Profesor p in prfsrs)
         {
           Application.Current.Dispatcher.BeginInvoke(new Action(() =>
           {

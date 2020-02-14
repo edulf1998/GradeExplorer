@@ -11,7 +11,7 @@ namespace GradeExplorer.Utils
   {
     public DbSet<Alumno> Alumnos { get; set; }
     public DbSet<Profesor> Profesores { get; set; }
-    public DbSet<Asignatura> Asignatura { get; set; }
+    public DbSet<Asignatura> Asignaturas { get; set; }
     public DbSet<Ejercicio> Ejercicios { get; set; }
     public DbSet<Nota> Notas { get; set; }
 
@@ -42,7 +42,7 @@ namespace GradeExplorer.Utils
         {
           new Asignatura() { Nombre = "Lengua Castellana y Literatura", Profesor = new Profesor() { Nombre = "Profesor A", Apellido1 = "A", Apellido2 = "A" } },
           new Asignatura() { Nombre = "Inglés", Profesor = new Profesor() { Nombre = "Profesor B", Apellido1 = "B", Apellido2 = "B" }  },
-          new Asignatura() { Nombre = "Latín", Profesor = new Profesor() { Nombre = "Profesor C", Apellido1 = "C", Apellido2 = "C" } },
+          new Asignatura() { Nombre = "Latín", Profesor = new Profesor() { Nombre = "Profesor C", Apellido1 = "C", Apellido2 = "C" }, Alumnos = new List<Alumno> { new Alumno() { Nombre = "PEDRO", Apellido1 = "PEREZ", Apellido2 = "PEREZ" } } },
         };
 
         List<Profesor> _profesores = new List<Profesor>
@@ -52,7 +52,7 @@ namespace GradeExplorer.Utils
         };
 
         context.Alumnos.AddRange(_alumnos);
-        context.Asignatura.AddRange(_asignaturas);
+        context.Asignaturas.AddRange(_asignaturas);
         context.Profesores.AddRange(_profesores);
 
         context.SaveChanges();

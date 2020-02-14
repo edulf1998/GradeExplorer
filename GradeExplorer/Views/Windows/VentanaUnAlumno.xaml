@@ -1,0 +1,27 @@
+﻿<Window x:Class="GradeExplorer.Views.Windows.VentanaUnAlumno"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GradeExplorer.Views.Windows"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="VentanaUnAlumno" Height="250" Width="400">
+    <ScrollViewer>
+        <StackPanel Orientation="Vertical">
+            <TextBlock HorizontalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}">Elige un alumno para añadir y confirma o cierra la ventana</TextBlock>
+            <ComboBox x:Name="ListaAlumnos" HorizontalAlignment="Center" SelectionChanged="SeleccionCambio">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Text="{Binding Path = Nombre}"/>
+                            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Text="  " />
+                            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Text="{Binding Path = Apellido1}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <Button x:Name="BtnConfirmar" HorizontalAlignment="Center">Confirmar</Button>
+        </StackPanel>
+    </ScrollViewer>
+</Window>

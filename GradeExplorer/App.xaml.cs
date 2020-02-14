@@ -1,5 +1,6 @@
 ﻿using GradeExplorer.Utils;
 using GradeExplorer.Views;
+using System;
 using System.Windows;
 
 namespace GradeExplorer
@@ -27,9 +28,17 @@ namespace GradeExplorer
       // Crear base de datos si no existe, ya que la usaremos de aqui en adelante
       using (SchoolContext c = new SchoolContext())
       {
-        c.Database.CreateIfNotExists();
+        try
+        {
+          c.Database.CreateIfNotExists();
+        }
+        catch (Exception ex)
+        {
+          MessageBox.Show("¡Error conectando a base de datos! Saliendo...");
+          Environment.Exit(-1);
+          return;
+        }
       }
-
       ventana.Show();
     }
   }

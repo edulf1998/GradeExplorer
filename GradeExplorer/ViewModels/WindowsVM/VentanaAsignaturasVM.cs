@@ -1,9 +1,11 @@
 ﻿using GradeExplorer.Models;
 using GradeExplorer.Utils;
+using GradeExplorer.Views.Windows;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
@@ -29,6 +31,13 @@ namespace GradeExplorer.ViewModels.WindowsVM
       set => SetField(ref _profesores, value);
     }
 
+    private ObservableCollection<Alumno> _todosAlumnos;
+    public ObservableCollection<Alumno> TodosAlumnos
+    {
+      get => _todosAlumnos;
+      set => SetField(ref _todosAlumnos, value);
+    }
+
     private ObservableCollection<Alumno> _alumnos;
     public ObservableCollection<Alumno> Alumnos
     {
@@ -43,44 +52,98 @@ namespace GradeExplorer.ViewModels.WindowsVM
       set => SetField(ref _profesor, value);
     }
     private bool modificando = false;
+
+    public RelayCommand AddAlumnoCommand { get; set; }
+    public RelayCommand DeleteAlumnoCommand { get; set; }
     public RelayCommand ConfirmCommand { get; set; }
+
+    public Alumno AlumnoSeleccionado { get; set; }
 
     public VentanaAsignaturasVM(Window w)
     {
       this.w = w;
       Asignatura = new Asignatura();
       ConfirmCommand = new RelayCommand((a) => Guardar());
+      AddAlumnoCommand = new RelayCommand((a) => AddAlumno());
+      DeleteAlumnoCommand = new RelayCommand((a) => DeleteAlumno(), (a) => AlumnoSeleccionado != null);
       _profesores = new ObservableCollection<Profesor>();
       _alumnos = new ObservableCollection<Alumno>();
+      _todosAlumnos = new ObservableCollection<Alumno>();
       Task.Factory.StartNew(() => ObtenerProfesores());
       Task.Factory.StartNew(() => ObtenerAlumnos());
     }
 
-    private void ObtenerAlumnos()
+    public VentanaAsignaturasVM(Asignatura _asignatura, Window w)
     {
-      using (var c = new SchoolContext())
+      this.w = w;
+      Asignatura = _asignatura;
+      Profesor = Asignatura.Profesor != null ? Asignatura.Profesor : null;
+      modificando = true;
+      ConfirmCommand = new RelayCommand((a) => Guardar());
+      AddAlumnoCommand = new RelayCommand((a) => AddAlumno());
+      DeleteAlumnoCommand = new RelayCommand((a) => DeleteAlumno(), (a) => AlumnoSeleccionado != null);
+      ConfirmCommand = new RelayCommand((p) => Guardar());
+      _profesores = new ObservableCollection<Profesor>();
+      _alumnos = new ObservableCollection<Alumno>();
+      _todosAlumnos = new ObservableCollection<Alumno>();
+      Task.Factory.StartNew(() => ObtenerProfesores());
+      Task.Factory.StartNew(() => ObtenerAlumnos());
+    }
+
+    private void AddAlumno()
+    {
+      VentanaUnAlumno window = new VentanaUnAlumno(TodosAlumnos);
+      window.ShowDialog();
+
+      Alumno a = window.Alumno;
+      if (a != null)
       {
-        foreach (Alumno a in c.Alumnos)
+        using (var c = new SchoolContext())
         {
-          Application.Current.Dispatcher.BeginInvoke(new Action(() =>
-          {
-            Alumnos.Add(a);
-          }), DispatcherPriority.Background);
+          Alumno a2 = c.Alumnos.Find(a.Id);
+          c.Entry(a2).State = EntityState.Modified;
+          Asignatura.Alumnos.Add(a2);
+          c.Set<Asignatura>().AddOrUpdate(Asignatura);
+          c.SaveChanges();
         }
       }
     }
 
-    public VentanaAsignaturasVM(Asignatura a, Window w)
+    private void DeleteAlumno()
     {
-      this.w = w;
-      Asignatura = a;
-      Profesor = Asignatura.Profesor != null ? Asignatura.Profesor : null;
-      modificando = true;
-      ConfirmCommand = new RelayCommand((p) => Guardar());
-      _profesores = new ObservableCollection<Profesor>();
-      _alumnos = new ObservableCollection<Alumno>();
-      Task.Factory.StartNew(() => ObtenerProfesores());
-      Task.Factory.StartNew(() => ObtenerAlumnos());
+      MessageBoxResult dialogResult = MessageBox.Show("¡Esta operación no se puede deshacer!", "¿Borrar matrícula de alumno?", MessageBoxButton.YesNo);
+      if (dialogResult == MessageBoxResult.Yes)
+      {
+        using (var c = new SchoolContext())
+        {
+          Asignatura.Alumnos.Remove(c.Alumnos.Find(AlumnoSeleccionado.Id));
+          c.Entry(Asignatura).State = EntityState.Modified;
+          c.SaveChanges();
+        }
+      }
+    }
+
+    private void ObtenerAlumnos()
+    {
+      if (modificando)
+      {
+        foreach (Alumno a in Asignatura.Alumnos)
+        {
+          Alumnos.Add(a);
+        }
+      }
+
+      using (var c = new SchoolContext())
+      {
+        var almns = c.Alumnos.Include((a) => a.Asignaturas);
+        foreach (Alumno a in almns)
+        {
+          Application.Current.Dispatcher.BeginInvoke(new Action(() =>
+          {
+            TodosAlumnos.Add(a);
+          }), DispatcherPriority.Background);
+        }
+      }
     }
 
     private void ObtenerProfesores()
@@ -110,16 +173,18 @@ namespace GradeExplorer.ViewModels.WindowsVM
 
     private void Guardar()
     {
-      Asignatura.Profesor = Profesor;
       using (var c = new SchoolContext())
       {
         if (modificando)
         {
-          c.Entry(Asignatura).State = EntityState.Modified;
+          c.Set<Asignatura>().AddOrUpdate(Asignatura);
+          Profesor p = c.Profesores.Find(Profesor.Id);
+          Asignatura.Profesor = p;
         }
         else
         {
-          c.Asignatura.Add(Asignatura);
+          Asignatura.Profesor = c.Profesores.Find(Profesor.Id);
+          c.Asignaturas.Add(Asignatura);
         }
         c.SaveChanges();
       }

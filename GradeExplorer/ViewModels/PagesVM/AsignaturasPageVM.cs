@@ -49,7 +49,7 @@ namespace GradeExplorer.ViewModels.PagesVM
       IsLoading = true;
       using (var c = new SchoolContext())
       {
-        var _asignaturas = c.Asignatura.Include((a) => a.Profesor).Include((a) => a.Alumnos).ToList();
+        var _asignaturas = c.Asignaturas.Include((a) => a.Profesor).Include((a) => a.Alumnos).ToList();
         foreach (Asignatura a in _asignaturas)
         {
           Application.Current.Dispatcher.BeginInvoke(new Action(() =>
